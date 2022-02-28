@@ -1,10 +1,14 @@
-{% set title = "Front Page" %}
+{% set title = "Главная | Patty & Bun" %}
 {% include "../templates/header.njk" %}
+
 <div id="overlay"></div>
 
-<header class="header">
+<header class="header wrapper">
   <nav class="nav">
-    <a class="nav__item" href="index.html">Home</a>
+    <a class="nav__item nav__item--logo" href="index.html">Home
+      <!-- width="163" height="30" -->
+      <img src="assets/img/bg/logo.png" alt="Patty & Bun" width="163" height="30">
+    </a>
     <a class="nav__item" href="projects-1.html">Projects</a>
     <a class="nav__item" href="ourclients.html">Our Clients</a>
     <a class="nav__item" href="media-page.html">Media</a>
@@ -108,7 +112,7 @@
 </header>
 
 <div class="popup__bg wrapper">
-  <form class="popup">
+  <form class="popup label">
     <svg class="close-popup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
       <path fill="#2982ff"
         d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
@@ -135,215 +139,6 @@
   </form>
 </div>
 
-<div class="wrapper">
-  <div id="calculator">
-    <span class="number-text">Количество</span>
-    <div class="calc-input__wrap">
-      <input class="calc-input" type="text" value="5000">
-      <span>шт.</span>
-    </div>
-
-    <span class="profit-text">Прибыль</span>
-    <div class="calc-slider"></div>
-    <div class="calc-bottom">
-
-      <div class="calc-result__wrap">
-        <div class="calc-result">1900</div>
-        <span>руб.</span>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<section class="mt-5">
-  <h2>Calc</h2>
-  <div class="row">
-    <div class="col-md-6">
-      <div id="calc">
-        <div class="form-group">
-          <label for="page-size">Размер страницы</label>
-          <select id="page-size" class="form-control">
-            <option selected>Размер страницы</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="qty">Кол-во разворотов</label>
-          <input type="number" class="form-control" min="1" value="1" id="qty">
-        </div>
-        <div class="form-group">
-          <label for="cover">Вид обложки</label>
-          <select id="cover" class="form-control">
-            <option>Вид обложки</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Наименование</th>
-            <th scope="col">Цена</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Размер страницы</td>
-            <td class="page-size">-</td>
-          </tr>
-          <tr>
-            <td>Кол-во разворотов</td>
-            <td class="qty">-</td>
-          </tr>
-          <tr>
-            <td>Цена обложки</td>
-            <td class="cover">-</td>
-          </tr>
-          <tr>
-            <td>Цена на форзац</td>
-            <td class="endpaper">-</td>
-          </tr>
-          <tr>
-            <td>Итого</td>
-            <td class="sum">-</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-<div class="wrapper">
-  <div class="row">
-    <div class="col">
-      <div class="single-post mt-5 mb-5">
-        <h2 class="post-tile">Lorem ipsum, dolor sit amet</h2>
-        <p><i class="bi-alarm"></i> Lorem ipsum, dolor sit
-          amet consectetur adipisicing elit. Quas in natus accusantium, atque porro optio quam
-          iste
-          excepturi quod ab, omnis, eligendi incidunt laboriosam nobis vel repellendus repudiandae quibusdam sunt!</p>
-        <p><a href="#" class="link-more">Leave comments</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="wrapper">
-  <table class="table table-bordered table-striped mt-5 mb-5">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Date</th>
-        <th scope="col">Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Content</td>
-        <td>Content</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Content</td>
-        <td>Content</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Content</td>
-        <td>Content</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Content</td>
-        <td>Content</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Content</td>
-        <td>Content</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<section>
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">
-          Элемент аккордеона #1
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин свертывания
-          не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют
-          общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с
-          помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что
-          практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает
-          переполнение.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-          aria-expanded="false" aria-controls="collapseTwo">
-          Элемент аккордеона #2
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин свертывания не
-          добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют
-          общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с
-          помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что
-          практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает
-          переполнение.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Элемент аккордеона #3
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию оно скрыто, пока плагин свертывания не
-          добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют
-          общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с
-          помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что
-          практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает
-          переполнение.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<button class="popup-btn open-popup wrapper">Открыть попап</button>
-
-<div style="height: 30px;"></div>
-
-<div class="wrapper">
-  <div>
-    <img style="border-radius: 15px;" src="https://picsum.photos/id/103/500/300" alt="">
-  </div>
-</div>
-
-<!-- <div class="wrapper">
-  <div id="ya_maps" style="height: 400px; width: 100%;"></div>
-  <img class="doc-c-image doc-c-image"
-    src="https://static-maps.yandex.ru/1.x/?ll=37.677751,55.757718&amp;spn=0.016457,0.00619&amp;l=map" alt="temp">
-</div> -->
 
 
 

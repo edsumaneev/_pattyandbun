@@ -35,8 +35,5 @@
     }
 }
 
-@include font-face("bootstrap-icons", "bootstrap-icons", "../fonts/bootstrap-icons", 400, "oldie");
-// @include font-face("HelveticaNeueCyr", "HelveticaNeueCyr-Roman", "../fonts/HelveticaNeueCyr-Roman", 400, "oldie");
-// @include font-face("HelveticaNeueCyr", "HelveticaNeueCyr-Light", "../fonts/HelveticaNeueCyr-Light", 300, "oldie");
-// @include font-face("HelveticaNeueCyr", "HelveticaNeueCyr-Black", "../fonts/HelveticaNeueCyr-Black", 900, "oldie");
-// @include font-face("HelveticaNeueCyr", "HelveticaNeueCyr-Bold", "../fonts/HelveticaNeueCyr-Bold", 700, "oldie");
+@include font-face("PTSans", "PT Sans", "../fonts/PTSans-Regular", 400, "oldie");
+@include font-face("PTSansNarrow", "PTSans-Narrow", "../fonts/PTSans-Narrow", 400, "oldie");

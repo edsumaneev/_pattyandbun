@@ -59,7 +59,8 @@
     "jquery": "^3.5.1",
     "jquery-ui": "^1.13.1",
     "magnific-popup": "^1.1.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1"
   },
   "description": ""
 }

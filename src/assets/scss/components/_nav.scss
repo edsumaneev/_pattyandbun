@@ -64,11 +64,15 @@
   width: 100%;
 }
 
-.button__mobmenu {
-  padding: 12px 20px;
-  margin-bottom: 20px;
-  color: #ffffff;
-
-  border: 1px solid #fff;
-  border-radius: 0.3rem;
+.nav__item--logo {
+  font-size: 0 !important;
 }
+
+// .button__mobmenu {
+//   padding: 12px 20px;
+//   margin-bottom: 20px;
+//   color: #ffffff;
+
+//   border: 1px solid #fff;
+//   border-radius: 0.3rem;
+// }
