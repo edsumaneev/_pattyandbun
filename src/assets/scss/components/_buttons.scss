@@ -21,4 +21,16 @@
 .btn:hover {
   color: #352a2a;
   background: linear-gradient(180deg, #eeb913 0%, #ee9613 100%);
+  transition: ease-in-out 0.4s;
+}
+
+.btn--invert {
+  color: #352a2a;
+  background: linear-gradient(180deg, #eeb913 0%, #ee9613 100%);
+}
+
+.btn--invert:hover {
+  color: #ffffff;
+  border: 1px solid #eeb913;
+  background: transparent;
 }
