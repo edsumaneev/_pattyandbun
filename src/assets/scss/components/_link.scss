@@ -1,0 +1,19 @@
+.link {
+  display: block;
+  box-sizing: border-box;
+
+  line-height: 120%;
+
+  text-decoration-line: underline;
+
+  color: #eeb913;
+}
+
+.link:hover {
+  color: #f2d474;
+  transition: ease-in-out 0.3s;
+}
+
+.intro .link {
+  margin-bottom: 50px;
+}

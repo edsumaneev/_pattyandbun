@@ -1,0 +1,20 @@
+{% macro sliderintro(img, name, title, cost, component, link) %}
+<div class="slider__slide">
+  <div class="slider__wrapper">
+      <div class="slider__img">
+        <!-- width="712" height="553" -->
+        <img src="{{img}}" alt="" width="712" height="553">
+      </div>
+      <div class="slider__inner">
+        <p class="slider__name">{{name}}</p>
+        <h2 class="title">{{title}}<span>{{cost}}</span></h2>
+        <p class="slider__component">
+          {{component}}
+        </p>
+        <a class="link" href="{{link}}">Добавить дополнительные ингредиенты</a>
+        <a class="btn" href="#">Заказать</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endmacro %}

@@ -19,7 +19,7 @@ $('#overlay, .nav__item').on('click', function (event) {
   }
 });
 
-$(document).keydown(function (eveent) {
+$(document).keydown(function (event) {
   if (event.keyCode == 27) {
     $('.hamburger').removeClass('active');
     $('.nav').removeClass('active');
@@ -52,4 +52,36 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
     popup.classList.remove('active'); // И с окна
   }
 });
+// 
+// slider main intro
+if ($(".intro").length > 0) {
+  $('.slider').slick({
+    prevArrow: $(".slick-prev"),
+    nextArrow: $(".slick-next"),
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    speed: 800,
+    touchThreshold: 100
+    // responsive: [{
+    //     breakpoint: 1100,
+    //     settings: {
+    //       // dots: false
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 767,
+    //     settings: {
+    //       prevArrow: false,
+    //       nextArrow: false,
+    //       dots: false
+    //     }
+    //   }
+    // ]
+  });
+  $(".slider").on('afterChange', function (event, slick, currentSlide) {
+    $("#cp").text(currentSlide + 1);
+  });
+};
+
 // 
