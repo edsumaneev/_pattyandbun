@@ -31,8 +31,8 @@ a {
 }
 
 a:hover {
-  opacity: 0.2;
-  transition: all ease-in-out 0.4s;
+  // opacity: 0.2;
+  transition: ease-in-out 0.4s;
 }
 
 // *:hover {
@@ -153,6 +153,6 @@ footer {
 
   .wrapper,
   footer {
-    padding: 0 calc(50vw - 725px);
+    padding: 0 calc(50vw - 593px);
   }
 }

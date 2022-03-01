@@ -9,134 +9,119 @@
   }
 }
 
-.contacts--narrow {
-  flex-basis: 18%;
+// .contacts--narrow {
+//   flex-basis: 18%;
 
-  // @media(max-width: $width-md) {
-  //   justify-content: space-between;
-  // }
-}
+// @media(max-width: $width-md) {
+//   justify-content: space-between;
+// }
+// }
 
-.contacts__lang svg {
-  margin-top: -2px;
-}
+// .contacts__lang svg {
+//   margin-top: -2px;
+// }
 
-.contacts__lang ul {
-  position: relative;
-  display: none;
+// .contacts__lang ul {
+//   position: relative;
+//   display: none;
 
-  min-width: 68px;
-}
+//   min-width: 68px;
+// }
 
-.contacts__lang:hover ul {
-  position: absolute;
-  top: 35px;
-  display: block;
+// .contacts__lang:hover ul {
+//   position: absolute;
+//   top: 35px;
+//   display: block;
 
-  width: 100%;
-}
+//   width: 100%;
+// }
 
-.contacts__lang a:hover {
-  color: #cfa55b;
-  transition: ease-in-out 0.3s;
-}
+// .contacts__lang a:hover {
+//   color: #cfa55b;
+//   transition: ease-in-out 0.3s;
+// }
 
-.contacts__lang {
-  @media(max-width: $width-lg) {
-    display: none;
-  }
-}
+// .contacts__lang {
+//   @media(max-width: $width-lg) {
+//     display: none;
+//   }
+// }
 
-.contacts__lang--mobmenu {
-  display: none;
-}
+// .contacts__lang--mobmenu {
+//   display: none;
+// }
 
-.nav.active .contacts__lang--mobmenu {
-  display: block;
-}
+// .nav.active .contacts__lang--mobmenu {
+//   display: block;
+// }
 
-.contacts__social {
-  display: flex;
-  align-items: center;
-  font-size: 0;
 
-  @media(max-width: $width-md) {
-    transform: scale(1.3);
-    margin: 32px 13px 0 13px;
-  }
-}
+// .contacts__social--header {
+//   z-index: 2;
 
-.contacts__social:hover {
-  color: #cfa55b;
-  transition: ease-in-out 0.3s;
-}
+//   @media(max-width: $width-lg) {
+//     margin: 0 0 0 22px;
+//   }
+// }
 
-.contacts__social--header {
-  z-index: 2;
+// .contacts__social--header svg {
+//   fill: #282b3a;
 
-  @media(max-width: $width-lg) {
-    margin: 0 0 0 22px;
-  }
-}
+//   @media(max-width: $width-lg) {
+//     width: 24px;
+//     height: 24px;
+//   }
+// }
 
-.contacts__social--header svg {
-  fill: #282b3a;
+// .contacts__social--white svg {
+//   @media(max-width: $width-lg) {
+//     fill: #ffffff;
+//   }
+// }
 
-  @media(max-width: $width-lg) {
-    width: 24px;
-    height: 24px;
-  }
-}
+// .phone.contacts__white {
+//   fill: #ffffff;
+// }
 
-.contacts__social--white svg {
-  @media(max-width: $width-lg) {
-    fill: #ffffff;
-  }
-}
+// .contacts__social:hover svg {
+//   fill: #cfa55b;
 
-.phone.contacts__white {
-  fill: #ffffff;
-}
+//   transition: ease-in-out 0.3s;
+// }
 
-.contacts__social:hover svg {
-  fill: #cfa55b;
+// .contacts__social--footer svg {
+//   fill: #ffffff;
+// }
 
-  transition: ease-in-out 0.3s;
-}
+// .contacts__phone {
+//   margin-left: 12px;
+//   font-size: 1rem;
 
-.contacts__social--footer svg {
-  fill: #ffffff;
-}
+//   @media(max-width: $width-lg) {
+//     display: none;
+//   }
+// }
 
-.contacts__phone {
-  margin-left: 12px;
-  font-size: 1rem;
+// .contacts__phone--white {
+//   color: #ffffff;
+// }
 
-  @media(max-width: $width-lg) {
-    display: none;
-  }
-}
+// .contacts__social--mobile {
+//   @media(max-width: $width-md) {
+//     display: none;
+//   }
+// }
 
-.contacts__phone--white {
-  color: #ffffff;
-}
+// .contacts__social--footer:hover .contacts__phone--white {
+//   color: #cfa55b;
+//   transition: ease-in-out 0.3s;
+// }
 
-.contacts__social--mobile {
-  @media(max-width: $width-md) {
-    display: none;
-  }
-}
-
-.contacts__social--footer:hover .contacts__phone--white {
-  color: #cfa55b;
-  transition: ease-in-out 0.3s;
-}
-
-.contacts__social--desktop {
-  @media(max-width: $width-lg) {
-    display: none;
-  }
-}
+// .contacts__social--desktop {
+//   @media(max-width: $width-lg) {
+//     display: none;
+//   }
+// }
 
 .contacts__mobmenu {
   display: none;
@@ -156,29 +141,18 @@
   }
 }
 
-.nav.active .contacts__lang--mobmenu {
-  display: block;
+// .nav.active .contacts__lang--mobmenu {
+//   display: block;
 
-  li {
-    margin-bottom: 10px;
-  }
+//   li {
+//     margin-bottom: 10px;
+//   }
 
-  a {
-    color: #ffffff;
-  }
-}
+//   a {
+//     color: #ffffff;
+//   }
+// }
 
-.nav.active .contacts__lang--mobmenu a:hover {
-  color: #cfa55b;
-}
-
-.nav.active .nav__item {
-  margin-bottom: 0;
-  font-size: rem(18px);
-}
-
-.nav.active .nav__item:hover {
-  color: #cfa55b;
-
-  transition: ease-in-out 0.3s;
-}
+// .nav.active .contacts__lang--mobmenu a:hover {
+//   color: #cfa55b;
+// }
