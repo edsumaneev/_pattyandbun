@@ -36,4 +36,5 @@
 }
 
 @include font-face("PTSans", "PT Sans", "../fonts/PTSans-Regular", 400, "oldie");
-@include font-face("PTSansNarrow", "PTSans-Narrow", "../fonts/PTSans-Narrow", 400, "oldie");
+@include font-face("PTSerif", "PT Sans", "../fonts/PTSerif-Regular", 400, "oldie");
+@include font-face("PTSansNarrow", "PTSansNarrow-Regular", "../fonts/PTSansNarrow-Regular", 400, "oldie");
