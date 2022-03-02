@@ -35,12 +35,24 @@
 .slick-next,
 .slick-prev {
   position: absolute;
-  right: 265px;
+  right: 210px;
   bottom: 140px;
 
   cursor: pointer;
+
+  svg {
+    fill: #ffffff;
+  }
 }
 
 .slick-next {
-  right: 150px;
+  right: 95px;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  svg {
+    fill: #cfa55b;
+    transition: ease-in-out 0.4s;
+  }
 }

@@ -29,7 +29,8 @@
 
 .goods__item:hover {
   background: linear-gradient(0deg, #524343, #524343), #3c3030;
-  box-shadow: 0px 0px 4px #524343, 0px 10px 50px #1e1717;
+  // box-shadow: 0px 0px 4px #524343, 0px 10px 50px #1e1717;
+  box-shadow: 0 0 4px #524343, 0 0 10px #1e1717;
   transition: ease-in-out 0.4s;
 }
 

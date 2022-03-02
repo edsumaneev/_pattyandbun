@@ -119,15 +119,13 @@
     <div class="slick-prev">
       <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
-          d="M0.646446 3.64644C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659726 4.53553 0.464464C4.34027 0.269201 4.02369 0.269201 3.82843 0.464464L0.646446 3.64644ZM33 3.5L1 3.5L1 4.5L33 4.5L33 3.5Z"
-          fill="white" />
+          d="M0.646446 3.64644C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659726 4.53553 0.464464C4.34027 0.269201 4.02369 0.269201 3.82843 0.464464L0.646446 3.64644ZM33 3.5L1 3.5L1 4.5L33 4.5L33 3.5Z" />
       </svg>
     </div>
     <div class="slick-next">
       <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
-          d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64645L29.1716 0.464466C28.9763 0.269204 28.6597 0.269204 28.4645 0.464466C28.2692 0.659728 28.2692 0.976311 28.4645 1.17157L31.2929 4L28.4645 6.82843C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.7308 28.9763 7.7308 29.1716 7.53553L32.3536 4.35355ZM0 4.5H32V3.5H0V4.5Z"
-          fill="white" />
+          d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64645L29.1716 0.464466C28.9763 0.269204 28.6597 0.269204 28.4645 0.464466C28.2692 0.659728 28.2692 0.976311 28.4645 1.17157L31.2929 4L28.4645 6.82843C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.7308 28.9763 7.7308 29.1716 7.53553L32.3536 4.35355ZM0 4.5H32V3.5H0V4.5Z" />
       </svg>
     </div>
     <!-- общее число страниц слайдера -->
@@ -260,14 +258,78 @@
     <li class="menu__item">
       <!-- <div class="menu__overlay"></div> -->
       <span class="menu__mark">8 бургеров</span>
-      <div>
+      <div class="menu__img">
+        <!-- width="403" height="179" -->
+        <img src="assets/img/bg/menu-img01.png" alt="" width="403" height="179">
+      </div>
+      <div class="menu__inner">
         <h4 class="menu__title">Бургеры</h4>
         <a class="btn btn--goods" href="#">Выбрать бургер</a>
       </div>
     </li>
+    <li class="menu__item">
+      <div class="menu__overlay"></div>
+      <span class="menu__mark">7 самасов</span>
+      <div class="menu__img menu__img--abs">
+        <!-- width="403" height="179" -->
+        <img src="assets/img/bg/menu-bg01.png" alt="" width="403" height="179">
+      </div>
+      <div class="menu__inner">
+        <h4 class="menu__title">Самосы</h4>
+        <a class="btn btn--goods" href="#">Выбрать самос</a>
+      </div>
+    </li>
+    <li class="menu__item">
+      <!-- <div class="menu__overlay"></div> -->
+      <span class="menu__mark">21 позиция</span>
+      <div class="menu__img">
+        <!-- width="403" height="179" -->
+        <img src="assets/img/bg/menu-img02.png" alt="" width="403" height="179">
+      </div>
+      <div class="menu__inner">
+        <h4 class="menu__title">Закуски и соуса</h4>
+        <a class="btn btn--goods" href="#">Посмотреть</a>
+      </div>
+    </li>
+    <li class="menu__item">
+      <!-- <div class="menu__overlay"></div> -->
+      <span class="menu__mark">21 позиция</span>
+      <div class="menu__img">
+        <!-- width="403" height="179" -->
+        <img src="assets/img/bg/menu-img03.png" alt="" width="403" height="179">
+      </div>
+      <div class="menu__inner">
+        <h4 class="menu__title">Напитки</h4>
+        <a class="btn btn--goods" href="#">Выбрать напиток</a>
+      </div>
+    </li>
   </ul>
 </section>
-
+<section class="news wrapper">
+  <h2 class="title">Новости</h2>
+  <h3 class="subtitle">Будь в курсе всех событий</h3>
+  <ul class="news__list">
+    <li class="news__item">
+      <div class="news__img">
+        <!-- width="570" height="308" -->
+        <img src="assets/img/bg/news-bg-img01.png" alt="" width="570" height="308">
+      </div>
+      <div class="news__inner">
+        <div>
+          <h4>Очень длинный заголовок новости</h4>
+          <span>Новости</span>
+        </div>
+        <div>
+          <div class="news__overlay"></div>
+          <p class="news__text">
+            Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+            маринованным огурцом и сыром чеддер.
+          </p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
 <div class="popup__bg wrapper">
   <form class="popup label">
     <svg class="close-popup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
