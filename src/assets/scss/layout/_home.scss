@@ -1,3 +1,10 @@
+.main {
+  padding-bottom: 2px;
+
+  background: url("../img/bg/bg-mask.png");
+  background-size: cover;
+}
+
 .intro {
   padding-top: 125px;
   padding-bottom: 80px;
@@ -166,6 +173,7 @@
   top: 0;
   left: 0;
   height: 100%;
+  width: 100%;
 
   img {
     object-fit: cover;
@@ -191,13 +199,37 @@
   box-shadow: 0px 10px 50px #1e1717;
 }
 
+.news__title {
+  margin-right: 30px;
+
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+}
+
+.news__mark {
+  padding: 7px 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  background: #6a5f5f;
+  border-radius: 5px;
+}
+
 .news__item:hover {
+  box-shadow: 0px 10px 50px #1e1717;
   background: radial-gradient(50% 50% at 50% 50%, #796464 0%, #524343 100%), radial-gradient(50% 50% at 50% 50%, #eeb913 0%, #ee8913 100%), #262626;
   transition: ease-in-out 0.4s;
 }
 
 .news__img {
-  margin-right: 30px;
+  margin-right: 25px;
   max-height: 308px;
 
   img {
@@ -208,16 +240,53 @@
 
 .news__inner {
   position: relative;
+  padding: 30px 10px 32px 0;
 }
 
 .news__overlay {
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 70%;
   bottom: 0;
   background: linear-gradient(180deg, rgba(60, 48, 48, 0) 0%, #3c3030 100%);
 }
 
 .news__item:hover .news__overlay {
-  background: linear-gradient(180deg, rgba(82, 67, 67, 0) 0%, #534444 100%);
+  background: linear-gradient(180deg, rgba(82, 67, 67, 0) 0%, #524343 100%);
+  opacity: 0.5;
+}
+
+.news__row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-bottom: 19px;
+}
+
+.news__issue {
+  position: relative;
+  max-height: 88px;
+
+  margin-bottom: 40px;
+
+  overflow-y: hidden;
+}
+
+.news__btn {
+  margin-right: 30px;
+}
+
+.news__divide {
+  margin-bottom: 70px;
+  height: 1px;
+  background: rgba($color: #ffffff, $alpha: 0.2);
+}
+
+.news__divide:last-child {
+  margin-bottom: 60px;
+}
+
+.maps {
+  padding-top: 44px;
 }
