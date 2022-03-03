@@ -2,15 +2,25 @@
   display: flex;
   justify-content: flex-start;
   margin-bottom: 100px;
+
+  @media screen and (max-width: 1198px) {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
 }
 
 .goods__item {
   padding: 20px 20px 30px 20px;
   margin-right: 30px;
   max-width: 270px;
+  height: 471px;
 
   background: radial-gradient(49.04% 49.04% at 50% 28.87%, #524343 0%, #352a2a 100%), #3c3030;
   box-shadow: 0px 10px 50px #1e1717;
+
+  @media screen and (max-width: 1198px) {
+    margin-bottom: 30px;
+  }
 }
 
 .goods__item--empty {

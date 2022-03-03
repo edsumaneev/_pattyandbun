@@ -6,6 +6,10 @@
   line-height: 130%;
 
   color: #ffffff;
+
+  @media screen and (max-width: 1198px) {
+    font-size: rem(48px);
+  }
 }
 
 .title span {
@@ -13,6 +17,11 @@
   font-size: rem(40px);
 
   color: #eeb913;
+
+  @media screen and (max-width: 1198px) {
+    margin-left: 20px;
+    font-size: rem(32px);
+  }
 }
 
 .slider .title {
