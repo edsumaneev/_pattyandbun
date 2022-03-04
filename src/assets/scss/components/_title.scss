@@ -1,5 +1,5 @@
 .title {
-  font-size: rem(60px);
+  font-size: rem(50px);
   font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -10,6 +10,18 @@
   @media screen and (max-width: 1198px) {
     font-size: rem(48px);
   }
+
+  @media screen and (max-width: 992px) {
+    font-size: rem(36px);
+  }
+
+  @media screen and (max-width: 575px) {
+    font-size: rem(32px);
+  }
+}
+
+.title--big {
+  font-size: rem(60px);
 
   @media screen and (max-width: 992px) {
     font-size: rem(36px);

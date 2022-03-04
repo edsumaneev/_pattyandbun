@@ -156,3 +156,11 @@ footer {
     padding: 0 calc(50vw - 593px);
   }
 }
+
+@media (min-width: 2498.98px) {
+
+  .wrapper,
+  footer {
+    padding: 0 calc(50vw - 750px);
+  }
+}
