@@ -26,6 +26,11 @@
 .nav__inner {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 }
 
 .nav__inner--contact {
@@ -76,14 +81,25 @@
   color: #ffffff;
 
   opacity: 0.3;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 20px;
+  }
 }
 
 .nav__phone {
+  display: block;
+  box-sizing: border-box;
+
   font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 20px;
+  }
 }
 
 .nav__phone:hover {

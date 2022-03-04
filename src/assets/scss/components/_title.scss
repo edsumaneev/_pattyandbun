@@ -10,6 +10,10 @@
   @media screen and (max-width: 1198px) {
     font-size: rem(48px);
   }
+
+  @media screen and (max-width: 992px) {
+    font-size: rem(36px);
+  }
 }
 
 .title span {
@@ -40,4 +44,8 @@
   color: #ffffff;
 
   opacity: 0.45;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 30px;
+  }
 }

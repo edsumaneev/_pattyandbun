@@ -66,6 +66,11 @@
     bottom: 70px;
     right: 305px;
   }
+
+  @media screen and (max-width: 992px) {
+    bottom: 22px;
+    right: 290px;
+  }
 }
 
 .slick-next {
@@ -73,6 +78,10 @@
 
   @media screen and (max-width: 1198px) {
     right: 215px;
+  }
+
+  @media screen and (max-width: 992px) {
+    right: 200px;
   }
 }
 
