@@ -1,0 +1,45 @@
+.page404 {
+  position: relative;
+}
+
+.page404__img {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+
+  @media screen and (max-width: 992px) {
+    transform: scale(0.6);
+  }
+}
+
+.page404__btn {
+  display: block;
+  box-sizing: border-box;
+  padding: 14px 20px;
+  max-width: 218px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+
+  @media screen and (max-width: 1198px) {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.page404__title {
+  margin-top: 70px;
+  margin-bottom: 11px;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 30px;
+  }
+}

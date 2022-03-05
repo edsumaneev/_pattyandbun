@@ -28,6 +28,17 @@
   }
 }
 
+.title--superbig {
+  font-size: rem(350px);
+  line-height: 100%;
+
+  text-align: center;
+
+  @media screen and (max-width: 992px) {
+    font-size: rem(200px);
+  }
+}
+
 .title span {
   margin-left: 38px;
   font-size: rem(40px);
@@ -38,6 +49,35 @@
     margin-left: 20px;
     font-size: rem(32px);
   }
+}
+
+.title--big span {
+  margin-left: 0;
+
+  color: #eeb913;
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-size: rem(60px);
+
+  @media screen and (max-width: 992px) {
+    font-size: rem(36px);
+  }
+}
+
+.title--superbig span {
+  margin-left: 0;
+  margin-bottom: 50px;
+
+  color: #eeb913;
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-size: rem(350px);
+
+  @media screen and (max-width: 992px) {
+    font-size: rem(200px);
+  }
+}
+
+.page404 .title--big {
+  text-align: center;
 }
 
 .slider .title {
