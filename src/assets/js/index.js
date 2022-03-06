@@ -1,5 +1,17 @@
 // require('../../../node_modules/jquery-ui/jquery-ui.min.js');
+require('./js-component/jquery-ui.min.js');
 require('slick-carousel');
+
+// tabs
+if ($(".timeline").length > 0) {
+  $(function () {
+    $("#tabs").tabs();
+  });
+};
+// accordion
+$(function () {
+  $("#accordion").accordion();
+});
 
 // hamburger
 $('.hamburger').on('click', function (event) {
