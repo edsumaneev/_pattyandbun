@@ -19,6 +19,13 @@
 
   background: transparent;
   border: none;
+
+  @media screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    margin: 0;
+  }
 }
 
 .timeline__list::before {
@@ -28,6 +35,14 @@
   height: 1px;
   top: 0;
   background: rgba($color: #ffffff, $alpha: 0.2);
+
+  @media screen and (max-width: 992px) {
+    width: 1px;
+    height: 100%;
+    right: unset;
+    left: 18px;
+    top: 5px;
+  }
 }
 
 // .timeline__item,
@@ -49,6 +64,11 @@
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
   position: relative;
   padding-top: 30px;
+
+  @media screen and (max-width: 575px) {
+    padding: 20px 10px 20px 30px;
+    font-size: 24px;
+  }
 }
 
 .ui-tabs-anchor::before {
@@ -63,7 +83,18 @@
 
   border-radius: 50%;
   background: #524343;
-  ;
+
+  @media screen and (max-width: 992px) {
+    top: 45px;
+    left: -95px;
+  }
+
+  @media screen and (max-width: 575px) {
+    width: 10px;
+    height: 10px;
+    top: 40px;
+    left: -47px;
+  }
 }
 
 .ui-state-active .ui-tabs-anchor::before {
@@ -85,6 +116,16 @@
 
 .ui-widget.ui-widget-content {
   border: none;
+
+  @media screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 575px) {
+    align-items: center;
+  }
 }
 
 .ui-tabs .ui-tabs-panel {
@@ -93,6 +134,10 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
 }
 
 .tabs__img {
@@ -104,6 +149,21 @@
     height: 100%;
     overflow: hidden;
   }
+
+  @media screen and (max-width: 1198px) {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    height: 250px;
+
+    // img {
+    // object-fit: contain;
+    // }
+  }
 }
 
 .tabs__text {
@@ -111,6 +171,18 @@
   margin-left: 30px;
 
   background: #352a2a;
+
+  @media screen and (max-width: 1198px) {
+    padding: 30px 10px 0 20px;
+    margin-left: 10px;
+    width: 50%;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 20px 10px 10px 10px;
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .tabs__paragraph {
@@ -120,4 +192,9 @@
 .tabs__paragraph--margin {
   margin-top: 20px;
   margin-bottom: 40px;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
