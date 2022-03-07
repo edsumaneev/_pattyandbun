@@ -1,4 +1,6 @@
 .menu {
+  padding-bottom: 50px;
+
   background: url("../img/bg/bg-mask.png");
   background-size: cover;
 }
@@ -20,7 +22,7 @@
 .menu__counter {
   position: absolute;
   right: 150px;
-  bottom: 70px;
+  bottom: 0;
 
   color: #ffffff;
 
@@ -42,4 +44,27 @@
   @media screen and (max-width:575px) {
     right: 675px;
   }
+}
+
+// .calories {}
+.calories {
+  padding: 15px 20px 20px;
+  max-width: 163px;
+  background: #1f1616;
+}
+
+.calories__item {
+  display: flex;
+  justify-content: space-between;
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: 120%;
+}
+
+.calories__vol {
+  color: #eeb913;
 }

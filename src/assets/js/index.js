@@ -100,8 +100,6 @@ if ($(".menu").length > 0) {
   $('.slider-nav').slick({
     prevArrow: $(".slick-prev"),
     nextArrow: $(".slick-next"),
-    // slidesToShow: 6,
-    // slidesToScroll: 1,
     asNavFor: '.slider-for',
     variableWidth: true,
     touchThreshold: 50,
