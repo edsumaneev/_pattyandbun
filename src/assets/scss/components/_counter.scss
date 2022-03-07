@@ -1,0 +1,46 @@
+.counter {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.counter__decrease,
+.counter__increase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  text-align: center;
+  user-select: none;
+
+  cursor: pointer;
+
+  border: 1px solid #6c5d5d;
+  border-radius: 60px;
+}
+
+.counter__input {
+  display: inline-block;
+  vertical-align: middle;
+
+  max-width: 27px;
+
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  color: #ffffff;
+
+  text-align: center;
+  user-select: none;
+  border: none;
+  background: transparent;
+}
+
+.counter__input:focus-visible {
+  outline: none;
+}

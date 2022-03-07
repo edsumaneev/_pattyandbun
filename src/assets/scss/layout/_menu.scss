@@ -1,0 +1,45 @@
+.menu {
+  background: url("../img/bg/bg-mask.png");
+  background-size: cover;
+}
+
+.menu__rel {
+  position: relative;
+
+  max-width: 1170px;
+  margin: 0 auto;
+
+  height: 0;
+
+  @media screen and (max-width: 1198px) {
+    max-width: unset;
+    width: 960px;
+  }
+}
+
+.menu__counter {
+  position: absolute;
+  right: 150px;
+  bottom: 70px;
+
+  color: #ffffff;
+
+  @media screen and (max-width: 1198px) {
+    bottom: 70px;
+    right: 260px;
+  }
+
+  @media screen and (max-width: 992px) {
+    bottom: 20px;
+    right: 245px;
+  }
+
+  @media screen and (max-width:767px) {
+    bottom: 16px;
+    right: 610px;
+  }
+
+  @media screen and (max-width:575px) {
+    right: 675px;
+  }
+}

@@ -39,7 +39,7 @@
   }
 }
 
-.title span {
+.title__yellow {
   margin-left: 38px;
   font-size: rem(40px);
 
@@ -51,17 +51,17 @@
   }
 }
 
-.title--big span {
-  margin-left: 0;
+// .title--big span {
+//   margin-left: 0;
 
-  color: #eeb913;
-  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
-  font-size: rem(60px);
+//   color: #eeb913;
+//   font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+//   font-size: rem(60px);
 
-  @media screen and (max-width: 992px) {
-    font-size: rem(36px);
-  }
-}
+//   @media screen and (max-width: 992px) {
+//     font-size: rem(36px);
+//   }
+// }
 
 .title--superbig span {
   margin-left: 0;

@@ -1,3 +1,7 @@
+const {
+  auto
+} = require('@popperjs/core');
+
 // require('../../../node_modules/jquery-ui/jquery-ui.min.js');
 require('./js-component/jquery-ui.min.js');
 require('slick-carousel');
@@ -9,9 +13,9 @@ if ($(".timeline").length > 0) {
   });
 };
 // accordion
-$(function () {
-  $("#accordion").accordion();
-});
+// $(function () {
+//   $("#accordion").accordion();
+// });
 
 // hamburger
 $('.hamburger').on('click', function (event) {
@@ -40,31 +44,32 @@ $(document).keydown(function (event) {
   }
 });
 // popup
-let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
-let popup = document.querySelector('.popup'); // Само окно
-let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
-let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
+if ($(".intro").length > 0) {
+  let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
+  let popup = document.querySelector('.popup'); // Само окно
+  let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
+  let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
 
-openPopupButtons.forEach((button) => { // Перебираем все кнопки
-  button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
-    e.preventDefault(); // Предотвращаем дефолтное поведение браузера
-    popupBg.classList.add('active'); // Добавляем класс 'active' для фона
-    popup.classList.add('active'); // И для самого окна
-  })
-});
+  openPopupButtons.forEach((button) => { // Перебираем все кнопки
+    button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+      e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+      popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+      popup.classList.add('active'); // И для самого окна
+    })
+  });
 
-closePopupButton.addEventListener('click', () => { // Вешаем обработчик на крестик
-  popupBg.classList.remove('active'); // Убираем активный класс с фона
-  popup.classList.remove('active'); // И с окна
-});
-
-document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
-  if (e.target === popupBg) { // Если цель клика - фот, то:
+  closePopupButton.addEventListener('click', () => { // Вешаем обработчик на крестик
     popupBg.classList.remove('active'); // Убираем активный класс с фона
     popup.classList.remove('active'); // И с окна
-  }
-});
-// 
+  });
+
+  document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+    if (e.target === popupBg) { // Если цель клика - фот, то:
+      popupBg.classList.remove('active'); // Убираем активный класс с фона
+      popup.classList.remove('active'); // И с окна
+    }
+  });
+};
 // slider main intro
 if ($(".intro").length > 0) {
   $('.slider').slick({
@@ -75,23 +80,34 @@ if ($(".intro").length > 0) {
     slidesToShow: 1,
     speed: 800,
     touchThreshold: 100
-    // responsive: [{
-    //     breakpoint: 1100,
-    //     settings: {
-    //       // dots: false
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 767,
-    //     settings: {
-    //       prevArrow: false,
-    //       nextArrow: false,
-    //       dots: false
-    //     }
-    //   }
-    // ]
   });
   $(".slider").on('afterChange', function (event, slick, currentSlide) {
+    $("#cp").text(currentSlide + 1);
+  });
+};
+
+// slider menu
+if ($(".menu").length > 0) {
+  $('.slider-for').slick({
+
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    // fade: true,
+    asNavFor: '.slider-nav',
+    touchThreshold: 100
+  });
+  $('.slider-nav').slick({
+    prevArrow: $(".slick-prev"),
+    nextArrow: $(".slick-next"),
+    // slidesToShow: 6,
+    // slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    variableWidth: true,
+    touchThreshold: 50,
+    focusOnSelect: true
+  });
+  $(".slider-nav").on('afterChange', function (event, slick, currentSlide) {
     $("#cp").text(currentSlide + 1);
   });
 };
