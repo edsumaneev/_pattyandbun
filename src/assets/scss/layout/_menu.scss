@@ -76,13 +76,16 @@
   bottom: 0;
   right: 0;
   padding: 30px;
-  // max-width: 163px;
+  max-width: 300px;
+
+
   background: #1f1616;
 }
 
 .ingredient__action {
   display: flex;
   justify-content: space-between;
+  margin-top: 18px;
 }
 
 .ingredient__header {
@@ -92,6 +95,8 @@
 
 .ingredient__subtitle,
 .ingredient__title {
+  margin-bottom: 10px;
+
   font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -105,10 +110,12 @@
 
 .ingredient__row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .ingredient__select {
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .ingredient__checkbox {

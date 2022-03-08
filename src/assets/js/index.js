@@ -12,6 +12,10 @@ if ($(".timeline").length > 0) {
     $("#tabs").tabs();
   });
 };
+// ToolTip
+$(function () {
+  $(document).tooltip();
+});
 // accordion
 // $(function () {
 //   $("#accordion").accordion();
