@@ -21,6 +21,12 @@
   border-radius: 60px;
 }
 
+.counter__decrease:hover,
+.counter__increase:hover {
+  border: 1px solid #eeb913;
+  transition: 0.4s linear;
+}
+
 .counter__input {
   display: inline-block;
   vertical-align: middle;

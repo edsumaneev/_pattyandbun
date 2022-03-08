@@ -68,3 +68,100 @@
 .calories__vol {
   color: #eeb913;
 }
+
+// ingredient
+.ingredient {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+  // max-width: 163px;
+  background: #1f1616;
+}
+
+.ingredient__action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingredient__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingredient__subtitle,
+.ingredient__title {
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(14px);
+  line-height: 130%;
+}
+
+.ingredient__subtitle {
+  color: rgba($color: #ffffff, $alpha: 0.3);
+}
+
+.ingredient__row {
+  display: flex;
+}
+
+.ingredient__select {
+  margin-right: 10px;
+}
+
+.ingredient__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ingredient__checkbox+label {
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+
+  cursor: pointer;
+}
+
+.ingredient__checkbox+label::before {
+  content: "";
+  display: inline-block;
+
+  width: 32px;
+  height: 33px;
+
+  background: transparent;
+  border: 1px solid #605757;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ingredient__checkbox:checked+label::before {
+  background: #eeb913;
+  border: 1px solid #eeb913;
+}
+
+.ingredient__checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #eeb913;
+  transition: ease-in-out 0.4s;
+}
+
+// .ingredient__checkbox:disabled+label::before {
+.ingredient__checkbox:disabled+label {
+  background-color: #44393a;
+  border-radius: 50%;
+
+  cursor: not-allowed;
+}
+
+.ingredient__img {
+  position: absolute;
+
+  object-fit: contain;
+}

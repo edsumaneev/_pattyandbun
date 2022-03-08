@@ -102,7 +102,10 @@ if ($(".menu").length > 0) {
     nextArrow: $(".slick-next"),
     asNavFor: '.slider-for',
     variableWidth: true,
-    touchThreshold: 50,
+    cssEase: 'linear',
+    dots: false,
+    centerMode: false,
+    // touchThreshold: 50,
     focusOnSelect: true
   });
   $(".slider-nav").on('afterChange', function (event, slick, currentSlide) {
@@ -111,23 +114,23 @@ if ($(".menu").length > 0) {
 };
 
 // 
-// productcard__counter 
-// if ($('.goods').length > 0) {
-//   $(function () {
-//     $('.goods__decrease').click(function () {
-//       var $input = $(this).parent().find('input');
-//       var count = parseInt($input.val()) - 1;
-//       count = count < 1 ? 1 : count;
-//       $input.val(count);
-//       $input.change();
-//       return false;
-//     });
-//     $('.goods__increase').click(function () {
-//       var $input = $(this).parent().find('input');
-//       $input.val(parseInt($input.val()) + 1);
-//       $input.change();
-//       return false;
-//     });
-//   });
-// }
+// counter 
+if ($('.counter').length > 0) {
+  $(function () {
+    $('.counter__decrease').click(function () {
+      var $input = $(this).parent().find('input');
+      var count = parseInt($input.val()) - 1;
+      count = count < 1 ? 1 : count;
+      $input.val(count);
+      $input.change();
+      return false;
+    });
+    $('.counter__increase').click(function () {
+      var $input = $(this).parent().find('input');
+      $input.val(parseInt($input.val()) + 1);
+      $input.change();
+      return false;
+    });
+  });
+}
 // 
