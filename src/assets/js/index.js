@@ -13,9 +13,9 @@ if ($(".timeline").length > 0) {
   });
 };
 // ToolTip
-$(function () {
-  $(document).tooltip();
-});
+// $(function () {
+//   $(document).tooltip();
+// });
 // accordion
 // $(function () {
 //   $("#accordion").accordion();
