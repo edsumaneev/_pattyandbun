@@ -109,7 +109,7 @@ if ($(".menu").length > 0) {
     cssEase: 'linear',
     dots: false,
     centerMode: false,
-    // touchThreshold: 50,
+    touchThreshold: 50,
     focusOnSelect: true
   });
   $(".slider-nav").on('afterChange', function (event, slick, currentSlide) {
