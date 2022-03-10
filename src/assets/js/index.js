@@ -21,6 +21,18 @@ if ($(".timeline").length > 0) {
 //   $("#accordion").accordion();
 // });
 
+// scroll to anchor
+$(document).ready(function () {
+  $(".menu__anchors").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 800);
+  });
+});
+
 // hamburger
 $('.hamburger').on('click', function (event) {
   event.preventDefault();
@@ -49,28 +61,28 @@ $(document).keydown(function (event) {
 });
 // popup
 if ($(".intro").length > 0) {
-  let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
-  let popup = document.querySelector('.popup'); // Само окно
-  let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
-  let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
+  let popupBg = document.querySelector('.popup__bg');
+  let popup = document.querySelector('.popup');
+  let openPopupButtons = document.querySelectorAll('.open-popup');
+  let closePopupButton = document.querySelector('.close-popup');
 
-  openPopupButtons.forEach((button) => { // Перебираем все кнопки
-    button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
-      e.preventDefault(); // Предотвращаем дефолтное поведение браузера
-      popupBg.classList.add('active'); // Добавляем класс 'active' для фона
-      popup.classList.add('active'); // И для самого окна
+  openPopupButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg.classList.add('active');
+      popup.classList.add('active');
     })
   });
 
-  closePopupButton.addEventListener('click', () => { // Вешаем обработчик на крестик
-    popupBg.classList.remove('active'); // Убираем активный класс с фона
-    popup.classList.remove('active'); // И с окна
+  closePopupButton.addEventListener('click', () => {
+    popupBg.classList.remove('active');
+    popup.classList.remove('active');
   });
 
-  document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
-    if (e.target === popupBg) { // Если цель клика - фот, то:
-      popupBg.classList.remove('active'); // Убираем активный класс с фона
-      popup.classList.remove('active'); // И с окна
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg) {
+      popupBg.classList.remove('active');
+      popup.classList.remove('active');
     }
   });
 };
@@ -138,42 +150,41 @@ if ($('.counter').length > 0) {
   });
 };
 // highlite aside menu
-// if ($('.menu').length > 0) {
-function onScroll(event) {
-  var scrollPos = $(document).scrollTop();
-  $('.menu__item').each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
-    // if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() + 2000 > scrollPos) {
-      $('.menu__item').removeClass("active-menu");
-      currLink.addClass("active-menu");
-    } else {
-      currLink.removeClass("active-menu");
-    }
-  });
-}
-
-
-var menu_selector = $('.menu__item');
-$(document).ready(function () {
-
-  $(document).on("scroll", onScroll);
-
-  $("a[href^=#]").click(function (e) {
-    e.preventDefault();
-    $(document).off("scroll");
-    $(menu_selector + " a.active-menu").removeClass("active-menu");
-    $(this).addClass("active-menu");
-    var hash = $(this).attr("href");
-    var target = $(hash);
-    $("html, body").animate({
-      scrollTop: target.offset().top
-    }, 500, function () {
-      window.location.hash = hash;
-      $(document).on("scroll", onScroll);
+if ($('.menu').length > 0) {
+  function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    $('.menu__item').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top - 50 <= scrollPos && refElement.position().top + refElement.height() + 2000 > scrollPos) {
+        $('.menu__item').removeClass("active-menu");
+        currLink.addClass("active-menu");
+      } else {
+        currLink.removeClass("active-menu");
+      }
     });
+  }
 
+
+  var menu_selector = $('.menu__item');
+  $(document).ready(function () {
+
+    $(document).on("scroll", onScroll);
+
+    $("a[href^=#]").click(function (e) {
+      e.preventDefault();
+      $(document).off("scroll");
+      $(menu_selector + " a.active-menu").removeClass("active-menu");
+      $(this).addClass("active-menu");
+      var hash = $(this).attr("href");
+      var target = $(hash);
+      $("html, body").animate({
+        scrollTop: target.offset().top
+      }, 500, function () {
+        window.location.hash = hash;
+        $(document).on("scroll", onScroll);
+      });
+
+    });
   });
-});
-// };
+};

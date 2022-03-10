@@ -190,13 +190,18 @@
 }
 
 .menu__aside {
+  position: relative;
   width: 20%;
 }
 
 .menu__anchors {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
+  height: fit-content;
 }
 
 .menu__goods {
