@@ -1,8 +1,7 @@
 {% set title = "Меню | Patty & Bun" %}
 {% include "../templates/header.njk" %}
-
-<div class="breadcrumbs wrapper"><a class="breadcrumbs__link" href="index.html">Главная</a> - <span>Меню</span></div>
-<section class="menu">
+<section class="calculate">
+  <div class="breadcrumbs wrapper"><a class="breadcrumbs__link" href="index.html">Главная</a> - <span>Меню</span></div>
 
   <div class="slider-nav">
     <div class="slider-nav__slide">
@@ -29,7 +28,7 @@
   </div>
 
   <div class="slider-for wrapper">
-
+    <!-- slide-01 -->
     <div class="slider-for__slide">
       <div class="slider-for__wrapper">
         <div class="slider-for__inner">
@@ -819,7 +818,7 @@
     <!-- END slide -->
 
   </div>
-  <div class="menu__rel">
+  <div class="calculate__rel">
     <div class="slick-prev">
       <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -833,9 +832,663 @@
       </svg>
     </div>
     <!-- общее число страниц слайдера -->
-    <div class="menu__counter">
-      <span id="cp">1</span><span class="intro__total">/ 7</span>
+    <div class="calculate__counter">
+      <span id="cp">1</span><span class="intro__total">/ 3</span>
     </div>
   </div>
+
 </section>
+<main class="menu">
+
+  <div class="menu__wrapper wrapper">
+    <aside class="menu__aside" style="position: relative;">
+      <ul class="menu__anchors" style="position: fixed; width: 250px; top: 50px;">
+        <li>
+          <a href="#samosa" class="menu__item">Самосы</a>
+        </li>
+        <li>
+          <a href="#snacks" class="menu__item">Снэки</a>
+        </li>
+        <li>
+          <a href="#sauce" class="menu__item">Соуса</a>
+        </li>
+        <li>
+          <a href="#drink" class="menu__item">Напитки</a>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="goods menu__goods">
+      <div id="snacks"></div>
+      <ul class="goods__snacks">
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Картофель фри</h4>
+            <span class="goods__mark">NEW</span>
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img04.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Картофельные дольки</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img05.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Чесночные гренки</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img06.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Сырные треугольники</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img07.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Луковые кольца</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img08.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Куриные наггетсы</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img09.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Королевские креветки</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img10.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Куриные крылышки в остром соусе</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img11.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Куриные крылышки в азиатском соусе</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img12.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Куриные крылышки в соусе Том-Ям </h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img13.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- group-2 -->
+      <div id="samosa"></div>
+      <ul class="goods__snacks">
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Картофель фри</h4>
+            <span class="goods__mark">NEW</span>
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img04.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Картофельные дольки</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img05.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Чесночные гренки</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img06.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Сырные треугольники</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img07.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Луковые кольца</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img08.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Куриные наггетсы</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img09.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Королевские креветки</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img10.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Куриные крылышки в остром соусе</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img11.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Куриные крылышки в азиатском соусе</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img12.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Куриные крылышки в соусе Том-Ям </h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img13.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <div class="counter">
+                <span class="counter__decrease">-</span>
+                <input class="counter__input" type="text" value="1" size="200" />
+                <span class="counter__increase">+</span>
+              </div>
+              <a class="btn btn--goods" href="#">В корзину</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
 {% include "../templates/footer.njk" %}

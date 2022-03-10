@@ -1,11 +1,14 @@
-.menu {
+.calculate {
   padding-bottom: 50px;
 
-  background: url("../img/bg/bg-mask.png");
+  // background: url("../img/bg/bg-mask.png");
+  background: url("../img/bg/bg-mask-menu-page.png ");
   background-size: cover;
+
+  box-shadow: 0px 10px 50px #1e1717;
 }
 
-.menu__rel {
+.calculate__rel {
   position: relative;
 
   max-width: 1170px;
@@ -19,7 +22,7 @@
   }
 }
 
-.menu__counter {
+.calculate__counter {
   position: absolute;
   right: 150px;
   bottom: 0;
@@ -172,4 +175,44 @@
   position: absolute;
 
   object-fit: contain;
+}
+
+// menu
+.menu {
+  padding-top: 100px;
+  background: url("../img/bg/bg-mask.png");
+  background-size: cover;
+}
+
+.menu__wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu__aside {
+  width: 20%;
+}
+
+.menu__anchors {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu__goods {
+  width: 75%;
+}
+
+.menu__item {
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 130%;
+  color: rgba($color: #ffffff, $alpha: 0.2);
+}
+
+.menu__item:hover,
+.active-menu {
+  color: rgba($color: #ffffff, $alpha: 1.0);
 }
