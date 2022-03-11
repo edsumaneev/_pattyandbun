@@ -1,0 +1,104 @@
+{% set title = "О нашей еде | Patty & Bun" %}
+{% include "../templates/header.njk" %}
+<section class="meals-page">
+  <div class="breadcrumbs wrapper">
+    <a class="breadcrumbs__link" href="index.html">Главная</a> - <span>О нашей еде</span>
+  </div>
+  <div class="meals-page__intro wrapper">
+    <div class="meals-page__inner">
+      <h1 class="title title--big meals-page__title">О нашей еде:</h1>
+      <ul class="meals-page__anchors">
+        <li>
+          <a href="#burg" class="meals-page__item active">Бургеры</a>
+        </li>
+        <li>
+          <a href="#" class="meals-page__item">Котлеты</a>
+        </li>
+        <li>
+          <a href="#meat" class="meals-page__item">Мясо</a>
+        </li>
+        <li>
+          <a href="#" class="meals-page__item">Соуса</a>
+        </li>
+      </ul>
+    </div>
+    <div class="meals-page__img">
+      <div class="meals-page__overlay"></div>
+      <!-- width="1170" heigh="640" -->
+      <img src="assets/img/bg/bg-meals-page-intro01.png" alt="" width="1170" heigh="640">
+    </div>
+    <p class="meals-page__descr">
+      Мы не боимся готовить по-настоящему острые блюда, использовать различные сочетания мяса с ягодами вишни, смородины
+      и другими интересными ингредиентами.
+    </p>
+  </div>
+</section>
+<section class="meals-type">
+  <div class="wrapper">
+    <h2 class="title meals-type__title" id="burg">Наши бургеры</h2>
+    <div class="meals-type__row">
+      <div class="meals-type__img">
+        <!-- width="426" heigh="330" -->
+        <img src="assets/img/bg/meals-img01.png" alt="" width="426" heigh="330">
+      </div>
+      <div class="meals-type__text">
+        <h3 class="title meals-type__subtitle">45-ая параллель</h3>
+        <p class="meals-type__parafraph">
+          Этим бургером мы признаемся в любвиь Краснодару, своеобразной «вишенке» на торте России. Между булок: сочная
+          котлета, сыр чеддер, обжаренный бекон, белый соус с пармезаном и горчицей и пряный соус с ягодами вишни.
+        </p>
+      </div>
+    </div>
+    <div class="meals-type__row">
+      <div class="meals-type__img">
+        <!-- width="426" heigh="330" -->
+        <img src="assets/img/bg/meals-img02.png" alt="" width="426" heigh="330">
+      </div>
+      <div class="meals-type__text">
+        <h3 class="title meals-type__subtitle">Эль Чапо</h3>
+        <p class="meals-type__parafraph">
+          Острый бургер с мексиканским акцентом. Между булок: сочная котлета, обжаренный бекон, перец халапеньо. Стойкую
+          зависимость вызывает авторский острый соус от шеф-повара.
+        </p>
+      </div>
+    </div>
+    <div class="meals-type__row">
+      <div class="meals-type__img">
+        <!-- width="426" heigh="330" -->
+        <img src="assets/img/bg/meals-img03.png" alt="" width="426" heigh="330">
+      </div>
+      <div class="meals-type__text">
+        <h3 class="title meals-type__subtitle">Нордик</h3>
+        <p class="meals-type__parafraph">
+          Сочетание вкусов пряных ягод смородины и терпкого сыра дорблю пришло из скандинавской кухни. Северный характер
+          блюда уравновешивают добротная котлета под пикантным соусом блю-чиз.
+        </p>
+      </div>
+    </div>
+    <div class="meals-type__row">
+      <a class="btn" href="#">Показать ещё +5 бургеров</a>
+    </div>
+  </div>
+  <div class="wrapper" id="meat">
+    <div class="meals-type__meat">
+      <div class="meals-page__cutlet">
+        <h3 class="title">Мясо для котлет</h3>
+        <p class="meals-page__paragraph meals-page__paragraph--margin">
+          Котлеты делаем сами – покупаем один определенный отруб мяса, рубим его, добавляем соль и перец и получаем
+          идеальные котлеты.
+        </p>
+        <p>
+          Проверьте качество сами – закажите бургер, отломите кусочек котлеты и попробуйте отдельно от бургера. Мы
+          стараемся чтобы котлета сама по себе была достойна к употреблению в чистом виде.” </p>
+      </div>
+      <div class="meals-type__img">
+        <!-- width="413" heigh="234" -->
+        <img src="assets/img/bg/meals-img04.png" alt="" width="413" heigh="234">
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+{% include "../templates/footer.njk" %}

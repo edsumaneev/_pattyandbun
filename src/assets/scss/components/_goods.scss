@@ -1,4 +1,4 @@
-.goods__snacks,
+.goods__list,
 .goods {
   display: flex;
   justify-content: flex-start;
@@ -16,8 +16,8 @@
   }
 }
 
-.goods__snacks {
-  padding-bottom: 100px;
+.goods__list {
+  padding-bottom: 30px;
 
   border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.2);
 }
@@ -161,12 +161,6 @@
 }
 
 .goods__wrapper {
-  // z-index: 2;
-  // position: relative;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // margin: auto;
   min-height: 222px;
   width: 270px;
 }

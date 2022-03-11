@@ -23,10 +23,10 @@ if ($(".timeline").length > 0) {
 
 // scroll to anchor
 $(document).ready(function () {
-  $(".menu__anchors").on("click", "a", function (event) {
+  $(".menu__anchors, .meals-page__anchors").on("click", "a", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
-      top = $(id).offset().top;
+      top = $(id).offset().top - 80;
     $('body,html').animate({
       scrollTop: top
     }, 800);
@@ -153,10 +153,11 @@ if ($('.counter').length > 0) {
 if ($('.menu').length > 0) {
   function onScroll(event) {
     var scrollPos = $(document).scrollTop();
+    var h = $(".goods__list").height();
     $('.menu__item').each(function () {
       var currLink = $(this);
       var refElement = $(currLink.attr("href"));
-      if (refElement.position().top - 50 <= scrollPos && refElement.position().top + refElement.height() + 2000 > scrollPos) {
+      if (refElement.position().top - 50 <= scrollPos && refElement.position().top + h > scrollPos) {
         $('.menu__item').removeClass("active-menu");
         currLink.addClass("active-menu");
       } else {
@@ -164,7 +165,6 @@ if ($('.menu').length > 0) {
       }
     });
   }
-
 
   var menu_selector = $('.menu__item');
   $(document).ready(function () {

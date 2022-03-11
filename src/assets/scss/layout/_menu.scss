@@ -191,6 +191,7 @@
 
 .menu__aside {
   position: relative;
+  padding-bottom: 90px;
   width: 20%;
 }
 
@@ -220,4 +221,83 @@
 .menu__item:hover,
 .active-menu {
   color: rgba($color: #ffffff, $alpha: 1.0);
+}
+
+// delivery
+
+.delivery {
+  padding-bottom: 100px;
+}
+
+.delivery__title {
+  margin-bottom: 45px;
+}
+
+.delivery__paragraph {
+  margin-bottom: 25px;
+}
+
+.delivery__paragraph--margin {
+  margin-bottom: 60px;
+}
+
+// menu__sidebar
+.menu__sidebar {
+  padding: 10px 0 60px 0;
+  width: 0;
+}
+
+.menu__cart {
+  position: sticky;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 53px;
+
+  border: 0 solid #ffffff;
+  border-radius: 50%;
+  background: #ffffff;
+
+  svg {
+    fill: #352a2a;
+  }
+}
+
+.menu__cart:hover {
+  border: 1px solid #ffffff;
+  background: transparent;
+
+  svg {
+    fill: #ffffff;
+  }
+}
+
+.menu__cart::after {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 18px;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #eeb913;
+}
+
+.menu__counter {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  right: 6px;
+
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+
+  text-align: center;
+
+  color: #121212;
 }

@@ -11,6 +11,8 @@
 
   background: radial-gradient(50% 50% at 50% 50%, #524343 0%, #352a2a 100%);
 
+  overflow-x: hidden;
+
   @media screen and (max-width: 1198px) {
     padding-top: 85px;
     padding-bottom: 30px;
