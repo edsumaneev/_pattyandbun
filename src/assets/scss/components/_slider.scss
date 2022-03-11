@@ -13,13 +13,17 @@
   z-index: 5;
   margin-right: 19px;
 
+  img {
+    object-fit: cover;
+  }
+
   @media screen and (max-width: 1198px) {
     max-width: 500px;
 
     img {
       width: 100%;
       height: auto;
-      object-fit: contain;
+      // object-fit: contain;
     }
   }
 }

@@ -92,8 +92,10 @@ if ($(".intro").length > 0) {
     prevArrow: $(".slick-prev"),
     nextArrow: $(".slick-next"),
     dots: false,
+    // autoplay: 200,
     infinite: true,
     slidesToShow: 1,
+    fade: true,
     speed: 800,
     touchThreshold: 100
   });
