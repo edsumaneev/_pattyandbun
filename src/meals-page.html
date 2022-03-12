@@ -4,21 +4,22 @@
   <div class="breadcrumbs wrapper">
     <a class="breadcrumbs__link" href="index.html">Главная</a> - <span>О нашей еде</span>
   </div>
-  <div class="meals-page__intro wrapper">
+  <div class="meals-page__intro wrapper sticky-element">
     <div class="meals-page__inner">
+      <div class="sticky-anchor"></div>
       <h1 class="title title--big meals-page__title">О нашей еде:</h1>
-      <ul class="meals-page__anchors">
+      <ul class="meals-page__anchors sticky-content">
         <li>
-          <a href="#burg" class="meals-page__item active">Бургеры</a>
+          <a href="#burg" class="meals-page__item">Бургеры</a>
         </li>
         <li>
-          <a href="#" class="meals-page__item">Котлеты</a>
+          <a href="#cutl" class="meals-page__item">Котлеты</a>
         </li>
         <li>
           <a href="#meat" class="meals-page__item">Мясо</a>
         </li>
         <li>
-          <a href="#" class="meals-page__item">Соуса</a>
+          <a href="#sauces" class="meals-page__item">Соуса</a>
         </li>
       </ul>
     </div>
@@ -33,55 +34,118 @@
     </p>
   </div>
 </section>
-<section class="meals-type">
+<section class="meals-type block" id="burg">
   <div class="wrapper">
-    <h2 class="title meals-type__title" id="burg">Наши бургеры</h2>
-    <div class="meals-type__row">
-      <div class="meals-type__img">
+    <h2 class="title title--mb">Наши бургеры</h2>
+    <div class="bordered">
+      <div class="bordered__img">
         <!-- width="426" height="330" -->
         <img src="assets/img/bg/meals-img01.png" alt="" width="426" height="330">
       </div>
-      <div class="meals-type__text">
-        <h3 class="title meals-type__subtitle">45-ая параллель</h3>
-        <p class="meals-type__parafraph">
+      <div class="bordered__text">
+        <h3 class="title bordered__subtitle">45-ая параллель</h3>
+        <p class="bordered__parafraph">
           Этим бургером мы признаемся в любвиь Краснодару, своеобразной «вишенке» на торте России. Между булок: сочная
           котлета, сыр чеддер, обжаренный бекон, белый соус с пармезаном и горчицей и пряный соус с ягодами вишни.
         </p>
       </div>
     </div>
-    <div class="meals-type__row">
-      <div class="meals-type__img">
+    <div class="bordered">
+      <div class="bordered__img">
         <!-- width="426" height="330" -->
         <img src="assets/img/bg/meals-img02.png" alt="" width="426" height="330">
       </div>
-      <div class="meals-type__text">
-        <h3 class="title meals-type__subtitle">Эль Чапо</h3>
-        <p class="meals-type__parafraph">
+      <div class="bordered__text">
+        <h3 class="title bordered__subtitle">Эль Чапо</h3>
+        <p class="bordered__parafraph">
           Острый бургер с мексиканским акцентом. Между булок: сочная котлета, обжаренный бекон, перец халапеньо. Стойкую
           зависимость вызывает авторский острый соус от шеф-повара.
         </p>
       </div>
     </div>
-    <div class="meals-type__row">
-      <div class="meals-type__img">
+    <div class="bordered">
+      <div class="bordered__img">
         <!-- width="426" height="330" -->
         <img src="assets/img/bg/meals-img03.png" alt="" width="426" height="330">
       </div>
-      <div class="meals-type__text">
-        <h3 class="title meals-type__subtitle">Нордик</h3>
-        <p class="meals-type__parafraph">
+      <div class="bordered__text">
+        <h3 class="title bordered__subtitle">Нордик</h3>
+        <p class="bordered__parafraph">
           Сочетание вкусов пряных ягод смородины и терпкого сыра дорблю пришло из скандинавской кухни. Северный характер
           блюда уравновешивают добротная котлета под пикантным соусом блю-чиз.
         </p>
       </div>
     </div>
-    <div class="meals-type__row">
+    <div class="bordered">
       <a class="btn" href="#">Показать ещё +5 бургеров</a>
     </div>
   </div>
-  <div class="wrapper" id="meat">
-    <div class="meals-type__meat">
-      <div class="meals-page__cutlet">
+</section>
+<section class="cutlet block" id="cutl">
+  <div class="wrapper">
+    <h2 class="title title--mb">Варианты котлет в бургер</h2>
+    <div class="bordered">
+      <div class="bordered__img">
+        <!-- width="469" height="294" -->
+        <img src="assets/img/bg/meals-img05.png" alt="" width="469" height="294">
+      </div>
+      <div class="bordered__text">
+        <h3 class="title bordered__subtitle bordered__subtitle--big">Мрамор</h3>
+        <h4 class="bordered__subtitle bordered__subtitle--small">Котлета из говядины:</h4>
+        <p class="bordered__parafraph">
+          В наших бургерах мы используем мраморную говядину Герефорд с эко-фермы Краснодарского края. Такая говядина
+          дает нашим котлетам насыщенный вкус, сочность и структуру. Ферма имеет сертификаты «эко+» и халяль.
+        </p>
+      </div>
+    </div>
+    <div class="bordered">
+      <div class="bordered__img">
+        <!-- width="469" height="294" -->
+        <img src="assets/img/bg/meals-img06.png" alt="" width="469" height="294">
+      </div>
+      <div class="bordered__text">
+        <h3 class="title bordered__subtitle bordered__subtitle--big">сочная</h3>
+        <h4 class="bordered__subtitle bordered__subtitle--small">Котлета из курицы:</h4>
+        <p class="bordered__parafraph">
+          Не любите говядину, или следите за своей фигурой - мы всегда рады вам помочь. в любом бургере мы заменим
+          котлету на куриную по вашей просьбе.
+        </p>
+      </div>
+    </div>
+    <div class="bordered">
+      <div class="bordered__img">
+        <!-- width="469" height="294" -->
+        <img src="assets/img/bg/meals-img07.png" alt="" width="469" height="294">
+      </div>
+      <div class="bordered__text">
+        <h3 class="title bordered__subtitle bordered__subtitle--big">полезная</h3>
+        <h4 class="bordered__subtitle bordered__subtitle--small">Котлета из нута:</h4>
+        <p class="bordered__parafraph">
+          Не едите мясо? не проблема! Специально для вас мы можем заменить мясную котлету на вегетарианскую из нута. Не
+          стоит отказывать себе в удовольствии!
+        </p>
+      </div>
+    </div>
+    <div class="bordered">
+      <div class="bordered__img">
+        <!-- width="469" height="294" -->
+        <img src="assets/img/bg/meals-img08.png" alt="" width="469" height="294">
+      </div>
+      <div class="bordered__text">
+        <h3 class="title bordered__subtitle bordered__subtitle--big">новинка</h3>
+        <h4 class="bordered__subtitle bordered__subtitle--small">Копченая рваная свинина вместо котлеты:</h4>
+        <p class="bordered__parafraph">
+          Если вы любите барбекю и копченое мясо, то мы рады предложить вам возможность замены котлеты на порцию
+          копчёной по технологии low&slow рваной свинины.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="block" id="meat">
+  <div class="wrapper">
+    <div class="bordered__meat">
+      <div class="meals-page__wrapper">
         <h3 class="title">Мясо для котлет</h3>
         <p class="meals-page__paragraph meals-page__paragraph--margin">
           Котлеты делаем сами – покупаем один определенный отруб мяса, рубим его, добавляем соль и перец и получаем
@@ -89,15 +153,102 @@
         </p>
         <p>
           Проверьте качество сами – закажите бургер, отломите кусочек котлеты и попробуйте отдельно от бургера. Мы
-          стараемся чтобы котлета сама по себе была достойна к употреблению в чистом виде.” </p>
+          стараемся чтобы котлета сама по себе была достойна к употреблению в чистом виде.</p>
       </div>
-      <div class="meals-type__img">
+      <div class="bordered__img">
         <!-- width="413" height="234" -->
         <img src="assets/img/bg/meals-img04.png" alt="" width="413" height="234">
       </div>
     </div>
   </div>
-
+</section>
+<section class="sauces block" id="sauces">
+  <div class="wrapper">
+    <h2 class="title title--mb">Соуса</h2>
+    <p class="sauces__text">
+      Все соусы готовим сами, никаких покупных из магазина. Благодаря расположению в Краснодаре – используем свежие
+      фермерские овощи, коих у нас в изобилии особенно в тёплое время года.
+    </p>
+    <ul class="sauces__list">
+      <li class="sauces__item">
+        <div class="sauces__img">
+          <!-- width="170" height="139" -->
+          <img src="assets/img/bg/goods-img14.png" alt="" width="170" height="139">
+        </div>
+        <p>Пармезан</p>
+      </li>
+      <li class="sauces__item">
+        <div class="sauces__img">
+          <!-- width="170" height="139" -->
+          <img src="assets/img/bg/goods-img14.png" alt="" width="170" height="139">
+        </div>
+        <p>Чесночны</p>
+      </li>
+      <li class="sauces__item">
+        <div class="sauces__img">
+          <!-- width="170" height="139" -->
+          <img src="assets/img/bg/goods-img14.png" alt="" width="170" height="139">
+        </div>
+        <p>Блю Чиз</p>
+      </li>
+      <li class="sauces__item">
+        <div class="sauces__img">
+          <!-- width="170" height="139" -->
+          <img src="assets/img/bg/goods-img14.png" alt="" width="170" height="139">
+        </div>
+        <p>Сырный</p>
+      </li>
+      <li class="sauces__item">
+        <div class="sauces__img">
+          <!-- width="170" height="139" -->
+          <img src="assets/img/bg/goods-img14.png" alt="" width="170" height="139">
+        </div>
+        <p>Фирменный острый</p>
+      </li>
+      <li class="sauces__item">
+        <div class="sauces__img">
+          <!-- width="170" height="139" -->
+          <img src="assets/img/bg/goods-img14.png" alt="" width="170" height="139">
+        </div>
+        <p>Кетчуп</p>
+      </li>
+      <li class="sauces__item">
+        <div class="sauces__img">
+          <!-- width="170" height="139" -->
+          <img src="assets/img/bg/goods-img14.png" alt="" width="170" height="139">
+        </div>
+        <p>BBQ</p>
+      </li>
+      <li class="sauces__item">
+        <div class="sauces__img">
+          <!-- width="170" height="139" -->
+          <img src="assets/img/bg/goods-img14.png" alt="" width="170" height="139">
+        </div>
+        <p>Том-Ям</p>
+      </li>
+      <li class="sauces__item">
+        <div class="sauces__img">
+          <!-- width="170" height="139" -->
+          <img src="assets/img/bg/goods-img14.png" alt="" width="170" height="139">
+        </div>
+        <p>Кисло-сладкий</p>
+      </li>
+      <li class="sauces__item">
+        <div class="sauces__img">
+          <!-- width="170" height="139" -->
+          <img src="assets/img/bg/goods-img14.png" alt="" width="170" height="139">
+        </div>
+        <p>Вишневый</p>
+      </li>
+      <li class="sauces__item">
+        <div class="sauces__img">
+          <!-- width="170" height="139" -->
+          <img src="assets/img/bg/goods-img14.png" alt="" width="170" height="139">
+        </div>
+        <p>Фета-мята</p>
+      </li>
+    </ul>
+  </div>
 </section>
 
 

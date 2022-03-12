@@ -26,7 +26,7 @@ $(document).ready(function () {
   $(".menu__anchors, .meals-page__anchors").on("click", "a", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
-      top = $(id).offset().top - 80;
+      top = $(id).offset().top + 5;
     $('body,html').animate({
       scrollTop: top
     }, 800);
@@ -159,7 +159,7 @@ if ($('.menu').length > 0) {
     $('.menu__item').each(function () {
       var currLink = $(this);
       var refElement = $(currLink.attr("href"));
-      if (refElement.position().top - 50 <= scrollPos && refElement.position().top + h > scrollPos) {
+      if (refElement.position().top <= scrollPos && refElement.position().top + h > scrollPos) {
         $('.menu__item').removeClass("active-menu");
         currLink.addClass("active-menu");
       } else {
@@ -173,11 +173,12 @@ if ($('.menu').length > 0) {
 
     $(document).on("scroll", onScroll);
 
-    $("a[href^=#]").click(function (e) {
+    $("a[href^=\\#]").click(function (e) {
       e.preventDefault();
       $(document).off("scroll");
-      $(menu_selector + " a.active-menu").removeClass("active-menu");
-      $(this).addClass("active-menu");
+      // $(menu_selector + " a.active").removeClass("active");
+      $(menu_selector).removeClass("active");
+      $(this).addClass("active");
       var hash = $(this).attr("href");
       var target = $(hash);
       $("html, body").animate({
@@ -186,7 +187,73 @@ if ($('.menu').length > 0) {
         window.location.hash = hash;
         $(document).on("scroll", onScroll);
       });
+    });
+  });
+};
 
+// st
+if ($('.meals-page').length > 0) {
+  var StickyElement = function (node) {
+    var doc = $(document),
+      fixed = false,
+      anchor = node.find('.sticky-anchor'),
+      content = node.find('.sticky-content');
+    var onScroll = function (e) {
+      var docTop = doc.scrollTop(),
+        anchorTop = anchor.offset().top;
+      if (docTop > anchorTop) {
+        if (!fixed) {
+          anchor.height(content.outerHeight());
+          content.addClass('fixed');
+          fixed = true;
+        }
+      } else {
+        if (fixed) {
+          anchor.height(0);
+          content.removeClass('fixed');
+          fixed = false;
+        }
+      }
+    };
+    $(window).on('scroll', onScroll);
+  };
+  var sticky = new StickyElement($('.sticky-element'));
+};
+// 
+if ($('.meals-page').length > 0) {
+  function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    var h = $(".block").height();
+    $('.meals-page__item').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top - 50 <= scrollPos && refElement.position().top + h > scrollPos) {
+        $('.meals-page__item').removeClass("active");
+        currLink.addClass("active");
+      } else {
+        currLink.removeClass("active");
+      }
+    });
+  }
+
+  var menu_selector = $('.meals-page__item');
+  $(document).ready(function () {
+
+    $(document).on("scroll", onScroll);
+
+    $("a[href^=\\#]").click(function (e) {
+      e.preventDefault();
+      $(document).off("scroll");
+      $(menu_selector).removeClass("active");
+      $(this).addClass("active");
+      var hash = $(this).attr("href");
+      var target = $(hash);
+      $("html, body").animate({
+        scrollTop: target.offset().top
+      }, 500, function () {
+        window.location.hash = hash;
+        $(document).on("scroll", onScroll);
+      });
     });
   });
 };

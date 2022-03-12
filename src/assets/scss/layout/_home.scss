@@ -9,9 +9,13 @@
   padding-top: 117px;
   padding-bottom: 80px;
 
-  background: radial-gradient(50% 50% at 50% 50%, #524343 0%, #352a2a 100%);
 
-  overflow-x: hidden;
+  background: radial-gradient(50% 50% at 50% 50%, #524343 0%, #352a2a 100%);
+  background-image: url("../img/bg/bg-mask-menu-page.png ");
+  // background-position: center;
+  background-size: contain;
+
+  // overflow-x: hidden;
 
   @media screen and (max-width: 1198px) {
     padding-top: 85px;

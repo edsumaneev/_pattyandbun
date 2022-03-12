@@ -1,9 +1,9 @@
-// html {
-//   overflow-x: hidden;
-// }
+html {
+  overflow-x: hidden;
+}
 
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   box-sizing: border-box;
 
   min-width: 320px;
@@ -15,9 +15,7 @@ body {
   font-size: 1rem;
   line-height: 140%;
 
-  // background: url("../img/bg/bg-mask.png");
   background-color: #1f1616;
-  // background-size: cover;
 }
 
 body.is-modal {

@@ -1,5 +1,6 @@
 .meals-page {
   padding-bottom: 100px;
+
   background: url("../img/bg/bg-mask.png");
   background-size: cover;
 }
@@ -49,6 +50,7 @@
   img {
     object-fit: contain;
     height: auto;
+    width: 100%;
   }
 }
 
@@ -73,19 +75,47 @@
   color: #ffffff;
 }
 
+.meals-page__wrapper {
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+.meals-page__paragraph--margin {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+// meals-type 
 .meals-type {
   padding-top: 100px;
   padding-bottom: 100px;
 
+
   background: radial-gradient(50% 50% at 50% 50%, #3f3333 0%, #271d1d 100%), radial-gradient(49.04% 49.04% at 50% 28.87%, #524343 0%, #352a2a 100%), #3c3030;
+  // background: radial-gradient(50% 50% at 50% 50%, #524343 0%, #352a2a 100%);
+  background-image: url("../img/bg/bg-mask-menu-page.png ");
+  background-size: contain;
+
   box-shadow: 0 10px 50px #1e1717;
 }
 
-.meals-type__title {
-  margin-bottom: 50px;
+// bordered
+.bordered {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  border-top: 1px solid rgba($color: #ffffff, $alpha: 0.2);
 }
 
-.meals-type__subtitle {
+.bordered__text {
+  width: 50%;
+}
+
+.bordered__subtitle {
   margin-bottom: 10px;
 
   font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
@@ -99,22 +129,19 @@
   color: #524343;
 }
 
-.meals-type__row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding-top: 40px;
-  padding-bottom: 40px;
-
-  border-top: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+.bordered__subtitle--big {
+  font-size: 120px;
 }
 
-.meals-type__text {
-  width: 50%;
+.bordered__subtitle--small {
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-transform: none;
+
+  color: #ffffff;
 }
 
-.meals-type__meat {
+.bordered__meat {
   display: flex;
   align-items: center;
 
@@ -124,12 +151,74 @@
   background: rgba($color: #1f1616, $alpha: 0.6);
 }
 
-.meals-page__cutlet {
-  padding-left: 50px;
-  padding-right: 100px;
+.bordered__img {
+  img {
+    height: auto;
+  }
 }
 
-.meals-page__paragraph--margin {
-  margin-top: 30px;
-  margin-bottom: 20px;
+// cutlet
+.cutlet {
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  background: url("../img/bg/bg-mask.png");
+  background-size: cover;
+}
+
+// sauces
+.sauces {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background: radial-gradient(50% 50% at 50% 50%, #3f3333 0%, #271d1d 100%), radial-gradient(49.04% 49.04% at 50% 28.87%, #524343 0%, #352a2a 100%), #3c3030;
+  // background: radial-gradient(50% 50% at 50% 50%, #524343 0%, #352a2a 100%);
+  background-image: url("../img/bg/bg-mask-menu-page.png ");
+  background-size: contain;
+
+  box-shadow: 0 10px 50px #1e1717;
+}
+
+.sauces__text {
+  margin-bottom: 50px;
+  width: 45%;
+}
+
+.sauces__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sauces__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  margin-right: 30px;
+  margin-bottom: 80px;
+
+  max-width: 170px;
+}
+
+.sauces__item:nth-child(6n) {
+  margin-right: 0;
+}
+
+.sticky-content.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  justify-content: center;
+
+  background: #352a2a;
+  z-index: 10;
+  min-height: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#meat {
+  padding-top: 50px;
 }
