@@ -16,42 +16,209 @@
         <div class="form-lk__row">
           <label for="tel">Номер телефона</label>
           <input class="form-lk__input" type="tel" id="tel" placeholder="+7 555 555-55-55">
-          <div class="form-lk__row">
-            <p>День рождения</p>
-            <div class="form-lk__inner">
-              <select class="form-lk__date" type="text" placeholder="День">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-              </select>
-              <select class="form-lk__date form-lk__date--wide" type="text" placeholder="Месяц">
-                <option>Январь</option>
-                <option>Февраль</option>
-                <option>Март</option>
-                <option>Апрель</option>
-                <option>Май</option>
-                <option>Июнь</option>
-                <option>Июль</option>
-                <option>Август</option>
-                <option>Сентябрь</option>
-                <option>Октябрь</option>
-                <option>Ноябрь</option>
-                <option>Декабрь</option>
-              </select>
-              <button class="form-lk__save" type="button">Сохранить</button>
-            </div>
+        </div>
+        <div class="form-lk__row">
+          <label>День рождения</label>
+          <div class="form-lk__inner">
+            <select class="form-lk__date">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+            <select class="form-lk__date form-lk__date--wide">
+              <option>Январь</option>
+              <option>Февраль</option>
+              <option>Март</option>
+              <option>Апрель</option>
+              <option>Май</option>
+              <option>Июнь</option>
+              <option>Июль</option>
+              <option>Август</option>
+              <option>Сентябрь</option>
+              <option>Октябрь</option>
+              <option>Ноябрь</option>
+              <option>Декабрь</option>
+            </select>
+            <button class="form-lk__save" type="button">Сохранить</button>
           </div>
-          <button class="btn form-lk__btn" type="submit">Выйти</button>
+        </div>
+        <button class="btn form-lk__btn" type="submit">Выйти</button>
       </form>
+      <div class="form-lk__orders">
+        <h1 class="title form-lk__title">История заказов</h1>
+        <ul class="form-lk__list">
+          <li class="form-lk__item">Наименование</li>
+          <li class="form-lk__item">Дата / Время</li>
+          <li class="form-lk__item">Цена</li>
+        </ul>
+        <div class="accordion" id="accordion">
+          <div class="accordion__header">
+            <ul class="accordion__list">
+              <li>Заказ #<span>4243</span></li>
+              <li>14.02.2021 <span>14:00</span></li>
+              <li>1290 Р</li>
+              <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
+              <li class="accordion__icon"><span>+</span></li>
+            </ul>
+          </div>
+          <div class="accordion__content">
+            <ul class="accordion__order">
+              <li>
+                <!-- width="75" height="54" -->
+                <img src="assets/img/bg/lk-img-01.png" alt="" width="75" height="54">
+              </li>
+              <li>Крестный отец</li>
+              <li>
+                <ul class="accordion__sublist">
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-01.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-02.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-03.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-04.png" alt="" width="27" height="22">
+                  </li>
+                </ul>
+              </li>
+              <li class="accordion__price">290 Р</li>
+            </ul>
+          </div>
+          <div class="accordion__header">
+            <ul class="accordion__list">
+              <li>Заказ #<span>4243</span></li>
+              <li>14.02.2021 <span>14:00</span></li>
+              <li>1290 Р</li>
+              <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
+              <li class="accordion__icon"><span>+</span></li>
+            </ul>
+          </div>
+          <div class="accordion__content">
+            <ul class="accordion__order">
+              <li>
+                <!-- width="75" height="54" -->
+                <img src="assets/img/bg/lk-img-01.png" alt="" width="75" height="54">
+              </li>
+              <li>Крестный отец</li>
+              <li>
+                <ul class="accordion__sublist">
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-01.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-02.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-03.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-04.png" alt="" width="27" height="22">
+                  </li>
+                </ul>
+              </li>
+              <li class="accordion__price">290 Р</li>
+            </ul>
+          </div>
+          <div class="accordion__header">
+            <ul class="accordion__list">
+              <li>Заказ #<span>4243</span></li>
+              <li>14.02.2021 <span>14:00</span></li>
+              <li>1290 Р</li>
+              <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
+              <li class="accordion__icon"><span>+</span></li>
+            </ul>
+          </div>
+          <div class="accordion__content">
+            <ul class="accordion__order">
+              <li>
+                <!-- width="75" height="54" -->
+                <img src="assets/img/bg/lk-img-01.png" alt="" width="75" height="54">
+              </li>
+              <li>Крестный отец</li>
+              <li>
+                <ul class="accordion__sublist">
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-01.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-02.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-03.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-04.png" alt="" width="27" height="22">
+                  </li>
+                </ul>
+              </li>
+              <li class="accordion__price">290 Р</li>
+            </ul>
+          </div>
+          <div class="accordion__header">
+            <ul class="accordion__list">
+              <li>Заказ #<span>4243</span></li>
+              <li>14.02.2021 <span>14:00</span></li>
+              <li>1290 Р</li>
+              <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
+              <li class="accordion__icon"><span>+</span></li>
+            </ul>
+          </div>
+          <div class="accordion__content">
+            <ul class="accordion__order">
+              <li>
+                <!-- width="75" height="54" -->
+                <img src="assets/img/bg/lk-img-01.png" alt="" width="75" height="54">
+              </li>
+              <li>Крестный отец</li>
+              <li>
+                <ul class="accordion__sublist">
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-01.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-02.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-03.png" alt="" width="27" height="22">
+                  </li>
+                  <li>
+                    <!-- width="27" height="22" -->
+                    <img src="assets/img/bg/ingredient-img-04.png" alt="" width="27" height="22">
+                  </li>
+                </ul>
+              </li>
+              <li class="accordion__price">290 Р</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

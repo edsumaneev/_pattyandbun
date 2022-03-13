@@ -17,9 +17,14 @@ if ($(".timeline").length > 0) {
 //   $(document).tooltip();
 // });
 // accordion
-// $(function () {
-//   $("#accordion").accordion();
-// });
+if ($(".lk-page").length > 0) {
+  $(function () {
+    $("#accordion").accordion({
+      header: ".accordion__header",
+      icons: false
+    });
+  });
+};
 
 // scroll to anchor
 $(document).ready(function () {

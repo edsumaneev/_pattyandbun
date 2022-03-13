@@ -1,0 +1,91 @@
+.accordion__header {
+  display: flex;
+  align-items: center;
+
+  padding-left: 0 !important;
+
+  min-width: 583px;
+
+  background: transparent;
+}
+
+.accordion__btn {
+  color: #ffffff !important;
+}
+
+// .accordion__header span {
+//   position: absolute;
+//   right: 0;
+// }
+
+// UI-JQ
+
+.ui-accordion-header-icon {
+  display: none;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: none;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+
+  border: none;
+  border-bottom: 1px solid #524343;
+  color: #ffffff;
+}
+
+.ui-accordion-content-active.accordion__content {
+  border-bottom: 1px solid #524343;
+  overflow: unset;
+}
+
+// 
+
+.accordion__order,
+.accordion__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__order {
+  justify-content: flex-start;
+}
+
+.accordion__sublist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.accordion__icon {
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+
+  color: #eeb913;
+}
+
+.accordion__content {
+  background: transparent;
+  border: none;
+}
+
+.accordion__price {
+  color: #eeb913;
+}
