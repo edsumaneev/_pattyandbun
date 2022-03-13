@@ -1,0 +1,60 @@
+{% set title = "Личный кабинет | Patty & Bun" %}
+{% include "../templates/header.njk" %}
+<section class="lk-page">
+  <div class="breadcrumbs wrapper">
+    <a class="breadcrumbs__link" href="index.html">Главная</a> - <span>Личный кабинет</span>
+  </div>
+  <div class="wrapper">
+    <div class="lk-page__data">
+      <form class="form-lk" action="#">
+        <h1 class="title form-lk__title">Личные данные</h1>
+        <div class="form-lk__row">
+          <label for="name">Имя</label>
+          <input class="form-lk__input" type="text" id="name" placeholder="Сергей">
+          <button class="form-lk__change" type="button">Изменить</button>
+        </div>
+        <div class="form-lk__row">
+          <label for="tel">Номер телефона</label>
+          <input class="form-lk__input" type="tel" id="tel" placeholder="+7 555 555-55-55">
+          <div class="form-lk__row">
+            <p>День рождения</p>
+            <div class="form-lk__inner">
+              <select class="form-lk__date" type="text" placeholder="День">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+              <select class="form-lk__date form-lk__date--wide" type="text" placeholder="Месяц">
+                <option>Январь</option>
+                <option>Февраль</option>
+                <option>Март</option>
+                <option>Апрель</option>
+                <option>Май</option>
+                <option>Июнь</option>
+                <option>Июль</option>
+                <option>Август</option>
+                <option>Сентябрь</option>
+                <option>Октябрь</option>
+                <option>Ноябрь</option>
+                <option>Декабрь</option>
+              </select>
+              <button class="form-lk__save" type="button">Сохранить</button>
+            </div>
+          </div>
+          <button class="btn form-lk__btn" type="submit">Выйти</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+{% include "../templates/footer.njk" %}

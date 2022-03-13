@@ -1,0 +1,103 @@
+.lk-page {
+  background: url("../img/bg/bg-mask.png");
+  background-size: cover;
+}
+
+.lk-page__data {
+  max-width: 100%;
+  background: #352a2a;
+}
+
+// form-lk
+.form-lk {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 40px 50px;
+  max-width: 50%;
+}
+
+.form-lk__title {
+  margin-bottom: 50px;
+
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+}
+
+.form-lk__row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.form-lk__row label {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.form-lk__inner {
+  display: flex;
+}
+
+.form-lk__input {
+  padding: 12px 0 15px 20px;
+  width: 246px;
+
+  color: #ffffff;
+  background: #1f1616;
+  border: none;
+  outline: none;
+}
+
+.form-lk__date {
+  padding: 12px 0 15px 20px;
+  width: 85px;
+
+  color: #ffffff;
+  background: #1f1616;
+  border: none;
+  outline: none;
+}
+
+.form-lk__date--wide {
+  width: 100%;
+}
+
+.form-lk__btn {
+  max-width: 110px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.form-lk__change,
+.form-lk__save {
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+
+  color: #eeb913;
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.form-lk__save {
+  right: -85px;
+}
+
+.form-lk__change:hover,
+.form-lk__save:hover {
+  color: #ffffff;
+  transition: all ease-in-out 0.4s;
+}
