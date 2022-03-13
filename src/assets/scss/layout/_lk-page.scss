@@ -8,15 +8,19 @@
 .lk-page__data {
   display: flex;
   justify-content: flex-start;
+  margin-top: 50px;
 
   max-width: 100%;
   background: #352a2a;
 }
 
 // form-lk
-.form-lk__orders,
 .form-lk {
   padding: 40px 50px;
+}
+
+.form-lk__orders {
+  padding: 40px 22px 40px 50px;
 }
 
 .form-lk {

@@ -21,7 +21,8 @@ if ($(".lk-page").length > 0) {
   $(function () {
     $("#accordion").accordion({
       header: ".accordion__header",
-      icons: false
+      icons: false,
+      heightStyle: 'content'
     });
   });
 };

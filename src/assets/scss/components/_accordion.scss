@@ -1,48 +1,35 @@
+.accordion {
+  padding-right: 30px;
+  width: 658px;
+  height: 583px;
+  overflow-y: auto;
+  // overflow-x: hidden;
+}
+
 .accordion__header {
   display: flex;
   align-items: center;
 
   padding-left: 0 !important;
 
-  min-width: 583px;
+  color: #ffffff;
 
   background: transparent;
+  border: none;
+  border-bottom: 1px solid #524343;
+}
+
+.accordion__header:last-child {
+  opacity: 0.5;
 }
 
 .accordion__btn {
+  padding: 10px 20px;
   color: #ffffff !important;
 }
 
-// .accordion__header span {
-//   position: absolute;
-//   right: 0;
-// }
-
-// UI-JQ
-
 .ui-accordion-header-icon {
   display: none;
-}
-
-.ui-state-active,
-.ui-widget-content .ui-state-active,
-.ui-widget-header .ui-state-active,
-a.ui-button:active,
-.ui-button:active,
-.ui-button.ui-state-active:hover {
-  border: none;
-}
-
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default,
-.ui-button,
-html .ui-button.ui-state-disabled:hover,
-html .ui-button.ui-state-disabled:active {
-
-  border: none;
-  border-bottom: 1px solid #524343;
-  color: #ffffff;
 }
 
 .ui-accordion-content-active.accordion__content {
@@ -50,23 +37,48 @@ html .ui-button.ui-state-disabled:active {
   overflow: unset;
 }
 
+.ui-accordion .ui-accordion-content {
+  padding: 1em 0;
+  color: #ffffff;
+}
+
 // 
 
 .accordion__order,
 .accordion__list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.accordion__list {
+  justify-content: space-between;
 }
 
 .accordion__order {
   justify-content: flex-start;
 }
 
+.accordion__sum {
+  margin-left: 40px;
+
+  color: #eeb913;
+}
+
+.accordion__img,
+.accordion__title,
+.accordion__price,
+.accordion__sublist {
+  margin-right: 28px;
+}
+
 .accordion__sublist {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
+
+  margin-right: 35px;
+  max-width: 105px;
 
   color: #ffffff;
 }
@@ -81,11 +93,75 @@ html .ui-button.ui-state-disabled:active {
   color: #eeb913;
 }
 
+
+.ui-state-active .accordion__icon span {
+  display: block;
+  transform: rotate(45deg);
+  color: #ffffff;
+  transition: all ease-in-out 0.3s;
+}
+
 .accordion__content {
+  height: auto;
   background: transparent;
   border: none;
 }
 
 .accordion__price {
   color: #eeb913;
+}
+
+.accordion__ingr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+  margin-bottom: 5px;
+
+  width: 19px;
+  height: 20px;
+
+  border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+  border-radius: 50%;
+}
+
+// 
+// .accordion {
+//   scrollbar-width: thin;
+//   scrollbar-color: blue orange;
+// }
+
+/* для Chrome/Edge/Safari */
+.accordion::-webkit-scrollbar {
+  height: 10px;
+  width: 3px;
+}
+
+.accordion::-webkit-scrollbar-track {
+  background: #524343;
+}
+
+.accordion::-webkit-scrollbar-thumb {
+  background-color: #eeb913;
+  border-radius: 30px;
+}
+
+.accordion {
+  scrollbar-width: 3px;
+  scrollbar-color: #eeb913 #524343;
+}
+
+/* Chrome/Edge/Safari */
+.accordion::-webkit-scrollbar {
+  height: 12px;
+  width: 3px;
+}
+
+.accordion::-webkit-scrollbar-track {
+  background: #524343;
+}
+
+.accordion::-webkit-scrollbar-thumb {
+  background-color: #eeb913;
+  border-radius: 30px;
 }
