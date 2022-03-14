@@ -30,6 +30,7 @@
   justify-content: space-between;
   padding: 20px 20px 30px 20px;
   margin-right: 29px;
+  margin-bottom: 30px;
   max-width: 270px;
   height: auto;
 
@@ -37,9 +38,9 @@
   box-shadow: 0px 10px 50px #1e1717;
 
   // @media screen and (max-width: 1198px) {
-  @media screen and (max-width: 2498px) {
-    margin-bottom: 30px;
-  }
+  // @media screen and (max-width: 2498px) {
+
+  // }
 
   @media screen and (max-width: 992px) {
     margin: 0 10px 20px;

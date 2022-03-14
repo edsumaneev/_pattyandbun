@@ -67,20 +67,8 @@
 .accordion__img,
 .accordion__title,
 .accordion__price,
-.accordion__sublist {
+.ingredients {
   margin-right: 28px;
-}
-
-.accordion__sublist {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-
-  margin-right: 35px;
-  max-width: 105px;
-
-  color: #ffffff;
 }
 
 .accordion__icon {
@@ -109,20 +97,6 @@
 
 .accordion__price {
   color: #eeb913;
-}
-
-.accordion__ingr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 6px;
-  margin-bottom: 5px;
-
-  width: 19px;
-  height: 20px;
-
-  border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
-  border-radius: 50%;
 }
 
 // 

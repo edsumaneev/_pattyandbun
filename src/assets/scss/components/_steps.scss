@@ -1,0 +1,30 @@
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.steps__step {
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  color: rgba($color: #ffffff, $alpha: 0.2);
+}
+
+.steps__step.steps__step--active {
+  color: rgba($color: #ffffff, $alpha: 1.0);
+}
+
+.steps__step--line {
+  display: inline-block;
+  box-sizing: border-box;
+
+  width: 262px;
+  height: 1px;
+
+  background: rgba($color: #ffffff, $alpha: 0.2);
+}
