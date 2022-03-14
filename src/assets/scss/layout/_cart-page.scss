@@ -1,5 +1,5 @@
 .cart-page {
-  padding-bottom: 80px;
+  // padding-bottom: 80px;
 
   background: url("../img/bg/bg-mask.png");
   background-size: cover;
@@ -99,12 +99,4 @@
   justify-content: space-between;
 
   min-width: 502px;
-}
-
-.cart-page__total {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 55px;
-  padding-bottom: 55px;
 }

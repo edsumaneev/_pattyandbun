@@ -1,0 +1,72 @@
+.totals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.totals__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totals__subtitle,
+.totals__summa {
+  margin-right: 45px;
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  color: #eeb913;
+}
+
+.totals__subtitle {
+  margin-right: 5px;
+  color: #ffffff;
+}
+
+.totals__onwards {
+  margin: 0 5px;
+}
+
+.totals__btn {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 4px;
+  padding: 0;
+  color: #eeb913;
+  font-size: 25px;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.totals__form {
+  position: relative;
+}
+
+.totals__form label {
+  margin-right: 50px;
+
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+}
+
+.totals__input {
+  padding: 8px 0 8px 25px;
+
+  color: #ffffff;
+  font-size: 25px;
+  background: #352a2a;
+  border: none;
+  outline: none;
+}

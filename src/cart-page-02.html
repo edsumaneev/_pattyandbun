@@ -1,0 +1,57 @@
+{% set title = "Корзина | Patty & Bun" %}
+{% include "../templates/header.njk" %}
+<section class="cart-page">
+  <div class="breadcrumbs wrapper">
+    <a class="breadcrumbs__link" href="index.html">Главная</a> - <span>Корзина</span>
+  </div>
+  <ul class="steps wrapper">
+    <li class="steps__step">01 - Корзина</li>
+    <li class="steps__step steps__step--line"></li>
+    <li class="steps__step steps__step--active">02 - Оформление</li>
+    <li class="steps__step steps__step--line"></li>
+    <li class="steps__step">03 - Оплата</li>
+  </ul>
+  <div class="wrapper">
+    <div class="cart-page__block">
+      <form class="form-lk" action="#">
+        <h1 class="title form-lk__title">Личные данные</h1>
+        <div class="form-lk__row">
+          <label for="name">Имя</label>
+          <input class="form-lk__input" type="text" id="name" placeholder="Сергей">
+          <button class="form-lk__change" type="button">Изменить</button>
+        </div>
+        <label for="tel">Номер телефона</label>
+        <input class="form-lk__input" type="tel" id="tel" placeholder="+7 555 555-55-55">
+        <label for="name">Адрес доставки</label>
+        <input class="form-lk__input" type="text" id="name" placeholder="Например, Баныкина 26">
+        <button class="form-lk__change" type="button">Выбрать самовывоз</button>
+    </div>
+    <div class="form-lk__row">
+
+    </div>
+    <div class="form-lk__row">
+
+    </div>
+
+    <button class="btn form-lk__btn" type="submit">Выйти</button>
+    </form>
+  </div>
+
+  <div class="totals">
+    <div class="totals__flex">
+      <h1 class="totals__subtitle">Итого:</h1>
+      <p class="totals__summa"><span>980</span> рублей</p>
+      <a class="btn totals__onwards" href="cart-page.html">Назад</a>
+      <a class="btn totals__onwards" href="#">Далее</a>
+    </div>
+    <form class="totals__form" action="#">
+      <label>У вас есть промокод?</label>
+      <input class="totals__input" type="text" placeholder="23FEBD">
+      <button class="totals__btn" type="submit">&rarr;</button>
+    </form>
+  </div>
+
+  </div>
+</section>
+
+{% include "../templates/footer.njk" %}
