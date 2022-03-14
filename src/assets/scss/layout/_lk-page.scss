@@ -36,29 +36,15 @@
 
 // form-lk
 .form-lk {
-  padding: 40px 50px;
-}
-
-.form-lk {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 
-
+  padding: 40px 50px;
   width: 40%;
 
   border-right: 1px solid #524343;
-}
-
-.form-lk__title {
-  margin-bottom: 50px;
-
-  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 130%;
 }
 
 .form-lk__row {

@@ -13,43 +13,41 @@
   </ul>
   <div class="wrapper">
     <div class="cart-page__block">
-      <form class="form-lk" action="#">
-        <h1 class="title form-lk__title">Личные данные</h1>
-        <div class="form-lk__row">
-          <label for="name">Имя</label>
-          <input class="form-lk__input" type="text" id="name" placeholder="Сергей">
-          <button class="form-lk__change" type="button">Изменить</button>
+      <form class="form-cart" action="#">
+        <h1 class="title form-cart__title">Заказ на доставку</h1>
+        <div class="form-cart__row">
+          <label for="name">Имя
+            <input class="form-cart__input" type="text" id="name" placeholder="Сергей">
+          </label>
+          <button class="form-cart__change" type="button">Изменить</button>
+          <label for="tel">Номер телефона
+            <input class="form-cart__input" type="tel" id="tel" placeholder="+7 555 555-55-55">
+          </label>
+          <label for="address">Адрес доставки
+            <input class="form-cart__input" type="text" id="address" placeholder="Например, Баныкина 26">
+          </label>
+          <button class="form-cart__pickup" type="submit">Выбрать самовывоз</button>
         </div>
-        <label for="tel">Номер телефона</label>
-        <input class="form-lk__input" type="tel" id="tel" placeholder="+7 555 555-55-55">
-        <label for="name">Адрес доставки</label>
-        <input class="form-lk__input" type="text" id="name" placeholder="Например, Баныкина 26">
-        <button class="form-lk__change" type="button">Выбрать самовывоз</button>
-    </div>
-    <div class="form-lk__row">
-
-    </div>
-    <div class="form-lk__row">
-
+        <div class="form-cart__comment">
+          <label for="txt">Ваш комментарий</label>
+          <textarea class="form-cart__input" name="txt" id="txt" cols="30" rows="10"></textarea>
+        </div>
+      </form>
     </div>
 
-    <button class="btn form-lk__btn" type="submit">Выйти</button>
-    </form>
-  </div>
-
-  <div class="totals">
-    <div class="totals__flex">
-      <h1 class="totals__subtitle">Итого:</h1>
-      <p class="totals__summa"><span>980</span> рублей</p>
-      <a class="btn totals__onwards" href="cart-page.html">Назад</a>
-      <a class="btn totals__onwards" href="#">Далее</a>
+    <div class="totals">
+      <div class="totals__flex">
+        <h1 class="totals__subtitle">Итого:</h1>
+        <p class="totals__summa"><span>980</span> рублей</p>
+        <a class="btn totals__onwards" href="cart-page.html">Назад</a>
+        <a class="btn totals__onwards" href="#">Далее</a>
+      </div>
+      <form class="totals__form" action="#">
+        <label>У вас есть промокод?</label>
+        <input class="totals__input" type="text" placeholder="23FEBD">
+        <button class="totals__btn" type="submit">&rarr;</button>
+      </form>
     </div>
-    <form class="totals__form" action="#">
-      <label>У вас есть промокод?</label>
-      <input class="totals__input" type="text" placeholder="23FEBD">
-      <button class="totals__btn" type="submit">&rarr;</button>
-    </form>
-  </div>
 
   </div>
 </section>
