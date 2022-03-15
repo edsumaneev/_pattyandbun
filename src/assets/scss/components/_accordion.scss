@@ -106,19 +106,19 @@
 // }
 
 /* для Chrome/Edge/Safari */
-.accordion::-webkit-scrollbar {
-  height: 10px;
-  width: 3px;
-}
+// .accordion::-webkit-scrollbar {
+//   height: 10px;
+//   width: 3px;
+// }
 
-.accordion::-webkit-scrollbar-track {
-  background: #524343;
-}
+// .accordion::-webkit-scrollbar-track {
+//   background: #524343;
+// }
 
-.accordion::-webkit-scrollbar-thumb {
-  background-color: #eeb913;
-  border-radius: 30px;
-}
+// .accordion::-webkit-scrollbar-thumb {
+//   background-color: #eeb913;
+//   border-radius: 30px;
+// }
 
 .accordion {
   scrollbar-width: 3px;

@@ -13,7 +13,7 @@
   </ul>
   <div class="wrapper">
     <div class="cart-page__block">
-      <form class="form-cart" action="#">
+      <form class="form-cart" action="#" method="post" id="formcart">
         <h1 class="title form-cart__title">Заказ на доставку</h1>
         <div class="form-cart__row">
           <label for="name">Имя
@@ -32,6 +32,104 @@
           <label for="txt">Ваш комментарий</label>
           <textarea class="form-cart__input" name="txt" id="txt" cols="30" rows="10"></textarea>
         </div>
+        <div class="form-cart__bottom">
+          <div class="form-cart__payment">
+            <h2 class="title form-cart__title">Выберите удобный способ оплаты</h2>
+            <div class="form-cart__list">
+              <div class="form-cart__pay">
+                <input class="form-cart__radio" type="radio" id="paySite" name="pay" value="pay1">
+                <label for="paySite">Картой на сайте</label>
+              </div>
+              <div class="form-cart__pay">
+                <input class="form-cart__radio" type="radio" id="payCourier" name="pay" value="pay2">
+                <label for="payCourier">Картой курьеру</label>
+              </div>
+              <div class="form-cart__pay">
+                <input class="form-cart__radio" type="radio" id="payCash" name="pay" value="pay3">
+                <label for="payCash">Наличными</label>
+              </div>
+            </div>
+            <div class="form-cart__inner">
+              <div>
+                <label>С какой суммы подготовить сдачу?
+                  <input class="form-cart__input form-cart__input--num" type="number" step="10">
+                </label>
+              </div>
+              <div>
+                <input class="form-cart__nochange" type="checkbox" name="nochange" id="nochange" checked>
+                <label for="nochange">Без сдачи</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-cart__orders">
+            <h2 class="title form-cart__title">Состав заказа</h2>
+            <ul class="listing">
+              <li class="listing__item">
+                <div class="listing__flex">
+                  <p class="listing__title">Крестный отец</p>
+                  <p class="listing__cost">290 ₽</p>
+                </div>
+                <span class="listing__weight">300 г</span>
+              </li>
+              <li class="listing__item">
+                <div class="listing__flex">
+                  <p class="listing__title">Крестный отец</p>
+                  <p class="listing__cost">290 ₽</p>
+                </div>
+                <span class="listing__weight">300 г</span>
+              </li>
+              <li class="listing__item">
+                <div class="listing__flex">
+                  <p class="listing__title">Крестный отец</p>
+                  <p class="listing__cost">290 ₽</p>
+                </div>
+                <span class="listing__weight">300 г</span>
+              </li>
+              <li class="listing__item">
+                <div class="listing__flex">
+                  <p class="listing__title">Крестный отец</p>
+                  <p class="listing__cost">290 ₽</p>
+                </div>
+                <span class="listing__weight">300 г</span>
+              </li>
+              <li class="listing__item">
+                <div class="listing__flex">
+                  <p class="listing__title">Крестный отец</p>
+                  <p class="listing__cost">290 ₽</p>
+                </div>
+                <span class="listing__weight">300 г</span>
+              </li>
+              <li class="listing__item">
+                <div class="listing__flex">
+                  <p class="listing__title">Крестный отец</p>
+                  <p class="listing__cost">290 ₽</p>
+                </div>
+                <span class="listing__weight">300 г</span>
+              </li>
+              <li class="listing__item">
+                <div class="listing__flex">
+                  <p class="listing__title">Крестный отец</p>
+                  <p class="listing__cost">290 ₽</p>
+                </div>
+                <span class="listing__weight">300 г</span>
+              </li>
+              <li class="listing__item">
+                <div class="listing__flex">
+                  <p class="listing__title">Крестный отец</p>
+                  <p class="listing__cost">290 ₽</p>
+                </div>
+                <span class="listing__weight">300 г</span>
+              </li>
+              <li class="listing__item">
+                <div class="listing__flex">
+                  <p class="listing__title">Крестный отец</p>
+                  <p class="listing__cost">290 ₽</p>
+                </div>
+                <span class="listing__weight">300 г</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </form>
     </div>
 
@@ -40,12 +138,12 @@
         <h1 class="totals__subtitle">Итого:</h1>
         <p class="totals__summa"><span>980</span> рублей</p>
         <a class="btn totals__onwards" href="cart-page.html">Назад</a>
-        <a class="btn totals__onwards" href="#">Далее</a>
+        <button class="btn totals__onwards" form="formcart" type="submit">Далее</button>
       </div>
-      <form class="totals__form" action="#">
+      <form class="totals__form" action="#" method="post" id="discount">
         <label>У вас есть промокод?</label>
         <input class="totals__input" type="text" placeholder="23FEBD">
-        <button class="totals__btn" type="submit">&rarr;</button>
+        <button class="totals__btn" type="submit" form="discount">&rarr;</button>
       </form>
     </div>
 

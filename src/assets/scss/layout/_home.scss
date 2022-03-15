@@ -3,6 +3,8 @@
 
   background: url("../img/bg/bg-mask.png");
   background-size: cover;
+
+  overflow-x: hidden;
 }
 
 .intro {
@@ -16,7 +18,7 @@
   // background-position: center;
   background-size: cover;
 
-  // overflow-x: hidden;
+  overflow-x: hidden;
 
   @media screen and (max-width: 1198px) {
     padding-top: 85px;
