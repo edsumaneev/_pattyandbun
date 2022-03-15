@@ -1,20 +1,9 @@
 .calculate {
+  @include grad();
+  position: relative;
   padding-bottom: 50px;
-
-  // background: url("../img/bg/bg-mask.png");
-  // background: url("../img/bg/bg-mask-menu-page.png ");
-  background-image: url("../img/bg/bg-mask-menu-page.png ");
-  // background: radial-gradient(50% 50% at 50% 50%, #3F3333 0%, #271D1D 100%), radial-gradient(49.04% 49.04% at 50% 28.87%, #524343 0%, #352A2A 100%), #3C3030;
-  background: radial-gradient(50% 50% at 50% 50%, #3F3333 0%, #271D1D 100%);
-
-  // background-image: url("../img/bg/bg-mask.png");
-
-  background-size: contain;
-
-
+  background-size: cover;
   box-shadow: 0px 10px 50px #1e1717;
-
-  // overflow-x: hidden;
 }
 
 .calculate__rel {

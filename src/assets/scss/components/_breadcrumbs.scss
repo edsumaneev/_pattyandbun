@@ -1,8 +1,8 @@
 .breadcrumbs {
   padding-top: 138px;
 
-  background: url("../img/bg/bg-mask.png");
-  background-size: cover;
+  // background: url("../img/bg/bg-mask.png");
+  // background-size: cover;
 
   span {
     margin-left: 5px;
@@ -13,13 +13,16 @@
   }
 }
 
-.cart-page .breadcrumbs,
-.lk-page .breadcrumbs,
-.about .breadcrumbs,
-.meals-page .breadcrumbs,
-.calculate .breadcrumbs {
-  background: none;
-}
+
+// .breadcrumbs--noback,
+// .supply-page .breadcrumbs,
+// .cart-page .breadcrumbs,
+// .lk-page .breadcrumbs,
+// .about .breadcrumbs,
+// .meals-page .breadcrumbs,
+// .calculate .breadcrumbs {
+//   background: none;
+// }
 
 .breadcrumbs__link {
   margin-right: 5px;

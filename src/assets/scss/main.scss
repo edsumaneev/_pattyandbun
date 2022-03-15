@@ -3,6 +3,7 @@
 @import "base/_fonts.scss";
 @import "base/_variables.scss";
 @import "base/_base.scss";
+@import "mixins/gradients";
 @import "layout/_header.scss";
 @import "layout/_footer.scss";
 @import "components/_buttons.scss";
@@ -32,3 +33,4 @@
 @import "layout/_about.scss";
 @import "layout/_lk-page.scss";
 @import "layout/_cart-page.scss";
+@import "layout/_supply-page.scss";

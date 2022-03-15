@@ -7,21 +7,25 @@
   overflow-x: hidden;
 }
 
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
 .intro {
-  padding-top: 117px;
+  @include grad();
+  position: relative;
   padding-bottom: 80px;
-
-
-  background: radial-gradient(50% 50% at 50% 50%, #524343 0%, #352a2a 100%);
-  background-image: url("../img/bg/bg-mask-menu-page.png ");
-
-  // background-position: center;
   background-size: cover;
 
   overflow-x: hidden;
 
   @media screen and (max-width: 1198px) {
-    padding-top: 85px;
     padding-bottom: 30px;
   }
 }

@@ -117,7 +117,7 @@ if ($(".calculate").length > 0) {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    // fade: true,
+    fade: true,
     asNavFor: '.slider-nav',
     touchThreshold: 100
   });

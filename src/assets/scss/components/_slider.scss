@@ -1,3 +1,12 @@
+.slider {
+  margin-top: 120px;
+
+  @media screen and (max-width:767px) {
+    margin-top: 25px;
+  }
+}
+
+
 .slider__wrapper {
   display: flex;
   justify-content: space-between;
@@ -12,7 +21,7 @@
 .slider__img {
   z-index: 5;
   margin-right: 19px;
-  width: 712px;
+  // width: 712px;
 
   img {
     object-fit: cover;
@@ -24,10 +33,16 @@
     img {
       width: 100%;
       height: auto;
-      // object-fit: contain;
+      object-fit: contain;
     }
   }
 }
+
+// .slider__img {
+//   img {
+//     height: 553px;
+//   }
+// }
 
 .slider-for__img {
   position: relative;
@@ -188,7 +203,7 @@
 }
 
 .slider-nav {
-  padding: 70px 15px 0 15px;
+  padding: 25px 15px 0 15px;
 
   @media (min-width: 575.98px) {
 
