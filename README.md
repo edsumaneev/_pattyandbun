@@ -9,6 +9,7 @@
 # http://sumaneev.crazytest.studio/cart-page-02.html
 # http://sumaneev.crazytest.studio/cart-page-02.html
 # http://sumaneev.crazytest.studio/supply-page.html
+# http://sumaneev.crazytest.studio/thanks-page.html
 
 # http://sumaneev.crazytest.studio/404-page.html
 # http://sumaneev.crazytest.studio/privacy-page.html

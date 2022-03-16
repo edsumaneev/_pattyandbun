@@ -1,0 +1,28 @@
+{% set title = "Корзина | Patty & Bun" %}
+{% include "../templates/header.njk" %}
+<section class="thanks-page">
+  <div class="breadcrumbs wrapper">
+    <a class="breadcrumbs__link" href="index.html">Главная</a> - <span>Корзина</span>
+  </div>
+  <ul class="steps wrapper">
+    <li class="steps__step">01 - Корзина</li>
+    <li class="steps__step steps__step--line"></li>
+    <li class="steps__step">02 - Оформление</li>
+    <li class="steps__step steps__step--line"></li>
+    <li class="steps__step steps__step--active">03 - Оплата</li>
+  </ul>
+  <div class="wrapper">
+    <div class="bordered thanks-page__bordered">
+      <div class="bordered__img">
+        <!-- width="1170" height="653" -->
+        <img src="assets/img/bg/tabs-img-01.png" alt="" width="1170" height="653">
+      </div>
+      <h1 class="title thanks-page__title">Спасибо что выбрали нас</h1>
+      <p class="thanks-page__text">Ваш заказ уже готовится и скоро будет у вас</p>
+      <a class="btn" href="index.html">На главную</a>
+    </div>
+  </div>
+
+</section>
+
+{% include "../templates/footer.njk" %}
