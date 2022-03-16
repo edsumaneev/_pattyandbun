@@ -1,0 +1,38 @@
+{% set title = "Popup | Patty & Bun" %}
+{% include "../templates/header.njk" %}
+<section class="popup-page">
+  <div class="wrapper">
+    <a class="subtitle popup-page__btn" href="#popup-enter"
+      style="color: black; background: lightgray; max-height: 50px;">лк-
+      вход</a>
+  </div>
+</section>
+
+<div class="bg-popup"></div>
+
+<div class="popup" id="popup-enter">
+  <form>
+    <svg class="close-popup" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.5">
+        <path d="M28.5 1L1 28.5" stroke-width="2" stroke-linecap="round" />
+        <path d="M1 1L28.5 28.5" stroke-width="2" stroke-linecap="round" />
+      </g>
+    </svg>
+    <h2 class="popup__title">Вход в личный кабинет</h2>
+    <div>
+      <input type="mail" id="mail" placeholder="Info@gmail.com">
+      <label for="mail">Почта</label>
+    </div>
+    <div>
+      <input type="password" id="pass">
+      <label for="pass">Пароль</label>
+    </div>
+    <a class="btn btn--invert" href="#">Войти</a>
+  </form>
+  <div>
+    <a href="#">Регистрация</a>
+    <a href="#">Забыли пароль?</a>
+  </div>
+</div>
+
+{% include "../templates/footer.njk" %}
