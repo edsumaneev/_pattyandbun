@@ -11,3 +11,129 @@
 .supply-page__paragraph {
   margin-bottom: 25px;
 }
+
+// maps-block
+.maps-block {
+  @include grad();
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 160px;
+
+  overflow: hidden;
+}
+
+.maps-block__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.maps-block__title {
+  margin-bottom: 30px;
+
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+}
+
+.maps-block__item:last-child {
+  max-width: 290px;
+}
+
+.maps-block__sublist {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.maps-block__subitem {
+  margin-bottom: 20px;
+}
+
+.maps-block__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+  width: 100%;
+}
+
+.maps-block__ymap,
+.maps-block__gmap {
+  display: block;
+  width: 570px;
+  height: 464px;
+}
+
+.maps-block__ymap {
+  margin-right: 30px;
+}
+
+.maps-block__gmap iframe {
+  width: 570px;
+  height: 100%;
+}
+
+.maps-block__link {
+  display: inline-block;
+
+  margin-top: 30px;
+  width: 100%;
+
+  text-align: center;
+  font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba($color: #ffffff, $alpha: 0.5);
+}
+
+.maps-block__link span {
+  color: rgba($color: #8a8a8a, $alpha: 0.5);
+}
+
+.register {
+  background: url("../img/bg/bg-mask.png");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.register__intro {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.register__paragraph {
+  margin-bottom: 25px;
+}
+
+.register__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-top: 80px;
+}
+
+
+.register__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 0 15px;
+
+  width: 50%;
+  height: 265px;
+
+  background: #352a2a;
+  box-shadow: 0 10px 50px #1e1717;
+
+  cursor: pointer;
+}
+
+.register__link:hover {
+  box-shadow: 5px 5px 15px #2a2525;
+}
