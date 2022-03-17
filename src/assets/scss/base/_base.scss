@@ -64,51 +64,6 @@ p {
   margin: 0;
 }
 
-// #overlay {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   z-index: 5;
-//   background-color: rgba(255, 255, 255, 0.8);
-//   opacity: 0;
-//   visibility: hidden;
-// }
-
-// #overlay.active {
-//   z-index: 5;
-//   opacity: 1;
-//   visibility: visible;
-//   overflow: hidden;
-// }
-
-// // битые изображения 
-// img {
-//   position: relative;
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-
-//   font-family: Helvetica, Arial, sans-serif;
-//   font-weight: 300;
-//   line-height: 2;
-//   text-align: center;
-// }
-
-// img:before {
-//   content: "Error img :(";
-//   display: block;
-//   margin-bottom: 10px;
-// }
-
-// img:after {
-//   content: "(url: "attr(src) ")";
-//   display: block;
-//   font-size: 12px;
-// }
-
-
 // container
 .wrapper,
 footer {

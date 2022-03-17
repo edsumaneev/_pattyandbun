@@ -10,6 +10,11 @@
 
 .about__bordered {
   border-top: none;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+  }
 }
 
 .about__parafraph {
@@ -18,6 +23,10 @@
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+  }
 }
 
 // 
@@ -27,6 +36,11 @@
 
   background: url("../img/bg/bg-mask.png");
   background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .timeline__title {

@@ -110,6 +110,13 @@
   padding-bottom: 40px;
 
   border-top: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .bordered .btn {
@@ -119,6 +126,10 @@
 
 .bordered__text {
   width: 50%;
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
 }
 
 .bordered__subtitle {
@@ -158,8 +169,14 @@
 }
 
 .bordered__img {
+  width: 100%;
+
   img {
     height: auto;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
 }
 
@@ -179,7 +196,6 @@
   padding-bottom: 100px;
 
   background: radial-gradient(50% 50% at 50% 50%, #3f3333 0%, #271d1d 100%), radial-gradient(49.04% 49.04% at 50% 28.87%, #524343 0%, #352a2a 100%), #3c3030;
-  // background: radial-gradient(50% 50% at 50% 50%, #524343 0%, #352a2a 100%);
   background-image: url("../img/bg/bg-mask-menu-page.png ");
   background-size: contain;
 

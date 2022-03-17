@@ -18,6 +18,10 @@
     max-width: unset;
     width: 960px;
   }
+
+  @media screen and (max-width: 992px) {
+    width: 680px;
+  }
 }
 
 .calculate__counter {
@@ -44,6 +48,12 @@
 
   @media screen and (max-width:575px) {
     right: 675px;
+  }
+}
+
+.calculate .calculate__counter {
+  @media screen and (max-width: 1198px) {
+    bottom: 5px;
   }
 }
 
@@ -204,6 +214,10 @@
 
 .menu__goods {
   width: 75%;
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
 }
 
 .menu__item {
@@ -213,6 +227,10 @@
   font-size: 50px;
   line-height: 130%;
   color: rgba($color: #ffffff, $alpha: 0.2);
+
+  @media screen and (max-width: 992px) {
+    font-size: 36px;
+  }
 }
 
 .menu__item:hover,

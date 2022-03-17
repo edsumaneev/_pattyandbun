@@ -21,7 +21,6 @@
 .slider__img {
   z-index: 5;
   margin-right: 19px;
-  // width: 712px;
 
   img {
     object-fit: cover;
@@ -29,6 +28,7 @@
 
   @media screen and (max-width: 1198px) {
     max-width: 500px;
+    margin-right: 0;
 
     img {
       width: 100%;
@@ -37,12 +37,6 @@
     }
   }
 }
-
-// .slider__img {
-//   img {
-//     height: 553px;
-//   }
-// }
 
 .slider-for__img {
   position: relative;
@@ -54,11 +48,24 @@
   min-height: 491px;
 
   margin-top: -40px;
+
+  @media screen and (max-width: 1198px) {
+    margin-top: 0;
+    min-height: 465px;
+  }
 }
 
 .slider-for__img img {
   position: absolute;
   object-fit: contain;
+
+  @media screen and (max-width: 1198px) {
+    left: -190px;
+  }
+
+  @media screen and (max-width: 992px) {
+    left: -130px;
+  }
 }
 
 .slider__name {
@@ -166,10 +173,18 @@
 // slider-for, slider-nav
 .slider-for {
   padding-top: 30px;
+
+  @media screen and (max-width: 1198px) {
+    padding-top: 0;
+  }
 }
 
 .slider-for__inner {
   padding-top: 30px;
+
+  @media screen and (max-width: 1198px) {
+    padding-top: 15px;
+  }
 }
 
 .slider-for__title {
@@ -239,8 +254,6 @@
   align-items: center;
   min-height: 85px;
 
-  // padding: 0 65px 0 0;
-
   font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -251,9 +264,7 @@
 }
 
 .slick-current .slider-nav__title {
-  // transition: transform 0.5s linear;
   transition: 0.7s linear;
-  // transition-delay: 0.5s;
 
   font-size: rem(50px);
   color: rgba($color: #ffffff, $alpha: 1.0);

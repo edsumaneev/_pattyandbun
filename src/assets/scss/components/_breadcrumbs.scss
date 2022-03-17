@@ -1,8 +1,7 @@
 .breadcrumbs {
+  position: relative;
+  z-index: 5;
   padding-top: 138px;
-
-  // background: url("../img/bg/bg-mask.png");
-  // background-size: cover;
 
   span {
     margin-left: 5px;
@@ -12,17 +11,6 @@
     padding-top: 100px;
   }
 }
-
-
-// .breadcrumbs--noback,
-// .supply-page .breadcrumbs,
-// .cart-page .breadcrumbs,
-// .lk-page .breadcrumbs,
-// .about .breadcrumbs,
-// .meals-page .breadcrumbs,
-// .calculate .breadcrumbs {
-//   background: none;
-// }
 
 .breadcrumbs__link {
   margin-right: 5px;
