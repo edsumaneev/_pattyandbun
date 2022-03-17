@@ -2,7 +2,6 @@ const {
   auto
 } = require('@popperjs/core');
 
-// require('./js-component/popup-simple.js');
 require('./js-component/jquery-ui.min.js');
 require('slick-carousel');
 
@@ -12,10 +11,6 @@ if ($(".timeline").length > 0) {
     $("#tabs").tabs();
   });
 };
-// ToolTip
-// $(function () {
-//   $(document).tooltip();
-// });
 // accordion
 if ($(".lk-page").length > 0) {
   $(function () {
@@ -263,53 +258,77 @@ if ($('.meals-page').length > 0) {
     });
   });
 };
-// ------------------------------------------
-let popupBg = document.querySelector('.bg-popup');
-// let popup = document.querySelector('.popup');
-let popupEnter = document.querySelector('#popup-enter');
-// let popupTest = document.querySelector('.popup-test');
-let openPopupButtons = document.querySelectorAll('.popup-page__btn');
-// let openPopupTestBtn = document.querySelectorAll('.tests__btn');
-let closePopupButton = document.querySelector('.close-popup');
-// let closePopupBtn = document.querySelector('.close-btn');
-
-openPopupButtons.forEach((button) => {
-  button.addEventListener('click', (e) => {
+// popup
+if ($(".popup").length > 0) {
+  $('.popup-btn').on('click', function (e) {
     e.preventDefault();
-    popupBg.classList.add('active');
-    popupEnter.classList.add('active');
-  })
-});
 
-// openPopupTestBtn.forEach((button) => {
-//   button.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     popupBg.classList.add('active');
-//     popupTest.classList.add('active');
-//   })
-// });
+    var elementID = $(this).attr("data-element");
+    $('.popup#' + elementID).toggleClass('active');
+    $('.popup-overlay').toggleClass('active');
+  });
 
-closePopupButton.addEventListener('click', () => {
-  popupBg.classList.remove('active');
-  popupEnter.classList.remove('active');
-});
+  $(".close-popup").on("click", function (e) {
+    e.preventDefault();
+    $(".popup").removeClass("active");
+    $('.popup-overlay').toggleClass('active');
+  });
 
-// closePopupBtn.addEventListener('click', () => {
-//   popupBg.classList.remove('active');
-//   popupTest.classList.remove('active');
-// });
+  $(".popup-overlay").on("click", function (e) {
+    e.preventDefault();
+    $(".popup").removeClass("active");
+    $('.popup-overlay').toggleClass('active');
+  });
 
-document.addEventListener('click', (e) => {
-  if (e.target === popupBg) {
-    popupBg.classList.remove('active');
-    popupEnter.classList.remove('active');
-    // popupTest.classList.remove('active');
+  $(document).keydown(function (e) {
+    if (e.keyCode == 27) {
+      e.preventDefault();
+      $(".popup").removeClass("active");
+      $('.popup-overlay').toggleClass('active');
+    }
+  });
+};
+// блокировать без подтверждения согласия
+$("#agreed, #agreement").click(function () {
+  if (($(this).prop("checked"))) {
+    $(".popup__button--reg").removeAttr("disabled").removeClass("disabled");
+  } else {
+    $(".popup__button--reg").attr("disabled", "disabled").addClass("disabled");
   }
 });
-$(document).keydown(function (e) {
-  if (e.keyCode == 27) {
-    popupBg.classList.remove('active');
-    popupEnter.classList.remove('active');
-    // popupTest.classList.remove('active');
+// tel
+window.addEventListener("DOMContentLoaded", function () {
+  function setCursorPosition(pos, elem) {
+    elem.focus();
+    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+    else if (elem.createTextRange) {
+      var range = elem.createTextRange();
+      range.collapse(true);
+      range.moveEnd("character", pos);
+      range.moveStart("character", pos);
+      range.select()
+    }
+  }
+
+  function template(event) {
+    var matrix = "+7 (___) - ___ - __ - __",
+      i = 0,
+      def = matrix.replace(/\D/g, ""),
+      val = this.value.replace(/\D/g, "");
+    if (def.length >= val.length) val = def;
+    this.value = matrix.replace(/./g, function (a) {
+      return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+    });
+    if (event.type == "blur") {
+      if (this.value.length == 2) this.value = ""
+    } else setCursorPosition(this.value.length, this)
+  }
+
+  var phoneForm = document.querySelector("#regtel, #tel");
+
+  if (phoneForm) {
+    phoneForm.addEventListener("input", template, false);
+    phoneForm.addEventListener("focus", template, false);
+    phoneForm.addEventListener("blur", template, false);
   }
 });

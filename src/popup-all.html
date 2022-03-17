@@ -1,38 +1,150 @@
 {% set title = "Popup | Patty & Bun" %}
 {% include "../templates/header.njk" %}
+
 <section class="popup-page">
-  <div class="wrapper">
-    <a class="subtitle popup-page__btn" href="#popup-enter"
-      style="color: black; background: lightgray; max-height: 50px;">лк-
-      вход</a>
+  <div class="bg-img">
+    <img src="assets/img/bg/bg-mask.png" alt="" width="1920" height="4400">
   </div>
-</section>
+  <div class="popup-page__block wrapper">
+    <h1 style="visibility: hidden;">H1</h1>
+    <!-- popup-btn -->
+    <a class="btn popup-btn" data-element="popup-enter">лк-вход</a>
+    <br>
+    <a class="btn popup-btn" data-element="popup-reg">лк-регистрация</a>
+    <br>
+    <a class="btn popup-btn" data-element="popup-regtel">регистрация</a>
+    <br>
+    <a class="btn popup-btn" data-element="popup-afterreg">лк- после регистрац.</a>
+    <br>
+    <a class="btn popup-btn" data-element="popup-forgot">лк- забыли пароль</a>
 
-<div class="bg-popup"></div>
+  </div>
 
-<div class="popup" id="popup-enter">
-  <form>
+  <!-- popup-overlay -->
+  <div class="popup-overlay"></div>
+
+  <!-- лк- вход -->
+  <div class="popup" id="popup-enter">
     <svg class="close-popup" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.5">
         <path d="M28.5 1L1 28.5" stroke-width="2" stroke-linecap="round" />
         <path d="M1 1L28.5 28.5" stroke-width="2" stroke-linecap="round" />
       </g>
     </svg>
-    <h2 class="popup__title">Вход в личный кабинет</h2>
-    <div>
-      <input type="mail" id="mail" placeholder="Info@gmail.com">
-      <label for="mail">Почта</label>
+    <form class="popup__form" action="#" method="post">
+      <h2 class="popup__title">Вход в личный кабинет</h2>
+      <div class="popup__row">
+        <label class="popup__label" for="mail">Почта</label>
+        <input class="popup__input" type="email" id="mail" placeholder="Info@gmail.com">
+      </div>
+      <div class="popup__row">
+        <label class="popup__label" for="pass">Пароль</label>
+        <input class="popup__input" type="password" id="pass">
+      </div>
+      <a class="btn btn--invert popup__button" href="#">Войти</a>
+    </form>
+    <div class="popup__footer">
+      <a class="popup__link" href="#">Регистрация</a>
+      <a class="popup__link" href="#">Забыли пароль?</a>
     </div>
-    <div>
-      <input type="password" id="pass">
-      <label for="pass">Пароль</label>
-    </div>
-    <a class="btn btn--invert" href="#">Войти</a>
-  </form>
-  <div>
-    <a href="#">Регистрация</a>
-    <a href="#">Забыли пароль?</a>
   </div>
-</div>
 
+  <!-- лк-регистрация -->
+  <div class="popup" id="popup-reg">
+    <svg class="close-popup" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.5">
+        <path d="M28.5 1L1 28.5" stroke-width="2" stroke-linecap="round" />
+        <path d="M1 1L28.5 28.5" stroke-width="2" stroke-linecap="round" />
+      </g>
+    </svg>
+    <form class="popup__form" action="#" method="post">
+      <h2 class="popup__title">Регистрация</h2>
+      <div class="popup__row">
+        <label class="popup__label" for="regmail">Ваша почта</label>
+        <input class="popup__input" type="email" id="regmail" placeholder="Info@gmail.com">
+      </div>
+      <div class="popup__row">
+        <label class="popup__label" for="regpass1">Придумайте пароль</label>
+        <input class="popup__input" type="password" id="regpass1">
+      </div>
+      <div class="popup__row">
+        <label class="popup__label" for="regpass2">Повторите пароль</label>
+        <input class="popup__input" type="password" id="regpass2">
+      </div>
+      <button class="btn btn--invert popup__button popup__button--reg" type="submit">Зарегистрироваться</button>
+      <div>
+        <input class="popup__agreement" type="checkbox" name="agreed" id="agreed" checked required>
+        <label for="agreed">Я согласен с &nbsp; <a href="privacy-page.html" target="_blank"> политикой
+            конфиденицальности</a></label>
+      </div>
+    </form>
+  </div>
+
+  <!-- регистрация -->
+  <div class="popup" id="popup-regtel">
+    <svg class="close-popup" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.5">
+        <path d="M28.5 1L1 28.5" stroke-width="2" stroke-linecap="round" />
+        <path d="M1 1L28.5 28.5" stroke-width="2" stroke-linecap="round" />
+      </g>
+    </svg>
+    <form class="popup__form" action="#" method="post">
+      <h2 class="popup__title">Регистрация</h2>
+      <div class="popup__row">
+        <label class="popup__label" for="regtel">Номер телефона</label>
+        <input class="popup__input" type="tel" id="regtel" placeholder="+7 (___) ___-__-__">
+        <button class="popup__sendtel" type="submit">Отправить</button>
+      </div>
+      <div class="popup__row">
+        <label class="popup__label" for="regsms">Введите код из смс</label>
+        <input class="popup__input popup__input--num" type="number" id="regsms">
+      </div>
+      <button class="btn btn--invert popup__button popup__button--reg" type="submit">Продолжить оформление</button>
+      <div>
+        <input class="popup__agreement" type="checkbox" name="agreement" id="agreement" checked required>
+        <label for="agreement">Я согласен с &nbsp; <a href="privacy-page.html" target="_blank"> политикой
+            конфиденицальности</a></label>
+      </div>
+    </form>
+  </div>
+
+  <!-- лк- после регистрац. -->
+  <div class="popup" id="popup-afterreg">
+    <svg class="close-popup" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.5">
+        <path d="M28.5 1L1 28.5" stroke-width="2" stroke-linecap="round" />
+        <path d="M1 1L28.5 28.5" stroke-width="2" stroke-linecap="round" />
+      </g>
+    </svg>
+    <h2 class="popup__title">Вам на почту поступит письмо с&nbsp;дальнейшими действиями</h2>
+    <div class="popup__footer">
+      <a class="btn btn--invert popup__button" href="#">Вход</a>
+    </div>
+  </div>
+
+  <!-- лк- забыли пароль -->
+  <div class="popup" id="popup-forgot">
+    <svg class="close-popup" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.5">
+        <path d="M28.5 1L1 28.5" stroke-width="2" stroke-linecap="round" />
+        <path d="M1 1L28.5 28.5" stroke-width="2" stroke-linecap="round" />
+      </g>
+    </svg>
+    <form class="popup__form" action="#" method="post">
+      <h2 class="popup__title">Введите вашу почту</h2>
+      <p class="popup__text">
+        На вашу почту придёт письмо для восстановления
+      </p>
+      <div class="popup__row">
+        <label class="popup__label" for="fogotmail">Почта</label>
+        <input class="popup__input" type="email" id="fogotmail" placeholder="Info@gmail.com">
+      </div>
+      <a class="btn btn--invert popup__button" href="#">Восстановить пароль</a>
+    </form>
+    <div class="popup__footer">
+      <a class="popup__link" href="#">Вход</a>
+      <a class="popup__link" href="#">Забыли пароль?</a>
+    </div>
+  </div>
+</section>
 {% include "../templates/footer.njk" %}
