@@ -22,6 +22,10 @@
   @media screen and (max-width: 992px) {
     width: 680px;
   }
+
+  @media screen and (max-width:767px) {
+    width: 320px;
+  }
 }
 
 .calculate__counter {
@@ -55,6 +59,12 @@
   @media screen and (max-width: 1198px) {
     bottom: 5px;
   }
+
+  @media screen and (max-width:767px) {
+    bottom: -35px;
+    right: 0;
+    text-align: center;
+  }
 }
 
 // .calories {}
@@ -62,6 +72,13 @@
   padding: 15px 20px 20px;
   max-width: 163px;
   background: #1f1616;
+
+  @media screen and (max-width:575px) {
+    max-width: unset;
+    width: 50%;
+    padding: 10px 15px 15px;
+    margin-right: 20px;
+  }
 }
 
 .calories__item {
@@ -87,18 +104,26 @@
   bottom: 0;
   right: 0;
   padding: 30px;
-  max-width: 300px;
+  max-width: 385px;
 
   background: #1f1616;
 
+  @media screen and (max-width: 992px) {
+    max-width: 300px;
+  }
+
   @media screen and (max-width:767px) {
     max-width: 340px;
+  }
+
+  @media screen and (max-width:575px) {
+    max-width: 300px;
   }
 }
 
 .ingredient__action {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 18px;
 }
 
@@ -155,13 +180,18 @@
   content: "";
   display: inline-block;
 
-  width: 32px;
-  height: 33px;
+  width: 44px;
+  height: 44px;
 
   background: transparent;
   border: 1px solid #605757;
   border-radius: 50%;
   cursor: pointer;
+
+  @media screen and (max-width: 992px) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .ingredient__checkbox:checked+label::before {
@@ -207,6 +237,10 @@
   position: relative;
   padding-bottom: 90px;
   width: 20%;
+
+  @media screen and (max-width:575px) {
+    display: none;
+  }
 }
 
 .menu__anchors {
@@ -249,10 +283,18 @@
 
 .delivery {
   padding-bottom: 100px;
+
+  @media screen and (max-width: 992px) {
+    padding-bottom: 30px;
+  }
 }
 
 .delivery__title {
   margin-bottom: 45px;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 25px;
+  }
 }
 
 .delivery__paragraph {
@@ -270,6 +312,10 @@
 
   @media screen and (max-width: 992px) {
     margin-right: 15px;
+  }
+
+  @media screen and (max-width:575px) {
+    display: none;
   }
 }
 
