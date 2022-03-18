@@ -24,7 +24,8 @@
             <input class="form-cart__input" type="tel" id="tel" placeholder="+7 555 555-55-55">
           </label>
           <label for="address">Адрес доставки
-            <input class="form-cart__input" type="text" id="address" placeholder="Например, Баныкина 26">
+            <input class="form-cart__input form-cart__input--nomargin" type="text" id="address"
+              placeholder="Например, Баныкина 26">
           </label>
           <button class="form-cart__pickup" type="submit">Выбрать самовывоз</button>
         </div>
@@ -134,17 +135,17 @@
     </div>
 
     <div class="totals">
+      <form class="totals__form" action="#" method="post" id="discount">
+        <label>У вас есть промокод?</label>
+        <input class="totals__input" type="text" placeholder="23FEBD">
+        <button class="totals__btn" type="submit" form="discount">&rarr;</button>
+      </form>
       <div class="totals__flex">
         <h1 class="totals__subtitle">Итого:</h1>
         <p class="totals__summa"><span>980</span> рублей</p>
         <a class="btn totals__onwards" href="cart-page.html">Назад</a>
         <button class="btn totals__onwards" form="formcart" type="submit">Далее</button>
       </div>
-      <form class="totals__form" action="#" method="post" id="discount">
-        <label>У вас есть промокод?</label>
-        <input class="totals__input" type="text" placeholder="23FEBD">
-        <button class="totals__btn" type="submit" form="discount">&rarr;</button>
-      </form>
     </div>
 
   </div>
