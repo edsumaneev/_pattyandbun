@@ -89,8 +89,11 @@
   padding: 30px;
   max-width: 300px;
 
-
   background: #1f1616;
+
+  @media screen and (max-width:767px) {
+    max-width: 340px;
+  }
 }
 
 .ingredient__action {
@@ -189,6 +192,10 @@
   padding-top: 100px;
   background: url("../img/bg/bg-mask.png");
   background-size: cover;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 30px;
+  }
 }
 
 .menu__wrapper {
@@ -260,6 +267,10 @@
 .menu__sidebar {
   padding: 10px 0 60px 0;
   width: 0;
+
+  @media screen and (max-width: 992px) {
+    margin-right: 15px;
+  }
 }
 
 .menu__cart {
@@ -277,6 +288,11 @@
 
   svg {
     fill: #352a2a;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -298,6 +314,11 @@
   right: 0;
   border-radius: 50%;
   background: #eeb913;
+
+  @media screen and (max-width: 992px) {
+    top: -5px;
+    right: -5px;
+  }
 }
 
 .menu__counter {
@@ -315,4 +336,9 @@
   text-align: center;
 
   color: #121212;
+
+  @media screen and (max-width: 992px) {
+    top: -5px;
+    right: 0;
+  }
 }
