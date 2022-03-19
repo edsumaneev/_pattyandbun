@@ -5,6 +5,14 @@
   background-size: cover;
 
   overflow: hidden;
+
+  @media screen and (max-width: 992px) {
+    padding-bottom: 50px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-bottom: 30px;
+  }
 }
 
 .thanks-page__bordered {
@@ -27,10 +35,25 @@
   font-weight: 400;
   font-size: 25px;
   line-height: 130%;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 }
 
 .thanks-page__text {
   margin-bottom: 40px;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 575px) {
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 
 .thanks-page .bordered__img {

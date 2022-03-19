@@ -3,6 +3,10 @@
 
   background: url("../img/bg/bg-mask.png");
   background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 30px;
+  }
 }
 
 .lk-page__data {
@@ -12,11 +16,24 @@
 
   max-width: 100%;
   background: #352a2a;
+
+  @media screen and (max-width: 1198px) {
+    margin-top: 30px;
+    flex-direction: column;
+  }
 }
 
 .lk-page__orders {
   position: relative;
   padding: 40px 22px 40px 50px;
+
+  @media screen and (max-width: 1198px) {
+    padding: 20px 30px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 20px 15px;
+  }
 }
 
 .lk-page__list {
@@ -36,15 +53,37 @@
 
 // form-lk
 .form-lk {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
 
   padding: 40px 50px;
   width: 40%;
 
   border-right: 1px solid #524343;
+
+  @media screen and (max-width: 1198px) {
+    border-right: none;
+    border-bottom: 1px solid #524343;
+    padding: 20px 30px;
+    width: 100%;
+  }
+}
+
+.form-lk__title {
+  margin-bottom: 30px;
+
+  font-size: 25px;
+}
+
+.form-lk__title--margin {
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 575px) {
+    margin-bottom: 30px;
+  }
 }
 
 .form-lk__row {
@@ -52,6 +91,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 1198px) {
+    margin-right: 25px;
+  }
 }
 
 .form-lk__row label {
@@ -103,9 +146,25 @@
 }
 
 .form-lk__btn {
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+
   max-width: 110px;
   background: transparent;
   cursor: pointer;
+
+  @media screen and (max-width: 1198px) {
+    bottom: unset;
+    left: unset;
+    right: 30px;
+    top: 20px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
 }
 
 .form-lk__change,
@@ -127,6 +186,11 @@
 
 .form-lk__save {
   right: -85px;
+
+  @media screen and (max-width: 425px) {
+    right: 0;
+    bottom: 55px;
+  }
 }
 
 .form-lk__change:hover,
@@ -142,4 +206,32 @@
   line-height: 140%;
 
   color: rgba($color: #ffffff, $alpha: 0.4);
+
+  @media screen and (max-width: 1198px) {
+    margin-right: 160px;
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-right: 100px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: 60px;
+  }
+}
+
+.form-lk__item--date {
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+}
+
+.form-lk__wrapper {
+  @media screen and (max-width: 1198px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 992px) {
+    flex-wrap: wrap;
+  }
 }

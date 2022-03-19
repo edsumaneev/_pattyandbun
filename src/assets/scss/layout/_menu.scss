@@ -75,9 +75,9 @@
 
   @media screen and (max-width:575px) {
     max-width: unset;
-    width: 50%;
+    width: 80%;
     padding: 10px 15px 15px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 
@@ -91,6 +91,11 @@
   font-weight: 400;
   font-size: rem(20px);
   line-height: 120%;
+
+  @media screen and (max-width:575px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
 
 .calories__vol {
@@ -117,7 +122,10 @@
   }
 
   @media screen and (max-width:575px) {
-    max-width: 300px;
+    // max-width: 300px;
+    max-width: unset;
+    position: relative;
+    order: 2;
   }
 }
 

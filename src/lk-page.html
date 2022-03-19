@@ -7,67 +7,69 @@
   <div class="wrapper">
     <div class="lk-page__data">
       <form class="form-lk" action="#">
-        <h1 class="title form-lk__title">Личные данные</h1>
-        <div class="form-lk__row">
-          <label for="name">Имя</label>
-          <input class="form-lk__input" type="text" id="name" placeholder="Сергей">
-          <button class="form-lk__change" type="button">Изменить</button>
-        </div>
-        <div class="form-lk__row">
-          <label for="tel">Номер телефона</label>
-          <input class="form-lk__input" type="tel" id="tel" placeholder="+7 (___) ___-__-__">
-        </div>
-        <div class="form-lk__row">
-          <label>День рождения</label>
-          <div class="form-lk__inner">
-            <select class="form-lk__date">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-              <option>13</option>
-              <option>14</option>
-              <option>15</option>
-              <option>16</option>
-              <option>17</option>
-              <option>18</option>
-              <option>19</option>
-              <option>20</option>
-              <option>21</option>
-              <option>22</option>
-              <option>23</option>
-              <option>24</option>
-              <option>25</option>
-              <option>26</option>
-              <option>27</option>
-              <option>28</option>
-              <option>29</option>
-              <option>30</option>
-              <option>31</option>
-            </select>
-            <select class="form-lk__date form-lk__date--wide">
-              <option>Январь</option>
-              <option>Февраль</option>
-              <option>Март</option>
-              <option>Апрель</option>
-              <option>Май</option>
-              <option>Июнь</option>
-              <option>Июль</option>
-              <option>Август</option>
-              <option>Сентябрь</option>
-              <option>Октябрь</option>
-              <option>Ноябрь</option>
-              <option>Декабрь</option>
-            </select>
-            <button class="form-lk__save" type="button">Сохранить</button>
+        <h1 class="title form-lk__title form-lk__title--margin">Личные данные</h1>
+        <div class="form-lk__wrapper">
+          <div class="form-lk__row">
+            <label for="name">Имя</label>
+            <input class="form-lk__input" type="text" id="name" placeholder="Сергей">
+            <button class="form-lk__change" type="button">Изменить</button>
+          </div>
+          <div class="form-lk__row">
+            <label for="tel">Номер телефона</label>
+            <input class="form-lk__input" type="tel" id="tel" placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form-lk__row">
+            <label>День рождения</label>
+            <div class="form-lk__inner">
+              <select class="form-lk__date">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+              <select class="form-lk__date form-lk__date--wide">
+                <option>Январь</option>
+                <option>Февраль</option>
+                <option>Март</option>
+                <option>Апрель</option>
+                <option>Май</option>
+                <option>Июнь</option>
+                <option>Июль</option>
+                <option>Август</option>
+                <option>Сентябрь</option>
+                <option>Октябрь</option>
+                <option>Ноябрь</option>
+                <option>Декабрь</option>
+              </select>
+              <button class="form-lk__save" type="button">Сохранить</button>
+            </div>
           </div>
         </div>
         <button class="btn form-lk__btn" type="submit">Выйти</button>
@@ -76,14 +78,14 @@
         <h1 class="title form-lk__title">История заказов</h1>
         <ul class="lk-page__list">
           <li class="form-lk__item">Наименование</li>
-          <li class="form-lk__item">Дата / Время</li>
+          <li class="form-lk__item form-lk__item--date">Дата / Время</li>
           <li class="form-lk__item">Цена</li>
         </ul>
         <div class="accordion" id="accordion">
           <div class="accordion__header">
             <ul class="accordion__list">
               <li>Заказ #<span>4243</span></li>
-              <li>14.02.2021 <span>14:00</span></li>
+              <li class="accordion__date">14.02.2021 <span>14:00</span></li>
               <li class="accordion__sum">1290 Р</li>
               <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
               <li class="accordion__icon"><span>+</span></li>
@@ -214,7 +216,7 @@
           <div class="accordion__header">
             <ul class="accordion__list">
               <li>Заказ #<span>4243</span></li>
-              <li>14.02.2021 <span>14:00</span></li>
+              <li class="accordion__date">14.02.2021 <span>14:00</span></li>
               <li class="accordion__sum">1290 Р</li>
               <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
               <li class="accordion__icon"><span>+</span></li>
@@ -253,7 +255,7 @@
           <div class="accordion__header">
             <ul class="accordion__list">
               <li>Заказ #<span>4243</span></li>
-              <li>14.02.2021 <span>14:00</span></li>
+              <li class="accordion__date">14.02.2021 <span>14:00</span></li>
               <li class="accordion__sum">1290 Р</li>
               <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
               <li class="accordion__icon"><span>+</span></li>
@@ -292,47 +294,7 @@
           <div class="accordion__header">
             <ul class="accordion__list">
               <li>Заказ #<span>4243</span></li>
-              <li>14.02.2021 <span>14:00</span></li>
-              <li class="accordion__sum">1290 Р</li>
-              <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
-              <li class="accordion__icon"><span>+</span></li>
-            </ul>
-          </div>
-          <div class="accordion__content">
-            <ul class="accordion__order">
-              <li class="accordion__img">
-                <!-- width="75" height="54" -->
-                <img src="assets/img/bg/lk-img-01.png" alt="" width="75" height="54">
-              </li>
-              <li class="accordion__title">Крестный отец</li>
-              <li>
-                <ul class="ingredients">
-                  <li class="ingredients__item">
-                    <!-- width="16" height="13" -->
-                    <img src="assets/img/bg/ingredient-img-06.png" alt="" width="16" height="13">
-                  </li>
-                  <li class="ingredients__item">
-                    <!-- width="16" height="13" -->
-                    <img src="assets/img/bg/ingredient-img-03.png" alt="" width="16" height="13">
-                  </li>
-                  <li class="ingredients__item">
-                    <!-- width="16" height="13" -->
-                    <img src="assets/img/bg/ingredient-img-04.png" alt="" width="16" height="13">
-                  </li>
-                  <li class="ingredients__item">
-                    <!-- width="16" height="13" -->
-                    <img src="assets/img/bg/ingredient-img-05.png" alt="" width="16" height="13">
-                  </li>
-                </ul>
-              </li>
-              <li class="accordion__price">290 Р</li>
-            </ul>
-          </div>
-
-          <div class="accordion__header">
-            <ul class="accordion__list">
-              <li>Заказ #<span>4243</span></li>
-              <li>14.02.2021 <span>14:00</span></li>
+              <li class="accordion__date">14.02.2021 <span>14:00</span></li>
               <li class="accordion__sum">1290 Р</li>
               <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
               <li class="accordion__icon"><span>+</span></li>
@@ -372,7 +334,7 @@
           <div class="accordion__header">
             <ul class="accordion__list">
               <li>Заказ #<span>4243</span></li>
-              <li>14.02.2021 <span>14:00</span></li>
+              <li class="accordion__date">14.02.2021 <span>14:00</span></li>
               <li class="accordion__sum">1290 Р</li>
               <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
               <li class="accordion__icon"><span>+</span></li>
@@ -412,7 +374,7 @@
           <div class="accordion__header">
             <ul class="accordion__list">
               <li>Заказ #<span>4243</span></li>
-              <li>14.02.2021 <span>14:00</span></li>
+              <li class="accordion__date">14.02.2021 <span>14:00</span></li>
               <li class="accordion__sum">1290 Р</li>
               <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
               <li class="accordion__icon"><span>+</span></li>
@@ -452,7 +414,7 @@
           <div class="accordion__header">
             <ul class="accordion__list">
               <li>Заказ #<span>4243</span></li>
-              <li>14.02.2021 <span>14:00</span></li>
+              <li class="accordion__date">14.02.2021 <span>14:00</span></li>
               <li class="accordion__sum">1290 Р</li>
               <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
               <li class="accordion__icon"><span>+</span></li>
@@ -492,7 +454,7 @@
           <div class="accordion__header">
             <ul class="accordion__list">
               <li>Заказ #<span>4243</span></li>
-              <li>14.02.2021 <span>14:00</span></li>
+              <li class="accordion__date">14.02.2021 <span>14:00</span></li>
               <li class="accordion__sum">1290 Р</li>
               <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
               <li class="accordion__icon"><span>+</span></li>
@@ -532,7 +494,47 @@
           <div class="accordion__header">
             <ul class="accordion__list">
               <li>Заказ #<span>4243</span></li>
-              <li>14.02.2021 <span>14:00</span></li>
+              <li class="accordion__date">14.02.2021 <span>14:00</span></li>
+              <li class="accordion__sum">1290 Р</li>
+              <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
+              <li class="accordion__icon"><span>+</span></li>
+            </ul>
+          </div>
+          <div class="accordion__content">
+            <ul class="accordion__order">
+              <li class="accordion__img">
+                <!-- width="75" height="54" -->
+                <img src="assets/img/bg/lk-img-01.png" alt="" width="75" height="54">
+              </li>
+              <li class="accordion__title">Крестный отец</li>
+              <li>
+                <ul class="ingredients">
+                  <li class="ingredients__item">
+                    <!-- width="16" height="13" -->
+                    <img src="assets/img/bg/ingredient-img-06.png" alt="" width="16" height="13">
+                  </li>
+                  <li class="ingredients__item">
+                    <!-- width="16" height="13" -->
+                    <img src="assets/img/bg/ingredient-img-03.png" alt="" width="16" height="13">
+                  </li>
+                  <li class="ingredients__item">
+                    <!-- width="16" height="13" -->
+                    <img src="assets/img/bg/ingredient-img-04.png" alt="" width="16" height="13">
+                  </li>
+                  <li class="ingredients__item">
+                    <!-- width="16" height="13" -->
+                    <img src="assets/img/bg/ingredient-img-05.png" alt="" width="16" height="13">
+                  </li>
+                </ul>
+              </li>
+              <li class="accordion__price">290 Р</li>
+            </ul>
+          </div>
+
+          <div class="accordion__header">
+            <ul class="accordion__list">
+              <li>Заказ #<span>4243</span></li>
+              <li class="accordion__date">14.02.2021 <span>14:00</span></li>
               <li class="accordion__sum">1290 Р</li>
               <li><a class="btn accordion__btn" href="menu-page.html">Повторить</a></li>
               <li class="accordion__icon"><span>+</span></li>

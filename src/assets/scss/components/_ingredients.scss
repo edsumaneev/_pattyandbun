@@ -16,6 +16,12 @@
   max-width: 220px;
 }
 
+.lk-page .ingredients {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .ingredients__item {
   display: flex;
   justify-content: center;

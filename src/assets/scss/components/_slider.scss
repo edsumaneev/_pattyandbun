@@ -64,7 +64,8 @@
   }
 
   @media screen and (max-width:575px) {
-    min-height: 365px;
+    min-height: 300px;
+    order: 3;
   }
 }
 
@@ -85,7 +86,7 @@
   }
 
   @media screen and (max-width:575px) {
-    left: -60px;
+    left: 0;
   }
 }
 
@@ -233,7 +234,7 @@
     order: 0;
     display: flex;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     flex-direction: row-reverse;
   }
 }
@@ -258,6 +259,10 @@
   line-height: 140%;
 
   color: #ffffff;
+
+  @media screen and (max-width:575px) {
+    margin-left: 10px;
+  }
 }
 
 .slider-for__component {

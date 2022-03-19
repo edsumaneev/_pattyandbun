@@ -3,7 +3,14 @@
   width: 658px;
   height: 583px;
   overflow-y: auto;
-  // overflow-x: hidden;
+
+  @media screen and (max-width: 1198px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-right: 10px;
+  }
 }
 
 .accordion__header {
@@ -26,6 +33,14 @@
 .accordion__btn {
   padding: 10px 20px;
   color: #ffffff !important;
+
+  @media screen and (max-width: 767px) {
+    padding: 5px 10px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 14px;
+  }
 }
 
 .ui-accordion-header-icon {
@@ -52,16 +67,30 @@
 
 .accordion__list {
   justify-content: space-between;
+
+  @media screen and (max-width: 350px) {
+    font-size: 14px;
+  }
 }
 
 .accordion__order {
   justify-content: flex-start;
 }
 
+.accordion__date {
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+}
+
 .accordion__sum {
   margin-left: 40px;
 
   color: #eeb913;
+
+  @media screen and (max-width: 575px) {
+    margin-left: 0;
+  }
 }
 
 .accordion__img,
@@ -69,6 +98,23 @@
 .accordion__price,
 .ingredients {
   margin-right: 28px;
+
+  @media screen and (max-width: 1198px) {
+    margin-right: 75px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: 45px;
+  }
+
+  @media screen and (max-width: 575px) {
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 350px) {
+    margin-right: 10px;
+    font-size: 14px;
+  }
 }
 
 .accordion__icon {
@@ -98,27 +144,6 @@
 .accordion__price {
   color: #eeb913;
 }
-
-// 
-// .accordion {
-//   scrollbar-width: thin;
-//   scrollbar-color: blue orange;
-// }
-
-/* для Chrome/Edge/Safari */
-// .accordion::-webkit-scrollbar {
-//   height: 10px;
-//   width: 3px;
-// }
-
-// .accordion::-webkit-scrollbar-track {
-//   background: #524343;
-// }
-
-// .accordion::-webkit-scrollbar-thumb {
-//   background-color: #eeb913;
-//   border-radius: 30px;
-// }
 
 .accordion {
   scrollbar-width: 3px;

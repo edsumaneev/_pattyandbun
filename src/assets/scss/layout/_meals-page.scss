@@ -3,6 +3,10 @@
 
   background: url("../img/bg/bg-mask.png");
   background-size: cover;
+
+  @media screen and (max-width: 992px) {
+    padding-bottom: 30px;
+  }
 }
 
 .meals-page__inner {
@@ -11,10 +15,20 @@
   align-items: center;
   margin-top: 70px;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    margin-top: 30px;
+  }
 }
 
 .meals-page__title {
   margin-right: 50px;
+
+  @media screen and (max-width: 992px) {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
 }
 
 .meals-page__anchors {
@@ -30,6 +44,16 @@
   border-radius: 60px;
 
   opacity: 0.2;
+
+  @media screen and (max-width: 992px) {
+    padding: 10px 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 5px 10px;
+  }
 }
 
 .meals-page__item:hover,
@@ -52,6 +76,10 @@
     height: auto;
     width: 100%;
   }
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 30px;
+  }
 }
 
 .meals-page__overlay {
@@ -73,11 +101,20 @@
   text-align: center;
 
   color: #ffffff;
+
+  @media screen and (max-width: 992px) {
+    font-size: 24px;
+  }
 }
 
 .meals-page__wrapper {
   padding-left: 50px;
   padding-right: 100px;
+
+  @media screen and (max-width: 575px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .meals-page__paragraph--margin {
@@ -93,11 +130,15 @@
 
 
   background: radial-gradient(50% 50% at 50% 50%, #3f3333 0%, #271d1d 100%), radial-gradient(49.04% 49.04% at 50% 28.87%, #524343 0%, #352a2a 100%), #3c3030;
-  // background: radial-gradient(50% 50% at 50% 50%, #524343 0%, #352a2a 100%);
   background-image: url("../img/bg/bg-mask-menu-page.png ");
   background-size: contain;
 
   box-shadow: 0 10px 50px #1e1717;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
 }
 
 // bordered
@@ -144,10 +185,18 @@
   text-transform: uppercase;
 
   color: #524343;
+
+  @media screen and (max-width: 992px) {
+    font-size: 50px;
+  }
 }
 
 .bordered__subtitle--big {
   font-size: 120px;
+
+  @media screen and (max-width: 992px) {
+    font-size: 50px;
+  }
 }
 
 .bordered__subtitle--small {
@@ -166,10 +215,14 @@
   padding-bottom: 50px;
 
   background: rgba($color: #1f1616, $alpha: 0.6);
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column-reverse;
+    padding-bottom: 30px;
+  }
 }
 
 .bordered__img {
-  width: 100%;
 
   img {
     height: auto;
@@ -187,6 +240,11 @@
 
   background: url("../img/bg/bg-mask.png");
   background-size: cover;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
 }
 
 // sauces
@@ -200,16 +258,30 @@
   background-size: contain;
 
   box-shadow: 0 10px 50px #1e1717;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
 }
 
 .sauces__text {
   margin-bottom: 50px;
   width: 45%;
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .sauces__list {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 575px) {
+    justify-content: center;
+  }
 }
 
 .sauces__item {
@@ -221,6 +293,17 @@
   margin-bottom: 80px;
 
   max-width: 170px;
+
+  @media screen and (max-width: 992px) {
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 575px) {
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 0;
+  }
 }
 
 .sauces__item:nth-child(6n) {
@@ -244,6 +327,8 @@
   transition: all ease-in-out 0.3s;
 }
 
+#sauces,
+#burg,
 #meat {
-  padding-top: 50px;
+  padding-top: 80px;
 }
