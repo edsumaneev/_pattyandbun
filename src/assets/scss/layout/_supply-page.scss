@@ -59,23 +59,48 @@
   margin-top: 30px;
 
   width: 100%;
+
+  @media screen and (max-width: 1198px) {
+    flex-direction: column;
+  }
 }
 
 .maps-block__ymap,
 .maps-block__gmap {
   display: block;
-  width: 570px;
+  width: auto;
   height: 464px;
 }
 
 .maps-block__ymap {
   margin-right: 30px;
+
+  @media screen and (max-width: 1198px) {
+    margin-right: 0;
+    margin-bottom: 70px;
+    width: auto;
+  }
 }
 
-.maps-block__gmap iframe {
+.maps-block__gmap iframe,
+#mapsmall {
   width: 570px;
+  // height: 464px;
   height: 100%;
+
+  @media screen and (max-width: 1198px) {
+    width: 960px;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 720px;
+  }
 }
+
+// .maps-block__gmap iframe {
+//   width: 570px;
+//   height: 100%;
+// }
 
 .maps-block__link {
   display: inline-block;
@@ -88,6 +113,10 @@
   font-weight: 400;
   font-size: 24px;
   color: rgba($color: #ffffff, $alpha: 0.5);
+
+  @media screen and (max-width: 1198px) {
+    margin-top: 20px;
+  }
 }
 
 .maps-block__link span {

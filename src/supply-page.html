@@ -42,16 +42,77 @@
     </ul>
     <div class="maps-block__inner wrapper">
       <div class="maps-block__ymap">
-        <script async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A34ad2babed713c73a06d577c25f1516e719b1c915c947b85ef565c0ae6290975&amp;width=570&amp;height=464&amp;lang=ru_RU&amp;scroll=true">
+        <div id="mapsmall"></div>
+        <script>
+          // Функция ymaps.ready() будет вызвана, когда
+          // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+          ymaps.ready(init);
+
+          function init() {
+            // Создание карты.
+            // https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/map-docpage/
+            var myMap = new ymaps.Map("mapsmall", {
+              // Координаты центра карты.
+              // Порядок по умолчнию: «широта, долгота».
+              center: [45.031661, 38.974558],
+              // Уровень масштабирования. Допустимые значения:
+              // от 0 (весь мир) до 19.
+              zoom: 14,
+              // Элементы управления
+              controls: [
+
+                'zoomControl', // Ползунок масштаба
+                // 'rulerControl', // Линейка
+                // 'routeButtonControl', // Панель маршрутизации
+                // 'trafficControl', // Пробки
+                // 'typeSelector', // Переключатель слоев карты
+                // 'fullscreenControl', // Полноэкранный режим
+
+                // Поисковая строка
+                // new ymaps.control.SearchControl({
+                //   options: {
+                //     // вид - поисковая строка
+                //     size: 'large',
+                //     // Включим возможность искать не только топонимы, но и организации.
+                //     provider: 'yandex#search'
+                //   }
+                // })
+
+              ]
+            });
+            // Отключаем scrollZoom
+            myMap.behaviors.disable('scrollZoom');
+            // Добавление метки
+            var myPlacemark = new ymaps.Placemark([45.031661, 38.974558], {
+              hintContent: 'Кранодар, ул. Красноармейская, 73',
+              // Балун откроется при клике по метке.
+              balloonContent: '+7 (928) 433-66-78'
+            }, {
+              // Опции.
+
+              // Необходимо указать данный тип макета.
+              iconLayout: 'default#image',
+
+              // Своё изображение иконки метки.
+              iconImageHref: 'assets/img/icons/icon-pin-map.png',
+              // Размеры метки.
+              iconImageSize: [40, 53],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-16, -16],
+            });
+
+            // После того как метка была создана, добавляем её на карту.
+            myMap.geoObjects.add(myPlacemark);
+
+          }
         </script>
         <a class="maps-block__link" href="https://yandex.ru/maps/-/CCUBeUXD0B">Яндекс <span> Карты</span></a>
-        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A34ad2babed713c73a06d577c25f1516e719b1c915c947b85ef565c0ae6290975&amp;source=constructor" width="570" height="464" frameborder="0"></iframe> -->
       </div>
       <div class="maps-block__gmap">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26823.028504541922!2d38.95353781628355!3d45.03662591107392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04fa2ccdcac7d%3A0x7eed0c5d00184d89!2z0JrRgNCw0YHQvdC-0LDRgNC80LXQudGB0LrQsNGPINGD0LsuLCA3Mywg0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwgMzUwMDAw!5e0!3m2!1sru!2sru!4v1647419293151!5m2!1sru!2sru"
-          width="570" height="464" style="border:0;" allowfullscreen="" loading="lazy">
+          width="920" height="464" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
         <a class="maps-block__link" href="https://goo.gl/maps/fQHg5tLaKS8Ge12RA">Google <span> Map</span></a>
       </div>

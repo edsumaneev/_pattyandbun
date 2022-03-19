@@ -5,6 +5,10 @@
   padding-top: 55px;
   padding-bottom: 55px;
   padding-right: 30px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .totals__flex {
@@ -22,6 +26,10 @@
   font-size: 25px;
   line-height: 130%;
   color: #eeb913;
+
+  @media screen and (max-width: 992px) {
+    font-size: 20px;
+  }
 }
 
 .totals__subtitle {
@@ -32,6 +40,11 @@
 .totals__onwards {
   margin: 0 5px;
   cursor: pointer;
+
+  @media screen and (max-width: 992px) {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
 }
 
 .totals__btn {
@@ -46,11 +59,27 @@
   background: transparent;
   outline: none;
   cursor: pointer;
+
+  @media screen and (max-width: 1198px) {
+    bottom: -5px;
+  }
+
+  @media screen and (max-width: 767px) {
+    bottom: 10px;
+  }
 }
 
 
 .totals__form {
   position: relative;
+
+  @media screen and (max-width: 1198px) {
+    width: min-content;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-left: 25px;
+  }
 }
 
 .totals__form label {
@@ -61,6 +90,14 @@
   font-weight: 400;
   font-size: 25px;
   line-height: 130%;
+
+  @media screen and (max-width: 1198px) {
+    display: block;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: -20px;
+  }
 }
 
 .totals__input {
@@ -71,4 +108,8 @@
   background: #352a2a;
   border: none;
   outline: none;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
