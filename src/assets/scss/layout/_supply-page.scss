@@ -6,6 +6,11 @@
 .supply-page__intro {
   padding-top: 70px;
   padding-bottom: 70px;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .supply-page__paragraph {
@@ -20,11 +25,20 @@
   padding-bottom: 160px;
 
   overflow: hidden;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
 }
 
 .maps-block__list {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
 }
 
 .maps-block__title {
@@ -35,6 +49,16 @@
   font-weight: 400;
   font-size: 25px;
   line-height: 130%;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 10px;
+  }
+}
+
+.maps-block__item {
+  @media screen and (max-width: 992px) {
+    margin-bottom: 30px;
+  }
 }
 
 .maps-block__item:last-child {
@@ -63,11 +87,15 @@
   @media screen and (max-width: 1198px) {
     flex-direction: column;
   }
+
+  @media screen and (max-width: 992px) {
+    margin-top: 0;
+  }
 }
 
 .maps-block__ymap,
 .maps-block__gmap {
-  display: block;
+  // display: block;
   width: auto;
   height: 464px;
 }
@@ -84,6 +112,7 @@
 
 .maps-block__gmap iframe,
 #mapsmall {
+  display: block;
   width: 570px;
   // height: 464px;
   height: 100%;
@@ -95,12 +124,19 @@
   @media screen and (max-width: 992px) {
     width: 720px;
   }
-}
 
-// .maps-block__gmap iframe {
-//   width: 570px;
-//   height: 100%;
-// }
+  @media screen and (max-width: 767px) {
+    width: 540px;
+  }
+
+  @media screen and (max-width: 575px) {
+    width: 410px;
+  }
+
+  @media screen and (max-width: 420px) {
+    width: 310px;
+  }
+}
 
 .maps-block__link {
   display: inline-block;
@@ -132,6 +168,11 @@
 .register__intro {
   padding-top: 100px;
   padding-bottom: 100px;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .register__paragraph {
@@ -144,8 +185,13 @@
   align-items: flex-start;
 
   margin-top: 80px;
-}
 
+  @media screen and (max-width: 992px) {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .register__link {
   display: flex;
@@ -161,6 +207,20 @@
   box-shadow: 0 10px 50px #1e1717;
 
   cursor: pointer;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 575px) {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .register__link:hover {

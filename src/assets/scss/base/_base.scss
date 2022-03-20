@@ -18,10 +18,29 @@ body {
   background-color: #1f1616;
 }
 
-// body.is-modal {
-//   height: 100vh;
-//   overflow-y: hidden;
-// }
+body.is-modal {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  visibility: hidden;
+}
+
+#overlay.active {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  overflow: hidden;
+}
 
 a {
   color: #ffffff;
@@ -116,4 +135,9 @@ footer {
   footer {
     padding: 0 calc(50vw - 750px);
   }
+}
+
+.wrapper {
+  // z-index: 5;
+  // position: relative;
 }
