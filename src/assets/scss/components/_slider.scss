@@ -38,13 +38,22 @@
   }
 }
 
+.slider__img img {
+  @media screen and (max-width: 1198px) {
+    height: 365px;
+  }
+
+  @media screen and (max-width: 575px) {
+    height: 275px;
+  }
+}
+
 .slider-for__img {
   position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-right: 0;
-  // width: 100%;
   min-height: 491px;
 
   margin-top: -40px;
@@ -202,7 +211,6 @@
   }
 }
 
-// slider-for, slider-nav
 .slider-for {
   padding-top: 30px;
 
@@ -320,7 +328,6 @@
 
   @media screen and (max-width: 992px) {
     font-size: rem(20px);
-    // min-height: auto;
   }
 }
 

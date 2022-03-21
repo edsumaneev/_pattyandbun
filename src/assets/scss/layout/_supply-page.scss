@@ -17,7 +17,6 @@
   margin-bottom: 25px;
 }
 
-// maps-block
 .maps-block {
   @include grad();
   position: relative;
@@ -95,7 +94,6 @@
 
 .maps-block__ymap,
 .maps-block__gmap {
-  // display: block;
   width: auto;
   height: 464px;
 }
@@ -114,7 +112,6 @@
 #mapsmall {
   display: block;
   width: 570px;
-  // height: 464px;
   height: 100%;
 
   @media screen and (max-width: 1198px) {

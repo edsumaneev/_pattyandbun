@@ -48,13 +48,8 @@ a {
 }
 
 a:hover {
-  // opacity: 0.2;
   transition: ease-in-out 0.4s;
 }
-
-// *:hover {
-//   transition: all ease-in-out 0.4s;
-// }
 
 *,
 *::before,
@@ -135,9 +130,4 @@ footer {
   footer {
     padding: 0 calc(50vw - 750px);
   }
-}
-
-.wrapper {
-  // z-index: 5;
-  // position: relative;
 }

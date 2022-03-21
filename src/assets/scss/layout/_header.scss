@@ -3,4 +3,9 @@
   position: absolute;
   width: 100%;
   padding-top: 18px;
+
+  @media screen and (max-width: 992px) {
+    position: fixed;
+    background-color: rgba(82, 67, 67, 0.3);
+  }
 }
