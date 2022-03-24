@@ -551,6 +551,8 @@
 }
 
 .form-cart__width {
+  flex-basis: 60%;
+
   @media screen and (max-width: 1198px) {
     flex-basis: 65%;
   }

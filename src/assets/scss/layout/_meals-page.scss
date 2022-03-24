@@ -65,6 +65,11 @@
   opacity: 1;
 }
 
+.meals-page__item.ordinary {
+  border: 1px solid #ffffff;
+  opacity: 0.2;
+}
+
 .meals-page__img {
   position: relative;
   margin-bottom: 70px;

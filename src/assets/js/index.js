@@ -17,7 +17,8 @@ if ($(".lk-page").length > 0) {
     $("#accordion").accordion({
       header: ".accordion__header",
       icons: false,
-      heightStyle: 'content'
+      heightStyle: 'content',
+      collapsible: true
     });
   });
 };
@@ -230,7 +231,9 @@ if ($('.meals-page').length > 0) {
       var refElement = $(currLink.attr("href"));
       if (refElement.position().top - 50 <= scrollPos && refElement.position().top + h > scrollPos) {
         $('.meals-page__item').removeClass("active");
+        $('.meals-page__item').addClass("ordinary");
         currLink.addClass("active");
+        currLink.removeClass("ordinary");
       } else {
         currLink.removeClass("active");
       }
@@ -247,6 +250,7 @@ if ($('.meals-page').length > 0) {
       $(document).off("scroll");
       $(menu_selector).removeClass("active");
       $(this).addClass("active");
+
       var hash = $(this).attr("href");
       var target = $(hash);
       $("html, body").animate({
