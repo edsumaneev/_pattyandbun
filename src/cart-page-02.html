@@ -135,16 +135,20 @@
     </div>
 
     <div class="totals">
-      <form class="totals__form" action="#" method="post" id="discount">
+      <form class="totals__form" action="#">
         <label>У вас есть промокод?</label>
         <input class="totals__input" type="text" placeholder="23FEBD">
-        <button class="totals__btn" type="submit" form="discount">&rarr;</button>
+        <button class="totals__btn" type="submit">&rarr;</button>
       </form>
-      <div class="totals__flex">
-        <a class="btn totals__onwards" href="cart-page.html">Назад</a>
-        <button class="btn totals__onwards" form="formcart" type="submit">Далее</button>
-        <h1 class="totals__subtitle">Итого:</h1>
-        <p class="totals__summa"><span>980</span> рублей</p>
+      <div class="totals__col">
+        <div class="totals__flex totals__flex--sum">
+          <h1 class="totals__subtitle">Итого:</h1>
+          <p class="totals__summa"><span>980</span> рублей</p>
+        </div>
+        <div class="totals__flex">
+          <a class="btn totals__onwards" href="cart-page.html">Назад</a>
+          <a class="btn totals__onwards" href="cart-page-02.html">Далее</a>
+        </div>
       </div>
     </div>
 

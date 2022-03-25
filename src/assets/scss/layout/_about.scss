@@ -179,7 +179,7 @@
   box-shadow: 0px 10px 50px #1e1717;
 
   img {
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
     overflow: hidden;
   }
@@ -187,12 +187,29 @@
   @media screen and (max-width: 1198px) {
     img {
       width: 100%;
-      object-fit: cover;
+      // object-fit: cover;
     }
   }
 
   @media screen and (max-width: 992px) {
     height: 250px;
+
+    // img {
+    //   width: 100%;
+    //   object-fit: contain;
+    // }
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 160px;
+
+    // img {
+    //   object-fit: contain;
+    // }
+  }
+
+  @media screen and (max-width: 367px) {
+    height: 122px;
   }
 }
 
