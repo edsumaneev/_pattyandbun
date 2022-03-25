@@ -192,7 +192,7 @@
   flex-wrap: wrap;
 
   @media screen and (max-width: 1198px) {
-    justify-content: center;
+    // justify-content: center;
   }
 }
 
@@ -218,11 +218,15 @@
   }
 
   @media screen and (max-width: 1198px) {
-    margin-right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-width: 474px;
   }
 
   @media screen and (max-width: 992px) {
     width: 100%;
+    margin-right: 0;
+    min-width: 100%;
   }
 
   @media screen and (max-width:767px) {

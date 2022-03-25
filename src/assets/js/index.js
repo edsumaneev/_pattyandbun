@@ -22,7 +22,17 @@ if ($(".lk-page").length > 0) {
     });
   });
 };
-
+// tooltip
+$(function () {
+  $(document).tooltip({
+    tooltipClass: "ui-tooltip",
+    items: "[title], [data-descr], [data-pr]",
+    content: function () {
+      var element = $(this);
+      return element.attr("title") + element.attr("data-descr") + element.attr("data-pr");
+    }
+  });
+});
 // scroll to anchor
 $(document).ready(function () {
   $(".menu__anchors, .meals-page__anchors").on("click", "a", function (event) {
@@ -39,7 +49,7 @@ $(document).ready(function () {
 $('.hamburger').on('click', function (event) {
   event.preventDefault();
   $(this).toggleClass('active');
-  $('.nav').toggleClass('active');
+  $('.mobmenu').toggleClass('active');
   $('body').toggleClass('is-modal');
   $('#overlay').toggleClass('active');
 });
@@ -47,7 +57,7 @@ $('.hamburger').on('click', function (event) {
 $('#overlay, .nav__item').on('click', function (event) {
   if ($(window).innerWidth() < 992) {
     $('.hamburger').removeClass('active');
-    $('.nav').removeClass('active');
+    $('.mobmenu').removeClass('active');
     $('body').removeClass('is-modal');
     $('#overlay').removeClass('active');
   }
@@ -56,7 +66,7 @@ $('#overlay, .nav__item').on('click', function (event) {
 $(document).keydown(function (event) {
   if (event.keyCode == 27) {
     $('.hamburger').removeClass('active');
-    $('.nav').removeClass('active');
+    $('.mobmenu').removeClass('active');
     $('body').removeClass('is-modal');
     $('#overlay').removeClass('active');
   }

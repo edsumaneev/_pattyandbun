@@ -106,8 +106,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 30px;
-  max-width: 385px;
+  padding: 20px;
+  max-width: 422px;
 
   background: #1f1616;
 
@@ -122,7 +122,7 @@
   @media screen and (max-width:575px) {
     max-width: unset;
     position: relative;
-    order: 2;
+    order: 3;
   }
 }
 
@@ -187,8 +187,6 @@
 
   width: 44px;
   height: 44px;
-  // width: 50px;
-  // height: 50px;
 
   background: transparent;
   border: 1px solid #605757;

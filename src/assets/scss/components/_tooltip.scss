@@ -1,51 +1,13 @@
-.tooltip {
-  z-index: -2;
-  opacity: 0;
-  position: absolute;
-  padding: 7px 10px;
-
-  color: #000;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(5px);
-
-  border-radius: 5px;
-}
-
-.ingredient__select:hover .tooltip {
-  z-index: 5;
-  opacity: 1;
-  transition: ease-in-out 0.5s;
-  min-width: 175px;
-  right: 100%;
-  top: 30px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-.tooltip__title {
-  margin-bottom: 2px;
-
+.ui-tooltip {
   font-family: "PTSansNarrow", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-}
 
-.tooltip__text {
-  font-family: "PTSans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 13px;
+  color: #000;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
 
-  color: rgba($color: #000000, $alpha: 0.5);
-}
-
-.tooltip__price {
-  margin-top: 9px;
-
-  font-size: 16px;
-  line-height: 140%;
-
-  color: #000000;
+  border-radius: 10px;
 }

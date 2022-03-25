@@ -1,477 +1,571 @@
-{% set title = "Главная | Patty & Bun" %}
-{% include "../templates/header.njk" %}
-<section class="intro">
-  <div class="bg-img">
-    <img src="assets/img/bg/bg-mask.png" alt="" width="1920" height="4400">
-  </div>
+<!DOCTYPE html>
+<html lang="ru">
 
-  <div class="slider wrapper">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Patty & Bun">
+  <meta name="author" content="Patty & Bun">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <title>Главная | Patty & Bun</title>
+  <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/_pattyandbun.min.css">
+</head>
 
-    <div class="slider__slide">
-      <div class="slider__wrapper">
-        <div class="slider__img">
-          <!-- width="712" height="553" -->
-          <img src="assets/img/bg/main-slide-img01.png" alt="" width="712" height="553">
-        </div>
-        <div class="slider__inner">
-          <p class="slider__name">Бургер</p>
-          <h2 class="title title--big">Крестный отец<span class="title__yellow">290&nbsp;₽</span></h2>
-          <p class="slider__component">
-            Состав: Котлета из мраморной говядины, огурцы, помидоры, асйберг булочка бриошь, соус - кислосладкий
-          </p>
-          <a class="link" href="#">Добавить дополнительные ингредиенты</a>
-          <a class="btn btn--invert" href="#">Заказать</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="slider__slide">
-      <div class="slider__wrapper">
-        <div class="slider__img">
-          <!-- width="712" height="553" -->
-          <img src="assets/img/bg/meals-img02.png" alt="" width="712" height="553">
-        </div>
-        <div class="slider__inner">
-          <p class="slider__name">Бургер</p>
-          <h2 class="title title--big">Эль Чапо<span class="title__yellow">275&nbsp;₽</span></h2>
-          <p class="slider__component">
-            Состав: Котлета из мраморной говядины, огурцы, помидоры, асйберг булочка бриошь, соус - кислосладкий
-          </p>
-          <a class="link" href="#">Добавить дополнительные ингредиенты</a>
-          <a class="btn btn--invert" href="#">Заказать</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="slider__slide">
-      <div class="slider__wrapper">
-        <div class="slider__img">
-          <!-- width="712" height="553" -->
-          <img src="assets/img/bg/meals-img02.png" alt="" width="712" height="553">
-        </div>
-        <div class="slider__inner">
-          <p class="slider__name">Бургер</p>
-          <h2 class="title title--big">Нордик<span class="title__yellow">350&nbsp;₽</span></h2>
-          <p class="slider__component">
-            Состав: Котлета из мраморной говядины, огурцы, помидоры, асйберг булочка бриошь, соус - кислосладкий
-          </p>
-          <a class="link" href="#">Добавить дополнительные ингредиенты</a>
-          <a class="btn btn--invert" href="#">Заказать</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="slider__slide">
-      <div class="slider__wrapper">
-        <div class="slider__img">
-          <!-- width="712" height="553" -->
-          <img src="assets/img/bg/menu-page-slider01.png" alt="" width="712" height="553">
-        </div>
-        <div class="slider__inner">
-          <p class="slider__name">Бургер</p>
-          <h2 class="title title--big">45-ая параллель<span class="title__yellow">430&nbsp;₽</span></h2>
-          <p class="slider__component">
-            Состав: Котлета из мраморной говядины, огурцы, помидоры, асйберг булочка бриошь, соус - кислосладкий
-          </p>
-          <a class="link" href="#">Добавить дополнительные ингредиенты</a>
-          <a class="btn btn--invert" href="#">Заказать</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="intro__rel">
-    <div class="slick-prev">
-      <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M0.646446 3.64644C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659726 4.53553 0.464464C4.34027 0.269201 4.02369 0.269201 3.82843 0.464464L0.646446 3.64644ZM33 3.5L1 3.5L1 4.5L33 4.5L33 3.5Z" />
-      </svg>
-    </div>
-    <div class="slick-next">
-      <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64645L29.1716 0.464466C28.9763 0.269204 28.6597 0.269204 28.4645 0.464466C28.2692 0.659728 28.2692 0.976311 28.4645 1.17157L31.2929 4L28.4645 6.82843C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.7308 28.9763 7.7308 29.1716 7.53553L32.3536 4.35355ZM0 4.5H32V3.5H0V4.5Z" />
-      </svg>
-    </div>
-    <!-- общее число страниц слайдера -->
-    <div class="intro__counter">
-      <span id="cp">1</span><span class="intro__total">/ 4</span>
-    </div>
-  </div>
-</section>
-<main class="main">
-  <section class="sale wrapper">
-    <h2 class="title sale__title">Действует с 01.02.22 - 7.02.22</h2>
-    <div class="sale__wrapper">
-      <div class="sale__img">
-        <!-- width="600" height="375" -->
-        <img src="assets/img/bg/main-sale-img01.png" alt="" width="600" height="375">
-      </div>
-      <div class="sale__inner">
-        <p class="sale__name">Бургер недели</p>
-        <h2 class="title title--big">45 паралель<span class="title__yellow">290 ₽</span></h2>
-        <p class="sale__component">
-          Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
-          маринованным огурцом и сыром чеддер.
-        </p>
-        <a class="btn" href="#">Добавить в заказ</a>
-      </div>
-    </div>
-  </section>
-  <section class="popular wrapper">
-    <h2 class="title">Популярные блюда</h2>
-    <h3 class="subtitle">Переходи скорее в меню</h3>
-    <ul class="goods">
-      <li class="goods__item">
-        <div class="goods__flex">
-          <h4 class="goods__title">Крестный отец</h4>
-          <span class="goods__mark">NEW</span>
-        </div>
-        <div>
-          <div class="goods__img">
-            <!-- width="218" height="180" -->
-            <img src="assets/img/bg/goods-img01.png" alt="" width="218" height="180">
-          </div>
-          <div class="goods__inner">
-            <div class="goods__overlay"></div>
-            <p class="goods__text">
-              Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
-              маринованным огурцом и сыром чеддер.
-            </p>
-          </div>
-          <a class="link goods__link" href="#">Читать полностью</a>
-          <div class="goods__flex goods__flex--type2">
-            <p class="goods__cost">290 Р</p><span>430 грамм</span>
-          </div>
-          <div class="goods__action">
-            <a class="btn btn--goods" href="#">Заказать</a>
-          </div>
-        </div>
-      </li>
-      <li class="goods__item">
-        <div class="goods__flex">
-          <h4 class="goods__title">Четыре сыра</h4>
-          <!-- <span class="goods__mark">NEW</span> -->
-        </div>
-        <div>
-          <div class="goods__img">
-            <!-- width="218" height="180" -->
-            <img src="assets/img/bg/goods-img02.png" alt="" width="218" height="180">
-          </div>
-          <div class="goods__inner">
-            <div class="goods__overlay"></div>
-            <p class="goods__text">
-              Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
-              маринованным огурцом и сыром чеддер.
-            </p>
-          </div>
-          <a class="link goods__link" href="#">Читать полностью</a>
-          <div class="goods__flex goods__flex--type2">
-            <p class="goods__cost">290 Р</p><span>430 грамм</span>
-          </div>
-          <div class="goods__action">
-            <a class="btn btn--goods" href="#">Заказать</a>
-          </div>
-        </div>
-      </li>
-      <li class="goods__item">
-        <div class="goods__flex">
-          <h4 class="goods__title">Биг Бен</h4>
-          <!-- <span class="goods__mark">NEW</span> -->
-        </div>
-        <div>
-          <div class="goods__img">
-            <!-- width="218" height="180" -->
-            <img src="assets/img/bg/goods-img03.png" alt="" width="218" height="180">
-          </div>
-          <div class="goods__inner">
-            <div class="goods__overlay"></div>
-            <p class="goods__text">
-              Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
-              маринованным огурцом и сыром чеддер.
-            </p>
-          </div>
-          <a class="link goods__link" href="#">Читать полностью</a>
-          <div class="goods__flex goods__flex--type2">
-            <p class="goods__cost">290 Р</p><span>430 грамм</span>
-          </div>
-          <div class="goods__action">
-            <a class="btn btn--goods" href="#">Заказать</a>
-          </div>
-        </div>
-      </li>
-      <li class="goods__item">
-        <div class="goods__flex">
-          <h4 class="goods__title">Биг Бен</h4>
-          <!-- <span class="goods__mark">NEW</span> -->
-        </div>
-        <div>
-          <div class="goods__img">
-            <!-- width="218" height="180" -->
-            <img src="assets/img/bg/goods-img03.png" alt="" width="218" height="180">
-          </div>
-          <div class="goods__inner">
-            <div class="goods__overlay"></div>
-            <p class="goods__text">
-              Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
-              маринованным огурцом и сыром чеддер.
-            </p>
-          </div>
-          <a class="link goods__link" href="#">Читать полностью</a>
-          <div class="goods__flex goods__flex--type2">
-            <p class="goods__cost">290 Р</p><span>430 грамм</span>
-          </div>
-          <div class="goods__action">
-            <a class="btn btn--goods" href="#">Заказать</a>
-          </div>
-        </div>
-      </li>
-      <li class="goods__item goods__item--empty">
-        <a class="goods__out" href="menu-page.html">
-          <div class="goods__plus">+</div>
-          Смотреть всё меню
+<body>
+  <div id="overlay"></div>
+  <header class="header header--nofix wrapper">
+    <nav class="nav">
+      <div class="nav__inner">
+        <a class="nav__item nav__item--logo" href="index.html">Home
+          <!-- width="163" height="30" -->
+          <img src="assets/img/bg/logo.png" alt="Patty & Bun" width="163" height="30">
         </a>
-      </li>
-    </ul>
-  </section>
-  <section class="carte wrapper">
-    <h2 class="title">Меню бургер-бара</h2>
-    <h3 class="subtitle">Только лучшие позиции</h3>
-    <ul class="carte__list">
-      <li class="carte__item">
-        <!-- <div class="carte__overlay"></div> -->
-        <span class="carte__mark">8 бургеров</span>
-        <div class="carte__img">
-          <!-- width="403" height="179" -->
-          <img src="assets/img/bg/menu-img01.png" alt="" width="403" height="179">
+        <p>
+          Уже 5 лет подаём качество
+        </p>
+      </div>
+      <div class="nav__inner nav__inner--contact social">
+        <a class="social__item" href="https://wa.me/79284336678">watsapp
+          <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5638 2.93692C14.7744 2.14173 13.8349 1.5113 12.7998 1.08224C11.7647 0.653182 10.6547 0.43404 9.53417 0.437541C4.8375 0.437541 1.0148 4.26024 1.0148 8.96014C1.0148 10.4619 1.40825 11.9304 2.15322 13.2204L0.943848 17.6375L5.46207 16.4518C6.71118 17.1322 8.1107 17.4892 9.5331 17.4903H9.53632C14.233 17.4903 18.0589 13.6676 18.0589 8.96767C18.0618 7.84756 17.8427 6.73798 17.4142 5.70305C16.9858 4.66811 16.3565 3.72833 15.5628 2.93799L15.5638 2.93692ZM9.53632 16.0519C8.26692 16.0521 7.02082 15.7109 5.92862 15.064L5.66955 14.9092L2.9885 15.6112L3.70445 12.9978L3.53675 12.7291C2.82484 11.6012 2.44862 10.2939 2.45207 8.96014C2.45435 7.08114 3.20201 5.27979 4.53097 3.95144C5.85993 2.62308 7.66162 1.87624 9.54062 1.87482C11.4315 1.87482 13.2128 2.61442 14.549 3.95064C15.2085 4.60767 15.7311 5.38885 16.0869 6.24906C16.4426 7.10926 16.6244 8.03143 16.6216 8.96229C16.6184 12.8721 13.4407 16.0508 9.53632 16.0508V16.0519ZM13.4203 10.7446C13.2085 10.6371 12.1604 10.1233 11.9658 10.0523C11.7712 9.98139 11.6293 9.94484 11.4853 10.1598C11.3445 10.3716 10.9349 10.8521 10.8102 10.9962C10.6855 11.137 10.5619 11.1574 10.3501 11.0499C10.1383 10.9424 9.44925 10.7178 8.63655 9.99214C8.00445 9.42777 7.57552 8.72902 7.45082 8.51724C7.32612 8.30547 7.43685 8.18829 7.54542 8.08402C7.64325 7.98942 7.7572 7.83569 7.8647 7.71099C7.9722 7.58629 8.00552 7.49922 8.07647 7.35517C8.14742 7.21434 8.11302 7.08964 8.05927 6.98214C8.00552 6.87464 7.57875 5.82652 7.4046 5.39974C7.23367 4.98264 7.05522 5.04069 6.92407 5.03317C6.79937 5.02672 6.65855 5.02672 6.51772 5.02672C6.3769 5.02672 6.1447 5.08047 5.95012 5.29224C5.75555 5.50402 5.20407 6.02109 5.20407 7.06922C5.20407 8.11734 5.96625 9.12892 6.07375 9.27297C6.18125 9.41379 7.57552 11.567 9.71155 12.4883C10.2189 12.7065 10.6156 12.8377 10.9241 12.9387C11.4348 13.1 11.8981 13.0763 12.2647 13.0226C12.6742 12.9624 13.5246 12.5087 13.703 12.011C13.8815 11.5133 13.8815 11.0876 13.8277 10.9994C13.7772 10.9048 13.6364 10.8521 13.4214 10.7436L13.4203 10.7446Z" />
+            <defs>
+              <rect width="17.2" height="17.2" fill="white" transform="translate(0.899902 0.4375)" />
+            </defs>
+          </svg>
+        </a>
+        <div class="nav__connect">
+          <p>Whatsapp</p>
+          <a class="nav__phone" href="tel:+79284336678">+7 (928) 433-66-78</a>
         </div>
-        <div class="carte__inner">
-          <h4 class="carte__title">Бургеры</h4>
-          <a class="btn" href="#">Выбрать бургер</a>
-        </div>
-      </li>
-      <li class="carte__item">
-        <div class="carte__overlay"></div>
-        <span class="carte__mark">7 самасов</span>
-        <div class="carte__img carte__img--abs">
-          <!-- width="403" height="179" -->
-          <img src="assets/img/bg/menu-bg01.png" alt="" width="403" height="179">
-        </div>
-        <div class="carte__inner">
-          <h4 class="carte__title">Самосы</h4>
-          <a class="btn" href="#">Выбрать самос</a>
-        </div>
-      </li>
-      <li class="carte__item">
-        <!-- <div class="carte__overlay"></div> -->
-        <span class="carte__mark">21 позиция</span>
-        <div class="carte__img">
-          <!-- width="403" height="179" -->
-          <img src="assets/img/bg/menu-img02.png" alt="" width="403" height="179">
-        </div>
-        <div class="carte__inner">
-          <h4 class="carte__title">Закуски и соуса</h4>
-          <a class="btn" href="#">Посмотреть</a>
-        </div>
-      </li>
-      <li class="carte__item">
-        <!-- <div class="carte__overlay"></div> -->
-        <span class="carte__mark">21 позиция</span>
-        <div class="carte__img">
-          <!-- width="403" height="179" -->
-          <img src="assets/img/bg/menu-img03.png" alt="" width="403" height="179">
-        </div>
-        <div class="carte__inner">
-          <h4 class="carte__title">Напитки</h4>
-          <a class="btn" href="#">Выбрать напиток</a>
-        </div>
-      </li>
-    </ul>
-  </section>
-  <section class="news wrapper">
-    <h2 class="title">Новости</h2>
-    <h3 class="subtitle">Будь в курсе всех событий</h3>
-    <ul class="news__list">
-      <li class="news__item">
-        <div class="news__img">
-          <!-- width="570" height="308" -->
-          <img src="assets/img/bg/news-bg-img01.png" alt="" width="570" height="308">
-        </div>
-        <div class="news__inner">
-          <div class="news__row">
-            <h4 class="news__title">Очень длинный заголовок новости</h4>
-            <span class="news__mark">Новости</span>
+        <a class="nav__item btn" href="lk-page.html">Вход</a>
+      </div>
+    </nav>
+    <div class="mobmenu-logo">
+      <a class="mobmenu-logo__logo" href="index.html">Home
+        <!-- width="163" height="30" -->
+        <img src="assets/img/bg/logo.png" alt="Patty & Bun" width="163" height="30">
+      </a>
+    </div>
+    <div class="mobmenu">
+      <div class="mobmenu__inner">
+        <a class="mobmenu__item mobmenu__item--logo" href="index.html">Home
+          <!-- width="163" height="30" -->
+          <img src="assets/img/bg/logo.png" alt="Patty & Bun" width="163" height="30">
+        </a>
+        <p>
+          Уже 5 лет подаём качество
+        </p>
+      </div>
+      <ul class="mobmenu__list">
+        <li class="mobmenu__head">Наше меню</li>
+        <li>
+          <a class="mobmenu__link" href="#">Бургеры</a>
+        </li>
+        <li>
+          <a class="mobmenu__link" href="#">Самосы</a>
+        </li>
+        <li>
+          <a class="mobmenu__link" href="#">Закуски и соуса</a>
+        </li>
+        <li>
+          <a class="mobmenu__link" href="#">Напитки</a>
+        </li>
+      </ul>
+      <ul class="mobmenu__list">
+        <li class="mobmenu__head">Клиентам</li>
+        <li>
+          <a class="mobmenu__link" href="meals-page.html">О нашей еде</a>
+        </li>
+        <li>
+          <a class="mobmenu__link" href="about-page.html">О компании</a>
+        </li>
+        <li>
+          <a class="mobmenu__link" href="#">Доставка</a>
+        </li>
+        <li>
+          <a class="mobmenu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="hamburger">
+      <span></span>
+    </div>
+  </header>
+  <section class="intro">
+    <div class="bg-img">
+      <img src="assets/img/bg/bg-mask.png" alt="" width="1920" height="4400">
+    </div>
+
+    <div class="slider wrapper">
+
+      <div class="slider__slide">
+        <div class="slider__wrapper">
+          <div class="slider__img">
+            <!-- width="712" height="553" -->
+            <img src="assets/img/bg/main-slide-img01.png" alt="" width="712" height="553">
           </div>
-          <div class="news__issue">
-            <div class="news__overlay"></div>
-            <p class="news__text">
-              Классический бургер с мраморной говядиной, в котором рубленая котлета
-              сочетается со свежим помидором, маринованным огурцом и сыром чеддер. Классический бургер с мраморной
-              говядиной, в котором рубленая котлета сочетается со свежим помидором, маринованным...
+          <div class="slider__inner">
+            <p class="slider__name">Бургер</p>
+            <h2 class="title title--big">Крестный отец<span class="title__yellow">290&nbsp;₽</span></h2>
+            <p class="slider__component">
+              Состав: Котлета из мраморной говядины, огурцы, помидоры, асйберг булочка бриошь, соус - кислосладкий
             </p>
-          </div>
-          <div class="news__row">
-            <a class="btn news__btn" href="#">Читать полностью</a>
-            <span>07.02.2022</span>
+            <a class="link" href="#">Добавить дополнительные ингредиенты</a>
+            <a class="btn btn--invert" href="#">Заказать</a>
           </div>
         </div>
-      </li>
-      <li class="news__divide"></li>
-      <li class="news__item">
-        <div class="news__img">
-          <!-- width="570" height="308" -->
-          <img src="assets/img/bg/news-bg-img02.png" alt="" width="570" height="308">
-        </div>
-        <div class="news__inner">
-          <div class="news__row">
-            <h4 class="news__title">Очень длинный заголовок новости</h4>
-            <span class="news__mark">Новости</span>
+      </div>
+
+      <div class="slider__slide">
+        <div class="slider__wrapper">
+          <div class="slider__img">
+            <!-- width="712" height="553" -->
+            <img src="assets/img/bg/meals-img02.png" alt="" width="712" height="553">
           </div>
-          <div class="news__issue">
-            <div class="news__overlay"></div>
-            <p class="news__text">
-              Классический бургер с мраморной говядиной, в котором рубленая котлета
-              сочетается со свежим помидором, маринованным огурцом и сыром чеддер. Классический бургер с мраморной
-              говядиной, в котором рубленая котлета сочетается со свежим помидором, маринованным...
+          <div class="slider__inner">
+            <p class="slider__name">Бургер</p>
+            <h2 class="title title--big">Эль Чапо<span class="title__yellow">275&nbsp;₽</span></h2>
+            <p class="slider__component">
+              Состав: Котлета из мраморной говядины, огурцы, помидоры, асйберг булочка бриошь, соус - кислосладкий
             </p>
-          </div>
-          <div class="news__row">
-            <a class="btn news__btn" href="#">Читать полностью</a>
-            <span>07.02.2022</span>
+            <a class="link" href="#">Добавить дополнительные ингредиенты</a>
+            <a class="btn btn--invert" href="#">Заказать</a>
           </div>
         </div>
-      </li>
-      <li class="news__divide"></li>
-      <li class="news__item">
-        <div class="news__img">
-          <!-- width="570" height="308" -->
-          <img src="assets/img/bg/news-bg-img03.png" alt="" width="570" height="308">
-        </div>
-        <div class="news__inner">
-          <div class="news__row">
-            <h4 class="news__title">Очень длинный заголовок новости</h4>
-            <span class="news__mark">Новости</span>
+      </div>
+
+      <div class="slider__slide">
+        <div class="slider__wrapper">
+          <div class="slider__img">
+            <!-- width="712" height="553" -->
+            <img src="assets/img/bg/meals-img02.png" alt="" width="712" height="553">
           </div>
-          <div class="news__issue">
-            <div class="news__overlay"></div>
-            <p class="news__text">
-              Классический бургер с мраморной говядиной, в котором рубленая котлета
-              сочетается со свежим помидором, маринованным огурцом и сыром чеддер. Классический бургер с мраморной
-              говядиной, в котором рубленая котлета сочетается со свежим помидором, маринованным...
+          <div class="slider__inner">
+            <p class="slider__name">Бургер</p>
+            <h2 class="title title--big">Нордик<span class="title__yellow">350&nbsp;₽</span></h2>
+            <p class="slider__component">
+              Состав: Котлета из мраморной говядины, огурцы, помидоры, асйберг булочка бриошь, соус - кислосладкий
             </p>
-          </div>
-          <div class="news__row">
-            <a class="btn news__btn" href="#">Читать полностью</a>
-            <span>07.02.2022</span>
+            <a class="link" href="#">Добавить дополнительные ингредиенты</a>
+            <a class="btn btn--invert" href="#">Заказать</a>
           </div>
         </div>
-      </li>
-      <li class="news__divide"></li>
-    </ul>
+      </div>
+
+      <div class="slider__slide">
+        <div class="slider__wrapper">
+          <div class="slider__img">
+            <!-- width="712" height="553" -->
+            <img src="assets/img/bg/menu-page-slider01.png" alt="" width="712" height="553">
+          </div>
+          <div class="slider__inner">
+            <p class="slider__name">Бургер</p>
+            <h2 class="title title--big">45-ая параллель<span class="title__yellow">430&nbsp;₽</span></h2>
+            <p class="slider__component">
+              Состав: Котлета из мраморной говядины, огурцы, помидоры, асйберг булочка бриошь, соус - кислосладкий
+            </p>
+            <a class="link" href="#">Добавить дополнительные ингредиенты</a>
+            <a class="btn btn--invert" href="#">Заказать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="intro__rel">
+      <div class="slick-prev">
+        <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.646446 3.64644C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659726 4.53553 0.464464C4.34027 0.269201 4.02369 0.269201 3.82843 0.464464L0.646446 3.64644ZM33 3.5L1 3.5L1 4.5L33 4.5L33 3.5Z" />
+        </svg>
+      </div>
+      <div class="slick-next">
+        <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64645L29.1716 0.464466C28.9763 0.269204 28.6597 0.269204 28.4645 0.464466C28.2692 0.659728 28.2692 0.976311 28.4645 1.17157L31.2929 4L28.4645 6.82843C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.7308 28.9763 7.7308 29.1716 7.53553L32.3536 4.35355ZM0 4.5H32V3.5H0V4.5Z" />
+        </svg>
+      </div>
+      <!-- общее число страниц слайдера -->
+      <div class="intro__counter">
+        <span id="cp">1</span><span class="intro__total">/ 4</span>
+      </div>
+    </div>
   </section>
-</main>
-<section class="maps">
-  <div class="wrapper">
-    <a class="btn btn--center" href="#">Смотреть все новости</a>
-    <h2 class="title">Где мы находимся?</h2>
-    <h3 class="subtitle">Ждём тебя в гости</h3>
-  </div>
-  <div id="map"></div>
-  <script>
-    // Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
+  <main class="main">
+    <section class="sale wrapper">
+      <h2 class="title sale__title">Действует с 01.02.22 - 7.02.22</h2>
+      <div class="sale__wrapper">
+        <div class="sale__img">
+          <!-- width="600" height="375" -->
+          <img src="assets/img/bg/main-sale-img01.png" alt="" width="600" height="375">
+        </div>
+        <div class="sale__inner">
+          <p class="sale__name">Бургер недели</p>
+          <h2 class="title title--big">45 паралель<span class="title__yellow">290 ₽</span></h2>
+          <p class="sale__component">
+            Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+            маринованным огурцом и сыром чеддер.
+          </p>
+          <a class="btn" href="#">Добавить в заказ</a>
+        </div>
+      </div>
+    </section>
+    <section class="popular wrapper">
+      <h2 class="title">Популярные блюда</h2>
+      <h3 class="subtitle">Переходи скорее в меню</h3>
+      <ul class="goods">
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Крестный отец</h4>
+            <span class="goods__mark">NEW</span>
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img01.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <a class="btn btn--goods" href="#">Заказать</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Четыре сыра</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img02.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <a class="btn btn--goods" href="#">Заказать</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Биг Бен</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img03.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <a class="btn btn--goods" href="#">Заказать</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <div class="goods__flex">
+            <h4 class="goods__title">Биг Бен</h4>
+            <!-- <span class="goods__mark">NEW</span> -->
+          </div>
+          <div>
+            <div class="goods__img">
+              <!-- width="218" height="180" -->
+              <img src="assets/img/bg/goods-img03.png" alt="" width="218" height="180">
+            </div>
+            <div class="goods__inner">
+              <div class="goods__overlay"></div>
+              <p class="goods__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета сочетается со свежим помидором,
+                маринованным огурцом и сыром чеддер.
+              </p>
+            </div>
+            <a class="link goods__link" href="#">Читать полностью</a>
+            <div class="goods__flex goods__flex--type2">
+              <p class="goods__cost">290 Р</p><span>430 грамм</span>
+            </div>
+            <div class="goods__action">
+              <a class="btn btn--goods" href="#">Заказать</a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item goods__item--empty">
+          <a class="goods__out" href="menu-page.html">
+            <div class="goods__plus">+</div>
+            Смотреть всё меню
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="carte wrapper">
+      <h2 class="title">Меню бургер-бара</h2>
+      <h3 class="subtitle">Только лучшие позиции</h3>
+      <ul class="carte__list">
+        <li class="carte__item">
+          <!-- <div class="carte__overlay"></div> -->
+          <span class="carte__mark">8 бургеров</span>
+          <div class="carte__img">
+            <!-- width="403" height="179" -->
+            <img src="assets/img/bg/menu-img01.png" alt="" width="403" height="179">
+          </div>
+          <div class="carte__inner">
+            <h4 class="carte__title">Бургеры</h4>
+            <a class="btn" href="#">Выбрать бургер</a>
+          </div>
+        </li>
+        <li class="carte__item">
+          <div class="carte__overlay"></div>
+          <span class="carte__mark">7 самасов</span>
+          <div class="carte__img carte__img--abs">
+            <!-- width="403" height="179" -->
+            <img src="assets/img/bg/menu-bg01.png" alt="" width="403" height="179">
+          </div>
+          <div class="carte__inner">
+            <h4 class="carte__title">Самосы</h4>
+            <a class="btn" href="#">Выбрать самос</a>
+          </div>
+        </li>
+        <li class="carte__item">
+          <!-- <div class="carte__overlay"></div> -->
+          <span class="carte__mark">21 позиция</span>
+          <div class="carte__img">
+            <!-- width="403" height="179" -->
+            <img src="assets/img/bg/menu-img02.png" alt="" width="403" height="179">
+          </div>
+          <div class="carte__inner">
+            <h4 class="carte__title">Закуски и соуса</h4>
+            <a class="btn" href="#">Посмотреть</a>
+          </div>
+        </li>
+        <li class="carte__item">
+          <!-- <div class="carte__overlay"></div> -->
+          <span class="carte__mark">21 позиция</span>
+          <div class="carte__img">
+            <!-- width="403" height="179" -->
+            <img src="assets/img/bg/menu-img03.png" alt="" width="403" height="179">
+          </div>
+          <div class="carte__inner">
+            <h4 class="carte__title">Напитки</h4>
+            <a class="btn" href="#">Выбрать напиток</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="news wrapper">
+      <h2 class="title">Новости</h2>
+      <h3 class="subtitle">Будь в курсе всех событий</h3>
+      <ul class="news__list">
+        <li class="news__item">
+          <div class="news__img">
+            <!-- width="570" height="308" -->
+            <img src="assets/img/bg/news-bg-img01.png" alt="" width="570" height="308">
+          </div>
+          <div class="news__inner">
+            <div class="news__row">
+              <h4 class="news__title">Очень длинный заголовок новости</h4>
+              <span class="news__mark">Новости</span>
+            </div>
+            <div class="news__issue">
+              <div class="news__overlay"></div>
+              <p class="news__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета
+                сочетается со свежим помидором, маринованным огурцом и сыром чеддер. Классический бургер с мраморной
+                говядиной, в котором рубленая котлета сочетается со свежим помидором, маринованным...
+              </p>
+            </div>
+            <div class="news__row">
+              <a class="btn news__btn" href="#">Читать полностью</a>
+              <span>07.02.2022</span>
+            </div>
+          </div>
+        </li>
+        <li class="news__divide"></li>
+        <li class="news__item">
+          <div class="news__img">
+            <!-- width="570" height="308" -->
+            <img src="assets/img/bg/news-bg-img02.png" alt="" width="570" height="308">
+          </div>
+          <div class="news__inner">
+            <div class="news__row">
+              <h4 class="news__title">Очень длинный заголовок новости</h4>
+              <span class="news__mark">Новости</span>
+            </div>
+            <div class="news__issue">
+              <div class="news__overlay"></div>
+              <p class="news__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета
+                сочетается со свежим помидором, маринованным огурцом и сыром чеддер. Классический бургер с мраморной
+                говядиной, в котором рубленая котлета сочетается со свежим помидором, маринованным...
+              </p>
+            </div>
+            <div class="news__row">
+              <a class="btn news__btn" href="#">Читать полностью</a>
+              <span>07.02.2022</span>
+            </div>
+          </div>
+        </li>
+        <li class="news__divide"></li>
+        <li class="news__item">
+          <div class="news__img">
+            <!-- width="570" height="308" -->
+            <img src="assets/img/bg/news-bg-img03.png" alt="" width="570" height="308">
+          </div>
+          <div class="news__inner">
+            <div class="news__row">
+              <h4 class="news__title">Очень длинный заголовок новости</h4>
+              <span class="news__mark">Новости</span>
+            </div>
+            <div class="news__issue">
+              <div class="news__overlay"></div>
+              <p class="news__text">
+                Классический бургер с мраморной говядиной, в котором рубленая котлета
+                сочетается со свежим помидором, маринованным огурцом и сыром чеддер. Классический бургер с мраморной
+                говядиной, в котором рубленая котлета сочетается со свежим помидором, маринованным...
+              </p>
+            </div>
+            <div class="news__row">
+              <a class="btn news__btn" href="#">Читать полностью</a>
+              <span>07.02.2022</span>
+            </div>
+          </div>
+        </li>
+        <li class="news__divide"></li>
+      </ul>
+    </section>
+  </main>
+  <section class="maps">
+    <div class="wrapper">
+      <a class="btn btn--center" href="#">Смотреть все новости</a>
+      <h2 class="title">Где мы находимся?</h2>
+      <h3 class="subtitle">Ждём тебя в гости</h3>
+    </div>
+    <div id="map"></div>
+    <script>
+      // Функция ymaps.ready() будет вызвана, когда
+      // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+      ymaps.ready(init);
 
-    function init() {
-      // Создание карты.
-      // https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/map-docpage/
-      var myMap = new ymaps.Map("map", {
-        // Координаты центра карты.
-        // Порядок по умолчнию: «широта, долгота».
-        center: [45.031661, 38.974558],
-        // Уровень масштабирования. Допустимые значения:
-        // от 0 (весь мир) до 19.
-        zoom: 14,
-        // Элементы управления
-        controls: [
+      function init() {
+        // Создание карты.
+        // https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/map-docpage/
+        var myMap = new ymaps.Map("map", {
+          // Координаты центра карты.
+          // Порядок по умолчнию: «широта, долгота».
+          center: [45.031661, 38.974558],
+          // Уровень масштабирования. Допустимые значения:
+          // от 0 (весь мир) до 19.
+          zoom: 14,
+          // Элементы управления
+          controls: [
 
-          'zoomControl', // Ползунок масштаба
-          // 'rulerControl', // Линейка
-          // 'routeButtonControl', // Панель маршрутизации
-          // 'trafficControl', // Пробки
-          // 'typeSelector', // Переключатель слоев карты
-          // 'fullscreenControl', // Полноэкранный режим
+            'zoomControl', // Ползунок масштаба
+            // 'rulerControl', // Линейка
+            // 'routeButtonControl', // Панель маршрутизации
+            // 'trafficControl', // Пробки
+            // 'typeSelector', // Переключатель слоев карты
+            // 'fullscreenControl', // Полноэкранный режим
 
-          // Поисковая строка
-          // new ymaps.control.SearchControl({
-          //   options: {
-          //     // вид - поисковая строка
-          //     size: 'large',
-          //     // Включим возможность искать не только топонимы, но и организации.
-          //     provider: 'yandex#search'
-          //   }
-          // })
+            // Поисковая строка
+            // new ymaps.control.SearchControl({
+            //   options: {
+            //     // вид - поисковая строка
+            //     size: 'large',
+            //     // Включим возможность искать не только топонимы, но и организации.
+            //     provider: 'yandex#search'
+            //   }
+            // })
 
-        ]
-      });
-      // Отключаем scrollZoom
-      myMap.behaviors.disable('scrollZoom');
-      // Добавление метки
-      var myPlacemark = new ymaps.Placemark([45.031661, 38.974558], {
-        hintContent: 'Кранодар, ул. Красноармейская, 73',
-        // Балун откроется при клике по метке.
-        balloonContent: '+7 (928) 433-66-78'
-      }, {
-        // Опции.
+          ]
+        });
+        // Отключаем scrollZoom
+        myMap.behaviors.disable('scrollZoom');
+        // Добавление метки
+        var myPlacemark = new ymaps.Placemark([45.031661, 38.974558], {
+          hintContent: 'Кранодар, ул. Красноармейская, 73',
+          // Балун откроется при клике по метке.
+          balloonContent: '+7 (928) 433-66-78'
+        }, {
+          // Опции.
 
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
 
-        // Своё изображение иконки метки.
-        iconImageHref: 'assets/img/icons/icon-pin-map.png',
-        // Размеры метки.
-        iconImageSize: [40, 53],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-16, -16],
-      });
+          // Своё изображение иконки метки.
+          iconImageHref: 'assets/img/icons/icon-pin-map.png',
+          // Размеры метки.
+          iconImageSize: [40, 53],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-16, -16],
+        });
 
-      // После того как метка была создана, добавляем её на карту.
-      myMap.geoObjects.add(myPlacemark);
+        // После того как метка была создана, добавляем её на карту.
+        myMap.geoObjects.add(myPlacemark);
 
-    }
-  </script>
-  <!-- <div class="maps__frame">
+      }
+    </script>
+    <!-- <div class="maps__frame">
     <script async
       src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7dd80b166dc5b07f2961b6d883c27d6a4cee14c2135c690a954ba8f8af8d3876&amp;height=650&amp;lang=ru_RU&amp;scroll=false">
     </script>
   </div> -->
-</section>
+  </section>
 
-<div class="popup__bg wrapper">
-  <form class="popup label">
-    <svg class="close-popup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path fill="#2982ff"
-        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
-    </svg>
-    <div>
-      <input type="text" name="name">
-      <div class="label__text">
-        Ваше имя
+  <div class="popup__bg wrapper">
+    <form class="popup label">
+      <svg class="close-popup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="#2982ff"
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+      </svg>
+      <div>
+        <input type="text" name="name">
+        <div class="label__text">
+          Ваше имя
+        </div>
       </div>
-    </div>
-    <div>
-      <input type="tel" name="tel">
-      <div class="label__text">
-        Ваш телефон
+      <div>
+        <input type="tel" name="tel">
+        <div class="label__text">
+          Ваш телефон
+        </div>
       </div>
-    </div>
-    <div>
-      <textarea name="message"></textarea>
-      <div class="label__text">
-        Ваше сообщение
+      <div>
+        <textarea name="message"></textarea>
+        <div class="label__text">
+          Ваше сообщение
+        </div>
       </div>
-    </div>
-    <button type="submit">Отправить</button>
-  </form>
-</div>
-{% include "../templates/footer.njk" %}
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+  {% include "../templates/footer.njk" %}

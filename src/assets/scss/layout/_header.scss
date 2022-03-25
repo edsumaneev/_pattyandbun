@@ -11,3 +11,12 @@
     padding-top: 0;
   }
 }
+
+.header--nofix {
+  @media screen and (max-width: 992px) {
+    position: absolute;
+    background-color: transparent;
+  }
+}
+
+// .header--nofix 
