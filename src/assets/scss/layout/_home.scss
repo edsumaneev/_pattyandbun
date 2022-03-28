@@ -190,6 +190,7 @@
 .carte__list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 
   @media screen and (max-width: 1198px) {
     // justify-content: center;
@@ -203,9 +204,9 @@
   justify-content: space-between;
   padding: 30px;
 
-  margin-right: 29px;
-  margin-bottom: 30px;
-  min-width: 733px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  min-width: 725px;
   min-height: 365px;
 
   background: radial-gradient(50% 50% at 50% 50%, #715757 0%, #3c3030 100%), radial-gradient(50% 50% at 50% 50%, #3c3030 0%, #3c3030 100%), radial-gradient(50% 50% at 50% 50%, #eeb913 0%, #ee8913 100%), #262626;
