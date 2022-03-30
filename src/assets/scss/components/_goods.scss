@@ -4,9 +4,9 @@
   flex-wrap: wrap;
   margin-bottom: 60px;
 
-  @media screen and (max-width: 2498px) {
-    flex-wrap: wrap;
-  }
+  // @media screen and (max-width: 2498px) {
+  //   flex-wrap: wrap;
+  // }
 
   @media screen and (max-width: 992px) {
     justify-content: flex-start;
@@ -170,6 +170,18 @@
 
   @media screen and (max-width:575px) {
     max-width: 400px;
+  }
+}
+
+.menu .goods__item:nth-child(4n) {
+  margin-right: 0;
+
+  @media screen and (max-width: 2498px) {
+    margin-right: 29px;
+  }
+
+  @media screen and (max-width: 992px) {
+    margin: 0 10px 20px;
   }
 }
 
