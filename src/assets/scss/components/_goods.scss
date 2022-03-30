@@ -30,6 +30,10 @@
   }
 }
 
+.goods__list--noborder {
+  border-bottom: none;
+}
+
 .goods__item {
   position: relative;
   display: flex;
