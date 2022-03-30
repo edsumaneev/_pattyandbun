@@ -239,7 +239,8 @@
 
 .menu__aside {
   position: relative;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 115px;
   width: 20%;
 
   @media screen and (max-width:575px) {
@@ -308,7 +309,7 @@
 }
 
 .menu__sidebar {
-  padding: 10px 0 60px 0;
+  padding: 60px 0 60px 0;
   width: 0;
 
   @media screen and (max-width: 992px) {
