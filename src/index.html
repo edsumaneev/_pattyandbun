@@ -471,21 +471,12 @@
     </div>
     <div id="map"></div>
     <script>
-      // Функция ymaps.ready() будет вызвана, когда
-      // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
       ymaps.ready(init);
 
       function init() {
-        // Создание карты.
-        // https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/map-docpage/
         var myMap = new ymaps.Map("map", {
-          // Координаты центра карты.
-          // Порядок по умолчнию: «широта, долгота».
           center: [45.031661, 38.974558],
-          // Уровень масштабирования. Допустимые значения:
-          // от 0 (весь мир) до 19.
           zoom: 14,
-          // Элементы управления
           controls: [
 
             'zoomControl', // Ползунок масштаба
@@ -509,63 +500,19 @@
         });
         // Отключаем scrollZoom
         myMap.behaviors.disable('scrollZoom');
-        // Добавление метки
+        // метки
         var myPlacemark = new ymaps.Placemark([45.031661, 38.974558], {
           hintContent: 'Кранодар, ул. Красноармейская, 73',
-          // Балун откроется при клике по метке.
           balloonContent: '+7 (928) 433-66-78'
         }, {
           // Опции.
-
-          // Необходимо указать данный тип макета.
           iconLayout: 'default#image',
-
-          // Своё изображение иконки метки.
           iconImageHref: 'assets/img/icons/icon-pin-map.png',
-          // Размеры метки.
           iconImageSize: [40, 53],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
           iconImageOffset: [-16, -16],
         });
-
-        // После того как метка была создана, добавляем её на карту.
         myMap.geoObjects.add(myPlacemark);
-
       }
     </script>
-    <!-- <div class="maps__frame">
-    <script async
-      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7dd80b166dc5b07f2961b6d883c27d6a4cee14c2135c690a954ba8f8af8d3876&amp;height=650&amp;lang=ru_RU&amp;scroll=false">
-    </script>
-  </div> -->
   </section>
-
-  <div class="popup__bg wrapper">
-    <form class="popup label">
-      <svg class="close-popup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path fill="#2982ff"
-          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
-      </svg>
-      <div>
-        <input type="text" name="name">
-        <div class="label__text">
-          Ваше имя
-        </div>
-      </div>
-      <div>
-        <input type="tel" name="tel">
-        <div class="label__text">
-          Ваш телефон
-        </div>
-      </div>
-      <div>
-        <textarea name="message"></textarea>
-        <div class="label__text">
-          Ваше сообщение
-        </div>
-      </div>
-      <button type="submit">Отправить</button>
-    </form>
-  </div>
   {% include "../templates/footer.njk" %}

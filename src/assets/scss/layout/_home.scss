@@ -191,10 +191,6 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
-  @media screen and (max-width: 1198px) {
-    // justify-content: center;
-  }
 }
 
 .carte__item {
