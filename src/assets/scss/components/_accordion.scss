@@ -73,6 +73,7 @@
 
 .accordion__order {
   justify-content: flex-start;
+  margin-bottom: 10px;
 }
 
 .accordion__date {
@@ -93,9 +94,9 @@
 
 .accordion__img,
 .accordion__title,
-.accordion__price,
-.ingredients {
-  margin-right: 28px;
+.accordion__price {
+  // margin-right: 28px;
+  margin-right: 65px;
 
   @media screen and (max-width: 1198px) {
     margin-right: 75px;
@@ -113,6 +114,17 @@
     margin-right: 10px;
     font-size: 14px;
   }
+}
+
+.accordion__price {
+  min-width: 100px;
+  margin-right: 0;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.accordion__title {
+  width: 140px;
 }
 
 .accordion__icon {

@@ -102,6 +102,8 @@ if ($(".calculate").length > 0) {
     touchThreshold: 100
   });
   $('.slider-nav').slick({
+    // slidesToShow: 5,
+    // infinite: false,
     prevArrow: $(".slick-prev"),
     nextArrow: $(".slick-next"),
     asNavFor: '.slider-for',
