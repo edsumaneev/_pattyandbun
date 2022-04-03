@@ -119,6 +119,61 @@ if ($(".calculate").length > 0) {
   });
 };
 
+// ------------------------
+if ($(".calculate").length > 0) {
+  $('.slider-for-2').slick({
+
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav-2',
+    touchThreshold: 100
+  });
+  $('.slider-nav-2').slick({
+    slidesToShow: 5,
+    // infinite: false,
+    prevArrow: $(".slick-prev"),
+    nextArrow: $(".slick-next"),
+    asNavFor: '.slider-for-2',
+    // variableWidth: true,
+    cssEase: 'linear',
+    dots: false,
+    centerMode: false,
+    touchThreshold: 50,
+    focusOnSelect: true,
+    responsive: [{
+        breakpoint: 2498,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 998,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+  $(".slider-nav-2").on('afterChange', function (event, slick, currentSlide) {
+    $("#cp").text(currentSlide + 1);
+  });
+};
+// ---------------------------
+
 // counter 
 if ($('.counter').length > 0) {
   $(function () {
