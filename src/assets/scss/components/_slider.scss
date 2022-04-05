@@ -211,9 +211,6 @@
   }
 }
 
-// ====================================================================
-.slider-for-2,
-// ====================================================================
 .slider-for {
   padding-top: 30px;
 
@@ -283,9 +280,6 @@
   color: #a7a7a7;
 }
 
-// ====================================================================
-.slider-nav-2,
-// ====================================================================
 .slider-nav {
   padding: 25px 15px 0 15px;
 
@@ -337,25 +331,7 @@
 }
 
 .slick-current .slider-nav__title {
-  // transition: 0.7s linear;
-  transition: ease-in-out 1.7s;
-  min-width: 200px;
-
-
-  font-size: rem(50px);
-  color: rgba($color: #ffffff, $alpha: 1.0);
-
-  @media screen and (max-width: 992px) {
-    font-size: rem(36px);
-  }
-}
-
-// ====================================================================
-.slick-current .slider-nav__slide-2 .slider-nav__title {
   transition: ease-in-out 0.7s;
-  // transition: none;
-  // min-width: 150px;
-
 
   font-size: rem(50px);
   color: rgba($color: #ffffff, $alpha: 1.0);
@@ -364,25 +340,16 @@
     font-size: rem(36px);
   }
 }
-
-// ====================================================================
 
 .slider-nav__slide {
-  // padding: 0 65px 0 0;
-  padding: 0 55px 0 0;
+  padding: 0 5px 0 0;
+  width: 340px !important;
 
   @media screen and (max-width: 992px) {
-    padding: 0 30px 0 0;
+    width: 340px !important;
   }
 }
 
-// ====================================================================
-.slider-nav__slide-2 {
-  padding: 0 5px 0 0;
-  width: 340px !important;
-}
-
-// ====================================================================
 .slider-nav__mark {
   padding: 3px 5px;
   margin-left: 20px;

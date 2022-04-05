@@ -2,8 +2,57 @@ const {
   auto
 } = require('@popperjs/core');
 
-require('./js-component/jquery-ui.min.js');
 require('slick-carousel');
+require('./js-component/jquery-ui.min.js');
+
+// slider menu-page
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav',
+  touchThreshold: 100
+});
+$('.slider-nav').slick({
+  slidesToShow: 5,
+  prevArrow: $(".slick-prev"),
+  nextArrow: $(".slick-next"),
+  asNavFor: '.slider-for',
+  cssEase: 'linear',
+  dots: false,
+  centerMode: false,
+  touchThreshold: 50,
+  focusOnSelect: true,
+  responsive: [{
+      breakpoint: 2498,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 1920,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 1120,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
+});
+$(".slider-nav").on('afterChange', function (event, slick, currentSlide) {
+  $("#cp").text(currentSlide + 1);
+});
 
 // tabs
 if ($(".timeline").length > 0) {
@@ -78,7 +127,6 @@ if ($(".intro").length > 0) {
     prevArrow: $(".slick-prev"),
     nextArrow: $(".slick-next"),
     dots: false,
-    // autoplay: 200,
     infinite: true,
     slidesToShow: 1,
     fade: true,
@@ -89,90 +137,6 @@ if ($(".intro").length > 0) {
     $("#cp").text(currentSlide + 1);
   });
 };
-
-// slider menu
-if ($(".calculate").length > 0) {
-  $('.slider-for').slick({
-
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav',
-    touchThreshold: 100
-  });
-  $('.slider-nav').slick({
-    // slidesToShow: 5,
-    // infinite: false,
-    prevArrow: $(".slick-prev"),
-    nextArrow: $(".slick-next"),
-    asNavFor: '.slider-for',
-    variableWidth: true,
-    cssEase: 'linear',
-    dots: false,
-    centerMode: false,
-    touchThreshold: 50,
-    focusOnSelect: true
-  });
-  $(".slider-nav").on('afterChange', function (event, slick, currentSlide) {
-    $("#cp").text(currentSlide + 1);
-  });
-};
-
-// ------------------------
-if ($(".calculate").length > 0) {
-  $('.slider-for-2').slick({
-
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav-2',
-    touchThreshold: 100
-  });
-  $('.slider-nav-2').slick({
-    slidesToShow: 5,
-    // infinite: false,
-    prevArrow: $(".slick-prev"),
-    nextArrow: $(".slick-next"),
-    asNavFor: '.slider-for-2',
-    // variableWidth: true,
-    cssEase: 'linear',
-    dots: false,
-    centerMode: false,
-    touchThreshold: 50,
-    focusOnSelect: true,
-    responsive: [{
-        breakpoint: 2498,
-        settings: {
-          slidesToShow: 4
-        }
-      },
-      {
-        breakpoint: 1920,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 998,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 575,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
-  });
-  $(".slider-nav-2").on('afterChange', function (event, slick, currentSlide) {
-    $("#cp").text(currentSlide + 1);
-  });
-};
-// ---------------------------
 
 // counter 
 if ($('.counter').length > 0) {

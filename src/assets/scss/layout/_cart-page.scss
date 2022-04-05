@@ -1,10 +1,5 @@
-// .cart-page {
-//   background: url("../img/bg/bg-mask.png");
-//   background-size: cover;
-// }
-
 .cart-page__block {
-  padding: 45px 30px 0 40px;
+  padding: 15px 30px 0 40px;
 
   background: #352a2a;
   box-shadow: 0px 10px 50px #1e1717;
@@ -21,11 +16,12 @@
 .cart-page__row {
   display: flex;
   justify-content: space-between;
-  // align-items: flex-start;
   align-items: center;
 
   padding-bottom: 35px;
   padding-top: 35px;
+
+  min-height: 190px;
 
   border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.2);
 
